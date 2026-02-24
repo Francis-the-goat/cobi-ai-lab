@@ -1,0 +1,33 @@
+# OpenClaw
+.openclaw/
+*.log
+/tmp/
+
+# Credentials
+*.key
+*.pem
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test files
+test_*.py
+test_*.js
