@@ -1,0 +1,81 @@
+# OpenClaw Scheduler Configuration
+# Proactive workflows that run without user prompting
+
+schedules:
+  # Morning briefing at 6 AM (before your day starts)
+  morning-brief:
+    cron: "0 6 * * *"
+    command: "bash ~/.openclaw/workspace/scripts/morning-briefing.sh"
+    notify: telegram
+    description: "Compile overnight activity into daily briefing"
+  
+  # Harvester runs every 2 hours for Tier 1 sources
+  harvester-tier1:
+    cron: "0 */2 * * *"
+    command: "bash ~/.openclaw/workspace/scripts/orchestrate-agents.sh --harvester"
+    notify: none
+    description: "Monitor high-priority sources"
+  
+  # Full harvest → analyze chain daily at 5 AM
+  daily-intelligence:
+    cron: "0 5 * * *"
+    command: "bash ~/.openclaw/workspace/scripts/orchestrate-agents.sh --chain"
+    notify: telegram
+    description: "Complete intelligence pipeline: harvest → analyze"
+  
+  # Skill opportunity detection daily at 7 AM
+  skill-detector:
+    cron: "0 7 * * *"
+    command: "bash ~/.openclaw/workspace/skills/skill-opportunity-detector/scripts/daily-scan.sh"
+    notify: telegram
+    description: "Analyze patterns for skill opportunities"
+  
+  # Self-improvement task daily at 9 AM
+  daily-improvement:
+    cron: "0 9 * * *"
+    command: "bash ~/.openclaw/workspace/scripts/self-improvement-loop.sh --daily-surprise"
+    notify: telegram
+    description: "Generate daily self-improvement task"
+  
+  # Pre-compaction save (runs before each compaction)
+  pre-compaction:
+    trigger: compaction
+    command: "bash ~/.openclaw/workspace/scripts/pre-compaction-save.sh"
+    notify: none
+    description: "Save critical context before conversation compaction"
+
+triggers:
+  # Chain analyst after harvester completes
+  chain-analyst:
+    on: "harvester-tier1:complete"
+    command: "bash ~/.openclaw/workspace/scripts/orchestrate-agents.sh --analyst"
+    delay: "5m"
+  
+  # Notify on high-value proposal
+  notify-proposal:
+    on: "file:create"
+    path: "04-decisions/skill-proposals/*"
+    command: "openclaw notify telegram 'New skill proposal ready for review'"
+
+# Notification settings
+notifications:
+  telegram:
+    chat_id: "${TELEGRAM_CHAT_ID}"
+    token: "${TELEGRAM_BOT_TOKEN}"
+  
+# Agent configurations
+agents:
+  harvester:
+    model: "ollama/qwen2.5:7b"
+    context_window: "32k"
+    skills: ["transcription", "rss-monitor", "github-api"]
+  
+  analyst:
+    model: "moonshot/kimi-k2.5"
+    context_window: "128k"
+    skills: ["pattern-extraction", "synthesis"]
+  
+  builder:
+    model: "openai-codex/gpt-5.3-codex"
+    context_window: "128k"
+    skills: ["skill-creator", "github"]
