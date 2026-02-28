@@ -31,3 +31,7 @@ venv/
 # Test files
 test_*.py
 test_*.js
+config/transcription.env
+config/transcription.envc
+*.env
+*secret*

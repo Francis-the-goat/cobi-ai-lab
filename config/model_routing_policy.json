@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "profile": "main",
+  "defaults": {
+    "primary": "moonshot/kimi-k2.5",
+    "fallbacks": [
+      "ollama/qwen2.5:3b",
+      "ollama/llama3.2:3b",
+      "ollama/qwen2.5:7b",
+      "ollama/deepseek-coder:1.3b"
+    ],
+    "heartbeatModel": "ollama/qwen2.5:3b",
+    "nonPremiumCronFallbackModel": "ollama/qwen2.5:3b"
+  },
+  "requireExplicitCronModel": true,
+  "enforceEnabledSet": true,
+  "enabledJobs": [
+    "orchestrator-daily-plan",
+    "resource-harvest-video-web",
+    "transcription-retry-worker",
+    "intel-midday-synthesis",
+    "foundry-daily-build-candidate",
+    "proof-daily-content-draft",
+    "warehouse-shift-handoff",
+    "security-daily-posture"
+  ],
+  "allowedMoonshotJobs": [
+    "orchestrator-daily-plan",
+    "intel-midday-synthesis",
+    "proof-daily-content-draft"
+  ],
+  "allowedOpenAICodexJobs": [
+    "foundry-daily-build-candidate"
+  ],
+  "cronModelByName": {
+    "orchestrator-daily-plan": "moonshot/kimi-k2.5",
+    "resource-harvest-video-web": "ollama/qwen2.5:3b",
+    "transcription-retry-worker": "ollama/qwen2.5:3b",
+    "intel-midday-synthesis": "moonshot/kimi-k2.5",
+    "foundry-daily-build-candidate": "openai-codex/gpt-5.3-codex",
+    "proof-daily-content-draft": "moonshot/kimi-k2.5",
+    "warehouse-shift-handoff": "ollama/qwen2.5:7b",
+    "security-daily-posture": "ollama/qwen2.5:3b"
+  }
+}

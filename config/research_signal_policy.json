@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "focusAreas": [
+    "agentic_ai_architecture",
+    "claude_code_workflows",
+    "codex_workflows",
+    "ai_business_resources"
+  ],
+  "thresholds": {
+    "minRelevanceScore": 17,
+    "minImportanceScore": 6,
+    "minAcceptedSources": 3,
+    "maxAcceptedSources": 5
+  },
+  "gates": {
+    "requireFocusMatch": true,
+    "requireImplementationEvidence": true,
+    "requireActionability48h": true,
+    "requireEntrepreneurImportance": true
+  },
+  "keywords": {
+    "focus": {
+      "agentic_ai_architecture": [
+        "agentic",
+        "orchestration",
+        "agent swarm",
+        "workflow",
+        "memory",
+        "eval",
+        "evaluation",
+        "guardrail",
+        "retry",
+        "prompt injection",
+        "production"
+      ],
+      "claude_code_workflows": [
+        "claude code",
+        "anthropic",
+        "claude",
+        "claude review",
+        "claude cli"
+      ],
+      "codex_workflows": [
+        "codex",
+        "openai codex",
+        "gpt-5.3-codex",
+        "codex review",
+        "codex cli"
+      ],
+      "ai_business_resources": [
+        "b2b",
+        "smb",
+        "offer",
+        "pricing",
+        "sales",
+        "conversion",
+        "distribution",
+        "retention",
+        "acquisition",
+        "case study",
+        "founder",
+        "entrepreneur"
+      ]
+    },
+    "implementationEvidence": [
+      "code",
+      "repo",
+      "architecture",
+      "benchmark",
+      "postmortem",
+      "workflow",
+      "script",
+      "ci",
+      "test",
+      "pull request",
+      "pr",
+      "runbook",
+      "tutorial",
+      "step-by-step"
+    ],
+    "actionability48h": [
+      "build",
+      "implement",
+      "deploy",
+      "workflow",
+      "pipeline",
+      "architecture",
+      "ci",
+      "pr",
+      "automate",
+      "template",
+      "playbook",
+      "checklist",
+      "framework",
+      "how to",
+      "steps",
+      "guide"
+    ],
+    "entrepreneurImportance": {
+      "revenue": [
+        "revenue",
+        "mrr",
+        "pricing",
+        "sales",
+        "conversion",
+        "lead",
+        "pipeline",
+        "acv"
+      ],
+      "delivery": [
+        "delivery",
+        "throughput",
+        "speed",
+        "automation",
+        "workflow",
+        "ops",
+        "process",
+        "execution"
+      ],
+      "moat": [
+        "moat",
+        "defensibility",
+        "distribution",
+        "retention",
+        "data",
+        "brand",
+        "system"
+      ],
+      "risk": [
+        "risk",
+        "security",
+        "compliance",
+        "reliability",
+        "cost",
+        "failure",
+        "outage",
+        "rate limit"
+      ]
+    }
+  }
+}

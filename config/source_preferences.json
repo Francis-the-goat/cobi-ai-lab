@@ -1,0 +1,49 @@
+{
+  "preferredUploaders": [
+    "Dan Koe",
+    "Nate B Jones",
+    "Futurepedia",
+    "Jeff Su",
+    "Y Combinator",
+    "OpenAI",
+    "Anthropic",
+    "Google DeepMind"
+  ],
+  "seedQueries": [
+    "Dan Koe AI systems entrepreneurship",
+    "Nate B Jones AI business systems",
+    "Futurepedia AI tools business workflows",
+    "Jeff Su AI productivity systems",
+    "Y Combinator AI startup operations",
+    "OpenAI agents sdk tutorials",
+    "Anthropic tool use docs tutorials"
+  ],
+  "officialDocs": [
+    {
+      "name": "OpenAI Docs",
+      "url": "https://platform.openai.com/docs",
+      "reason": "Primary API and agents documentation"
+    },
+    {
+      "name": "OpenAI Developer Blog",
+      "url": "https://developers.openai.com/blog/",
+      "reason": "Official implementation patterns and release guidance"
+    },
+    {
+      "name": "Anthropic Docs",
+      "url": "https://docs.anthropic.com/",
+      "reason": "Primary Claude platform and tool-use documentation"
+    },
+    {
+      "name": "Google AI for Developers",
+      "url": "https://ai.google.dev/",
+      "reason": "Primary Gemini and agent tooling references"
+    },
+    {
+      "name": "Y Combinator",
+      "url": "https://www.ycombinator.com/library",
+      "reason": "Operator-grade startup and execution insights"
+    }
+  ],
+  "maxPerUploader": 2
+}
