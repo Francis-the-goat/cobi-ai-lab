@@ -1,5 +1,7 @@
 #!/bin/bash
 # Pre-Compaction Memory Hook
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"# Ensure PATH for cron compatibility
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 # Saves critical context before OpenClaw compacts conversation
 
 set -euo pipefail

@@ -1,5 +1,7 @@
 #!/bin/bash
 # Morning Briefing Generator
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"# Ensure PATH for cron compatibility
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 # Synthesizes overnight activity into actionable summary
 
 set -euo pipefail

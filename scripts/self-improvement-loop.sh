@@ -1,5 +1,7 @@
 #!/bin/bash
 # Self-Improvement Loop
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"# Ensure PATH for cron compatibility
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 # Creates and maintains the self-improving agent system
 
 set -euo pipefail
