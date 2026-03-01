@@ -64,8 +64,8 @@ echo "[STEP 2/3] Running Analyst..."
 echo "─────────────────────────────────────────────────────────────"
 
 if [ "$HARVESTER_STATUS" = "SUCCESS" ] || [ "${FORCE_ANALYZE:-false}" = "true" ]; then
-    if [ -x "$WORKSPACE_PATH/scripts/analyst-agent.sh" ]; then
-        if bash "$WORKSPACE_PATH/scripts/analyst-agent.sh" 2>&1; then
+    if [ -x "$WORKSPACE_PATH/scripts/value-hunter.sh" ]; then
+        if bash "$WORKSPACE_PATH/scripts/value-hunter.sh" 2>&1; then
             ANALYST_STATUS="SUCCESS"
             # Parse results
             ANALYST_OUTPUT=$(grep "ANALYST_RESULT:" "$LOG_FILE" | tail -1 || echo "")
@@ -83,7 +83,7 @@ if [ "$HARVESTER_STATUS" = "SUCCESS" ] || [ "${FORCE_ANALYZE:-false}" = "true" ]
         fi
     else
         echo "⚠ Analyst script not found or not executable"
-        echo "  Expected: $WORKSPACE_PATH/scripts/analyst-agent.sh"
+        echo "  Expected: $WORKSPACE_PATH/scripts/value-hunter.sh"
     fi
 else
     echo "⊘ Skipped (harvester failed and FORCE_ANALYZE not set)"
