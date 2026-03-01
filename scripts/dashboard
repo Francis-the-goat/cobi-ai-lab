@@ -1,0 +1,27 @@
+#!/bin/bash
+# Dashboard launcher - Choose CLI or Web
+
+echo "🦞 OpenClaw Mission Control"
+echo ""
+echo "Choose dashboard type:"
+echo "  1) CLI Dashboard (terminal)"
+echo "  2) Web Dashboard (browser)"
+echo ""
+read -p "Select (1-2): " choice
+
+case "$choice" in
+    1)
+        bash ~/.openclaw/workspace/scripts/mission-control.sh
+        ;;
+    2)
+        echo "Starting web dashboard..."
+        echo "Open http://127.0.0.1:8765 in your browser"
+        echo "Press Ctrl+C to stop"
+        echo ""
+        python3 ~/.openclaw/workspace/scripts/mission-control.py
+        ;;
+    *)
+        echo "Invalid choice"
+        exit 1
+        ;;
+esac
