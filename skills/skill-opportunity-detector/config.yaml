@@ -1,0 +1,18 @@
+value_criteria:
+  novelty_threshold: 7        # 1-10: New vs repackaged
+  actionability_threshold: 7  # 1-10: Can we build this?
+  reuse_potential: 6          # 1-10: Would others use it?
+  
+constraint_filters:
+  max_cost: 50               # $50 per skill max
+  max_api_calls: 10          # API calls per operation
+  requires_realtime: false   # Async-friendly only
+  
+auto_log: true              # Log rejected patterns too
+
+vault_path: ~/obsidian/openclaw
+
+pattern_sources:
+  - 03-patterns/
+  - 02-research/
+  - transcripts/

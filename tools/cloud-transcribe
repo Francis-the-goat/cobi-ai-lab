@@ -1,0 +1,149 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+AUDIO_FILE="${1:-}"
+OUT_SRT="${2:-}"
+
+if [[ -z "$AUDIO_FILE" || -z "$OUT_SRT" ]]; then
+  echo "Usage: cloud-transcribe <audio_file> <output_srt>" >&2
+  exit 1
+fi
+
+if [[ ! -f "$AUDIO_FILE" ]]; then
+  echo "Error: audio file not found: $AUDIO_FILE" >&2
+  exit 1
+fi
+
+if ! command -v curl >/dev/null 2>&1; then
+  echo "Error: curl is required" >&2
+  exit 1
+fi
+
+PROVIDER="${TRANSCRIBE_CLOUD_PROVIDER:-auto}"
+TOOLS_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+
+if [[ "$PROVIDER" == "auto" ]]; then
+  if [[ -n "${GROQ_API_KEY:-}" ]]; then
+    PROVIDER="groq"
+  elif [[ -n "${OPENAI_API_KEY:-}" ]]; then
+    PROVIDER="openai"
+  elif [[ -n "${DEEPGRAM_API_KEY:-}" ]]; then
+    PROVIDER="deepgram"
+  else
+    echo "Error: no cloud transcription API key found (GROQ_API_KEY/OPENAI_API_KEY/DEEPGRAM_API_KEY)" >&2
+    exit 1
+  fi
+fi
+
+case "$PROVIDER" in
+  openai)
+    if [[ -z "${OPENAI_API_KEY:-}" ]]; then
+      echo "Error: OPENAI_API_KEY is required for openai cloud transcription" >&2
+      exit 1
+    fi
+    MODEL="${TRANSCRIBE_OPENAI_MODEL:-gpt-4o-mini-transcribe}"
+    if [[ "$MODEL" == "whisper-1" ]]; then
+      curl -sS --fail "https://api.openai.com/v1/audio/transcriptions" \
+        -H "Authorization: Bearer $OPENAI_API_KEY" \
+        -F "model=$MODEL" \
+        -F "response_format=srt" \
+        -F "file=@$AUDIO_FILE" >"$OUT_SRT"
+    else
+      TMP_TEXT="$(mktemp)"
+      trap 'rm -f "$TMP_TEXT"' EXIT
+      curl -sS --fail "https://api.openai.com/v1/audio/transcriptions" \
+        -H "Authorization: Bearer $OPENAI_API_KEY" \
+        -F "model=$MODEL" \
+        -F "response_format=text" \
+        -F "file=@$AUDIO_FILE" >"$TMP_TEXT"
+      python3 - "$TMP_TEXT" "$AUDIO_FILE" "$OUT_SRT" <<'PY'
+import subprocess
+import sys
+from pathlib import Path
+
+text_path = Path(sys.argv[1])
+audio_path = Path(sys.argv[2])
+out_path = Path(sys.argv[3])
+text = text_path.read_text(encoding="utf-8").strip()
+if not text:
+    raise SystemExit("Empty transcription text from OpenAI")
+
+duration = 3600.0
+try:
+    proc = subprocess.run(
+        [
+            "ffprobe",
+            "-v",
+            "error",
+            "-show_entries",
+            "format=duration",
+            "-of",
+            "default=noprint_wrappers=1:nokey=1",
+            str(audio_path),
+        ],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if proc.returncode == 0 and proc.stdout.strip():
+        duration = max(float(proc.stdout.strip()), 1.0)
+except Exception:
+    pass
+
+end_h = int(duration // 3600)
+rem = duration % 3600
+end_m = int(rem // 60)
+end_s = int(rem % 60)
+end_ms = int((duration - int(duration)) * 1000)
+srt = (
+    "1\n"
+    f"00:00:00,000 --> {end_h:02d}:{end_m:02d}:{end_s:02d},{end_ms:03d}\n"
+    f"{text}\n"
+)
+out_path.write_text(srt, encoding="utf-8")
+PY
+    fi
+    ;;
+
+  groq)
+    if [[ -z "${GROQ_API_KEY:-}" ]]; then
+      echo "Error: GROQ_API_KEY is required for groq cloud transcription" >&2
+      exit 1
+    fi
+    MODEL="${TRANSCRIBE_GROQ_MODEL:-whisper-large-v3-turbo}"
+    TMP_JSON="$(mktemp)"
+    trap 'rm -f "$TMP_JSON"' EXIT
+    curl -sS --fail "https://api.groq.com/openai/v1/audio/transcriptions" \
+      -H "Authorization: Bearer $GROQ_API_KEY" \
+      -F "model=$MODEL" \
+      -F "response_format=verbose_json" \
+      -F "file=@$AUDIO_FILE" >"$TMP_JSON"
+    python3 "$TOOLS_DIR/segments-json-to-srt.py" "$TMP_JSON" "$OUT_SRT"
+    ;;
+
+  deepgram)
+    if [[ -z "${DEEPGRAM_API_KEY:-}" ]]; then
+      echo "Error: DEEPGRAM_API_KEY is required for deepgram cloud transcription" >&2
+      exit 1
+    fi
+    MODEL="${TRANSCRIBE_DEEPGRAM_MODEL:-nova-2}"
+    TMP_JSON="$(mktemp)"
+    trap 'rm -f "$TMP_JSON"' EXIT
+    curl -sS --fail -X POST \
+      "https://api.deepgram.com/v1/listen?model=${MODEL}&smart_format=true&punctuate=true&utterances=true" \
+      -H "Authorization: Token $DEEPGRAM_API_KEY" \
+      -H "Content-Type: audio/mpeg" \
+      --data-binary "@$AUDIO_FILE" >"$TMP_JSON"
+    python3 "$TOOLS_DIR/deepgram-to-srt.py" "$TMP_JSON" "$OUT_SRT"
+    ;;
+
+  *)
+    echo "Error: unsupported TRANSCRIBE_CLOUD_PROVIDER '$PROVIDER' (use auto|groq|openai|deepgram)" >&2
+    exit 1
+    ;;
+esac
+
+if [[ ! -s "$OUT_SRT" ]]; then
+  echo "Error: cloud transcription produced empty output" >&2
+  exit 1
+fi

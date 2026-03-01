@@ -1,0 +1,161 @@
+#!/usr/bin/env bash
+# yt-transcribe - Extract transcripts from YouTube videos.
+# Falls back to local Whisper transcription when subtitles are unavailable.
+# Usage: yt-transcribe <youtube_url_or_id> [text|json|srt]
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+WORKSPACE_DIR="${OPENCLAW_WORKSPACE_DIR:-$HOME/.openclaw/workspace}"
+TRANSCRIBE_CONFIG_FILE="${TRANSCRIBE_CONFIG_FILE:-$WORKSPACE_DIR/config/transcription.env}"
+
+if [[ -f "$TRANSCRIBE_CONFIG_FILE" ]]; then
+  # shellcheck disable=SC1090
+  source "$TRANSCRIBE_CONFIG_FILE"
+fi
+
+INPUT="${1:-}"
+FORMAT="${2:-text}"
+WHISPER_MODEL="${WHISPER_MODEL:-base}"
+TRANSCRIBE_ENABLE_CLOUD_FALLBACK="${TRANSCRIBE_ENABLE_CLOUD_FALLBACK:-0}"
+
+usage() {
+  cat <<'USAGE'
+Usage: yt-transcribe <youtube_url_or_id> [text|json|srt]
+
+Examples:
+  yt-transcribe https://youtu.be/QWzLPn164w0
+  yt-transcribe QWzLPn164w0 json
+  yt-transcribe https://www.youtube.com/watch?v=QWzLPn164w0 srt
+USAGE
+}
+
+if [[ -z "$INPUT" ]]; then
+  usage >&2
+  exit 1
+fi
+
+if [[ "$FORMAT" != "text" && "$FORMAT" != "json" && "$FORMAT" != "srt" ]]; then
+  echo "Error: format must be one of: text, json, srt" >&2
+  exit 1
+fi
+
+if ! command -v yt-dlp >/dev/null 2>&1; then
+  echo "Error: yt-dlp is required (install with: brew install yt-dlp)" >&2
+  exit 1
+fi
+
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "Error: python3 is required" >&2
+  exit 1
+fi
+
+is_truthy() {
+  case "${1,,}" in
+    1|true|yes|on) return 0 ;;
+    *) return 1 ;;
+  esac
+}
+
+if [[ "$INPUT" =~ ^[A-Za-z0-9_-]{11}$ ]]; then
+  VIDEO_ID="$INPUT"
+else
+  VIDEO_ID="$(printf '%s' "$INPUT" | sed -nE 's/.*(youtu\.be\/|v=|embed\/|v\/)([A-Za-z0-9_-]{11}).*/\2/p')"
+fi
+
+if [[ -z "${VIDEO_ID:-}" || ${#VIDEO_ID} -ne 11 ]]; then
+  echo "Error: could not extract a valid YouTube video ID from '$INPUT'" >&2
+  exit 1
+fi
+
+VIDEO_URL="https://youtu.be/$VIDEO_ID"
+TMP_DIR="$(mktemp -d)"
+trap 'rm -rf "$TMP_DIR"' EXIT
+
+TRANSCRIPT_SRT="$TMP_DIR/transcript.srt"
+HAVE_SUBS=0
+
+try_download_subs() {
+  local mode="$1"
+  yt-dlp --quiet \
+    --skip-download \
+    "$mode" \
+    --sub-langs "en,en-US,en-GB,en.*,en-US.*,en-GB.*" \
+    --convert-subs srt \
+    --output "$TMP_DIR/%(id)s.%(ext)s" \
+    "$VIDEO_URL" >/dev/null 2>&1 || return 1
+  return 0
+}
+
+if try_download_subs "--write-auto-subs"; then
+  HAVE_SUBS=1
+elif try_download_subs "--write-subs"; then
+  HAVE_SUBS=1
+fi
+
+if [[ "$HAVE_SUBS" -eq 1 ]]; then
+  SRT_FILE="$(find "$TMP_DIR" -type f -name '*.srt' | head -n 1 || true)"
+  VTT_FILE="$(find "$TMP_DIR" -type f -name '*.vtt' | head -n 1 || true)"
+  if [[ -n "$SRT_FILE" ]]; then
+    cp "$SRT_FILE" "$TRANSCRIPT_SRT"
+  elif [[ -n "$VTT_FILE" ]]; then
+    if ! command -v ffmpeg >/dev/null 2>&1; then
+      echo "Error: ffmpeg is required to convert VTT subtitles (install: brew install ffmpeg)" >&2
+      exit 1
+    fi
+    ffmpeg -hide_banner -loglevel error -y -i "$VTT_FILE" "$TRANSCRIPT_SRT"
+  fi
+fi
+
+if [[ ! -s "$TRANSCRIPT_SRT" ]]; then
+  if ! command -v ffmpeg >/dev/null 2>&1; then
+    echo "Error: no subtitles found and ffmpeg is missing for audio extraction" >&2
+    exit 1
+  fi
+  AUDIO_FILE="$TMP_DIR/$VIDEO_ID.mp3"
+  yt-dlp --quiet -x --audio-format mp3 --audio-quality 0 \
+    -o "$TMP_DIR/%(id)s.%(ext)s" \
+    "$VIDEO_URL"
+
+  if command -v whisper >/dev/null 2>&1; then
+    whisper "$AUDIO_FILE" \
+      --model "$WHISPER_MODEL" \
+      --language en \
+      --output_format srt \
+      --output_dir "$TMP_DIR" >/dev/null 2>&1 || true
+  fi
+
+  WHISPER_SRT="$TMP_DIR/$VIDEO_ID.srt"
+  if [[ -s "$WHISPER_SRT" ]]; then
+    cp "$WHISPER_SRT" "$TRANSCRIPT_SRT"
+  fi
+fi
+
+if [[ ! -s "$TRANSCRIPT_SRT" ]] && is_truthy "$TRANSCRIBE_ENABLE_CLOUD_FALLBACK"; then
+  if [[ ! -f "${AUDIO_FILE:-}" ]]; then
+    AUDIO_FILE="$TMP_DIR/$VIDEO_ID.mp3"
+    yt-dlp --quiet -x --audio-format mp3 --audio-quality 0 \
+      -o "$TMP_DIR/%(id)s.%(ext)s" \
+      "$VIDEO_URL"
+  fi
+  "$SCRIPT_DIR/cloud-transcribe" "$AUDIO_FILE" "$TRANSCRIPT_SRT"
+fi
+
+if [[ ! -s "$TRANSCRIPT_SRT" ]]; then
+  echo "Error: failed to transcribe $VIDEO_ID (captions + local whisper + cloud fallback)" >&2
+  echo "Tip: set TRANSCRIBE_ENABLE_CLOUD_FALLBACK=1 and provider API key if you want cloud fallback." >&2
+  exit 1
+fi
+
+if [[ "$FORMAT" == "srt" ]]; then
+  cat "$TRANSCRIPT_SRT"
+  exit 0
+fi
+
+if [[ "$FORMAT" == "json" ]]; then
+  python3 "$SCRIPT_DIR/srt-to-json.py" "$TRANSCRIPT_SRT"
+  exit 0
+fi
+
+# text output
+python3 "$SCRIPT_DIR/srt-to-clean-text.py" "$TRANSCRIPT_SRT"

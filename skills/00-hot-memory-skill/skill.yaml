@@ -1,0 +1,9 @@
+name: 00-hot-memory-skill
+version: 1.0.0
+description: Auto-built skill from value extraction
+author: Auto-Build Agent
+entry: main.sh
+inputs:
+  - name: input
+    description: Input to process
+    required: true
