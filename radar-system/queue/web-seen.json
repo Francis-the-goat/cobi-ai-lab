@@ -1,0 +1,72 @@
+{
+  "https://openai.com/news/": {
+    "name": "openai-news",
+    "hash": "511aca2bdb0ab6692b45d0e4e8264d0def1d89486462cde068c8dc1c11c6a64b",
+    "title": "OpenAI News | OpenAI",
+    "priority": "high",
+    "focus": "model-and-product-launches",
+    "selector": "main",
+    "last_checked": "2026-02-25T04:04:51.062621+00:00",
+    "last_excerpt": "OpenAI All Company Research Product Safety Engineering Security Global Affairs All"
+  },
+  "https://www.anthropic.com/news": {
+    "name": "anthropic-news",
+    "hash": "bbca7049495987d75b1d2dc3f4c5aa9eb0b671bd4b2faa5aa880f0019e100503",
+    "title": "Newsroom \\ Anthropic",
+    "priority": "high",
+    "focus": "model-releases-and-enterprise-moves",
+    "selector": "main",
+    "last_checked": "2026-02-25T04:04:51.062621+00:00",
+    "last_excerpt": "Newsroom Press inquires press@anthropic.com Non-media inquiries support@anthropic.com Media assets Download press kit Introducing Claude Sonnet 4.6 Product Feb 17, 2026 Sonnet 4.6 delivers frontier performance across coding, agents, and professional work at scale. Announcements Feb 5, 2026 Introducing Claude Opus 4.6 We\u2019re upgrading our smartest model. Across agentic coding, computer use, tool use"
+  },
+  "https://blog.google/technology/ai/": {
+    "name": "google-ai-blog",
+    "hash": "6fc7abaea7b9106412c810c34117ea405d017be028e4859346f8d5fbec43f312",
+    "title": "Official Google AI news and updates | Google Blog",
+    "priority": "medium",
+    "focus": "foundation-model-and-product-signals",
+    "selector": "main",
+    "last_checked": "2026-02-25T04:04:51.062621+00:00",
+    "last_excerpt": "Breadcrumb Innovation & AI Technology AI The work we're doing to make AI helpful for everyone. Follow Us AI AI Impact Summit 2026: How we\u2019re partnering to make AI work for everyone An overview of Google\u2019s new global partnerships and funding announcements at the AI Impact Summit in India. Gemini App 6 tips for prompting Lyria 3 in the Gemini app A new way to express yourself: Gemini can now create "
+  },
+  "https://www.microsoft.com/en-us/microsoft-cloud/blog/category/ai/": {
+    "name": "microsoft-ai-blog",
+    "hash": "10929e54fddf3e7bea83cfab6d5736dfe28e39b3807ed45231581cce7052fe53",
+    "title": "Page not found | The Microsoft Cloud Blog",
+    "priority": "medium",
+    "focus": "enterprise-ai-rollouts",
+    "selector": "main",
+    "last_checked": "2026-02-25T04:03:03.588396+00:00",
+    "last_excerpt": "Home Page Not Found Search 404 We are sorry, the page you requested cannot be found. The URL may be misspelled or the page you\u2019re looking for is no longer available. Search"
+  },
+  "https://www.ycombinator.com/blog": {
+    "name": "ycombinator-blog",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "title": "Y Combinator",
+    "priority": "medium",
+    "focus": "startup-and-smb-shift-signals",
+    "selector": "main",
+    "last_checked": "2026-02-25T04:04:51.062621+00:00",
+    "last_excerpt": ""
+  },
+  "https://docs.openclaw.ai/": {
+    "name": "openclaw-docs",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "title": "OpenClaw - OpenClaw",
+    "priority": "high",
+    "focus": "openclaw-capability-and-workflow-changes",
+    "selector": "main",
+    "last_checked": "2026-02-25T04:04:51.062621+00:00",
+    "last_excerpt": ""
+  },
+  "https://blogs.microsoft.com/ai/": {
+    "name": "microsoft-ai-blog",
+    "hash": "79a18671681e3427ec45b5156d31fc9161da6f8dc3d64ca0105a01809a3a114d",
+    "title": "AI - Source",
+    "priority": "medium",
+    "focus": "enterprise-ai-rollouts",
+    "selector": "main",
+    "last_checked": "2026-02-25T04:04:51.062621+00:00",
+    "last_excerpt": "AI Tag: How an AI tool is helping UK clinicians save time and be present with patients Tag: A new study explores how AI shapes what you can trust online Tag: From Signal magazine: How the Vatican is thinking about AI in a changing world Tag: From beards to bytes: How AI is empowering small business owners in Kenya Tag: Faster decisions: How an AI agent is redefining executive workflows at one of t"
+  }
+}

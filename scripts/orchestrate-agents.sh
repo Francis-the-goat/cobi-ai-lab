@@ -4,22 +4,35 @@
 
 set -euo pipefail
 
+# Ensure PATH includes openclaw (for cron compatibility)
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
+# Find openclaw binary
+if command -v openclaw &> /dev/null; then
+    OPENCLAW_CMD="openclaw"
+else
+    # Fallback to known location
+    OPENCLAW_CMD="/opt/homebrew/bin/openclaw"
+fi
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VAULT_PATH="${VAULT_PATH:-$HOME/obsidian/openclaw}"
 
 echo "=== Sub-Agent Orchestrator ==="
+echo "Using: $OPENCLAW_CMD"
 
 # Function: Spawn Harvester Agent
 spawn_harvester() {
     echo "[$(date)] Spawning Harvester Agent..."
     
     # Create session with specific agent ID
-    SESSION_KEY=$(openclaw sessions spawn \
+    SESSION_KEY=$($OPENCLAW_CMD sessions spawn \
         --agent-id harvester \
         --mode session \
         --task "Monitor Tier 1 sources, download new content, transcribe, log to vault" \
         --cwd "$VAULT_PATH" \
-        --json | jq -r '.sessionKey')
+        --run-timeout 3600 \
+        2>&1 | tail -1)
     
     echo "  → Harvester session: $SESSION_KEY"
     echo "$SESSION_KEY" > "$VAULT_PATH/.harvester-session"
@@ -32,15 +45,16 @@ spawn_analyst() {
     echo "[$(date)] Spawning Analyst Agent..."
     
     # Check if harvester completed
-    STATUS=$(openclaw sessions status "$harvester_session" --json | jq -r '.status')
+    STATUS=$($OPENCLAW_CMD sessions status "$harvester_session" 2>/dev/null | grep -o "completed\|running\|failed" || echo "unknown")
     
     if [ "$STATUS" = "completed" ]; then
-        SESSION_KEY=$(openclaw sessions spawn \
+        SESSION_KEY=$($OPENCLAW_CMD sessions spawn \
             --agent-id analyst \
             --mode session \
             --task "Analyze patterns from harvester output, extract thinking architectures, write to 03-patterns/" \
             --cwd "$VAULT_PATH" \
-            --json | jq -r '.sessionKey')
+            --run-timeout 3600 \
+            2>&1 | tail -1)
         
         echo "  → Analyst session: $SESSION_KEY"
         echo "$SESSION_KEY" > "$VAULT_PATH/.analyst-session"
@@ -56,18 +70,19 @@ spawn_builder() {
     
     echo "[$(date)] Spawning Builder Agent for: $proposal"
     
-    SESSION_KEY=$(openclaw sessions spawn \
+    SESSION_KEY=$($OPENCLAW_CMD sessions spawn \
         --agent-id builder \
         --mode run \
         --task "Build skill from proposal: $proposal" \
         --cwd "$VAULT_PATH" \
-        --json | jq -r '.sessionKey')
+        --run-timeout 7200 \
+        2>&1 | tail -1)
     
     echo "  → Builder session: $SESSION_KEY"
     
     # Wait for completion and notify
-    (sleep 5 && openclaw sessions status "$SESSION_KEY" --json | jq -r '.status' && \
-     echo "Build complete for $proposal" | openclaw notify telegram) &
+    (sleep 5 && $OPENCLAW_CMD sessions status "$SESSION_KEY" && \
+     echo "Build complete for $proposal") &
 }
 
 # Main logic

@@ -35,3 +35,4 @@ config/transcription.env
 config/transcription.envc
 *.env
 *secret*
+config/telegram.env

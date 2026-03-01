@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+VENV_DIR="${OPENCLAW_SCRAPLING_VENV:-$HOME/.openclaw/scrapling-venv}"
+TOOL="$HOME/.openclaw/workspace/tools/scrapling_extract.py"
+
+if [[ -x "$VENV_DIR/bin/python3" ]]; then
+  exec "$VENV_DIR/bin/python3" "$TOOL" "$@"
+fi
+
+exec python3 "$TOOL" "$@"

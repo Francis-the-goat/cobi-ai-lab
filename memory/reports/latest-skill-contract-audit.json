@@ -1,0 +1,59 @@
+{
+  "skills": [
+    {
+      "name": "ai-business-asset-foundry",
+      "path": "/Users/cobi/.openclaw/skills/ai-business-asset-foundry",
+      "score": 100,
+      "status": "ready",
+      "tests": {
+        "passed": 3,
+        "total": 3
+      },
+      "findings": []
+    },
+    {
+      "name": "model-router",
+      "path": "/Users/cobi/.openclaw/skills/model-router",
+      "score": 100,
+      "status": "ready",
+      "tests": {
+        "passed": 3,
+        "total": 3
+      },
+      "findings": []
+    },
+    {
+      "name": "operator-skill-reliability",
+      "path": "/Users/cobi/.openclaw/skills/operator-skill-reliability",
+      "score": 100,
+      "status": "ready",
+      "tests": {
+        "passed": 3,
+        "total": 3
+      },
+      "findings": []
+    },
+    {
+      "name": "smb-agentic-opportunity-radar",
+      "path": "/Users/cobi/.openclaw/skills/smb-agentic-opportunity-radar",
+      "score": 100,
+      "status": "ready",
+      "tests": {
+        "passed": 3,
+        "total": 3
+      },
+      "findings": []
+    },
+    {
+      "name": "video-source-intelligence",
+      "path": "/Users/cobi/.openclaw/skills/video-source-intelligence",
+      "score": 100,
+      "status": "ready",
+      "tests": {
+        "passed": 3,
+        "total": 3
+      },
+      "findings": []
+    }
+  ]
+}

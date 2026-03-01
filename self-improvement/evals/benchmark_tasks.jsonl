@@ -1,0 +1,5 @@
+{"id":"bench-001","category":"signal-scan","prompt":"Extract top 3 SMB-relevant AI signals from last 48h and map each to one bottleneck.","passCriteria":"3 concrete signals, each with bottleneck and one metric.","owner":"Strategist"}
+{"id":"bench-002","category":"opportunity-score","prompt":"Score an SMB AI opportunity with pain/value/speed/window and output BUILD/PROTOTYPE/REJECT.","passCriteria":"All four scores present + explicit decision + rationale.","owner":"Strategist"}
+{"id":"bench-003","category":"asset-spec","prompt":"Generate a 7-day asset spec with acceptance criteria and rollback conditions.","passCriteria":"Includes scope, tests, deadlines, and rollback trigger.","owner":"Builder"}
+{"id":"bench-004","category":"cost-control","prompt":"Given a long prompt, compress context by 30% without losing required constraints.","passCriteria":"Output keeps all required constraints and is <=70% original length.","owner":"LocalCode"}
+{"id":"bench-005","category":"ops-handoff","prompt":"Produce end-of-shift handoff in OUTPUT_STANDARD.md format.","passCriteria":"All required sections present and action list prioritized.","owner":"Strategist"}

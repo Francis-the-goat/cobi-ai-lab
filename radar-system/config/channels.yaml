@@ -1,0 +1,34 @@
+monitors:
+  github:
+    enabled: true
+    interval: 7200
+    filters:
+      language: typescript
+      minStars: 10
+      keywords:
+        - agent
+        - ai
+        - llm
+        - automation
+        - workflow
+        - bot
+  hackernews:
+    enabled: true
+    interval: 1800
+    sources:
+      - show_hn
+      - ai
+    minPoints:
+      show: 10
+      ai: 20
+  youtube:
+    enabled: true
+    interval: 3600
+    channels:
+      - id: UCt8xK0wfUCn5YTCYEmIDa1g
+        name: Nate B Jones
+  twitter:
+    enabled: false
+    interval: 1800
+    rssFeeds: []
+    minEngagement: 10

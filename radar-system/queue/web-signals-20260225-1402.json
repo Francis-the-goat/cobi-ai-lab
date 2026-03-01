@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-02-25T04:02:44.988257+00:00",
+  "source": "web-scrapling",
+  "checked": 6,
+  "changed": 0,
+  "errors": [
+    {
+      "name": "openai-news",
+      "url": "https://openai.com/news/",
+      "error": "Failed to perform, curl: (6) Could not resolve host: openai.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    },
+    {
+      "name": "anthropic-news",
+      "url": "https://www.anthropic.com/news",
+      "error": "Failed to perform, curl: (6) Could not resolve host: www.anthropic.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    },
+    {
+      "name": "google-ai-blog",
+      "url": "https://blog.google/technology/ai/",
+      "error": "Failed to perform, curl: (6) Could not resolve host: blog.google. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    },
+    {
+      "name": "microsoft-ai-blog",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/category/ai/",
+      "error": "Failed to perform, curl: (6) Could not resolve host: www.microsoft.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    },
+    {
+      "name": "ycombinator-blog",
+      "url": "https://www.ycombinator.com/blog",
+      "error": "Failed to perform, curl: (6) Could not resolve host: www.ycombinator.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    },
+    {
+      "name": "openclaw-docs",
+      "url": "https://docs.openclaw.ai/",
+      "error": "Failed to perform, curl: (6) Could not resolve host: docs.openclaw.ai. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    }
+  ],
+  "signals": []
+}

@@ -1,0 +1,22 @@
+keywords:
+  include:
+    - agent
+    - ai
+    - automation
+    - workflow
+    - smb
+    - business
+    - llm
+  exclude:
+    - crypto
+    - nft
+    - gambling
+    - meme
+
+tags:
+  include:
+    - ai
+    - automation
+    - agents
+    - smb
+  exclude: []

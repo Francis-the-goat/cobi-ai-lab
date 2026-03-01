@@ -1,0 +1,156 @@
+OpenClaw is the most powerful AI tool ever created,
+but you might not feel that way.
+For most people, it just feels like chat GPT inside Telegram.
+That's because you're barely scratching the surface.
+In this video, I'm about to show you
+the five most powerful techniques and workflows
+to turn openClaw into your personal autonomous AI employee.
+All right, so the first one is sub agents,
+and most people have no idea this is even a thing.
+You're likely using a single agent
+for all sorts of tasks,
+but to make OpenClaw actually powerful,
+you need to create multiple sub agents,
+each one built for a specific task.
+For example, this is the exact workflow I use.
+I have my main agent called Mono.
+She's my thinking partner, my second brain.
+She helps me brainstorm ideas, make better decisions,
+but she rarely actually does anything herself.
+Instead, I have multiple sub agents
+that Mono uses as our workers to do the actual work.
+For example, for coding tasks,
+I have a sub agent called Samantha,
+and I'll show you how to create it in a second.
+She has her own model, context window, and memory,
+which helps not to overload my main agent.
+So when I need to build something,
+I just ask Mono about it,
+and she passes it straight to Samantha
+who writes the actual code.
+Now, the cool part about it
+is it's actually very easy to create.
+In the gateway, if we go to the Agents tab,
+you can see that currently I only have one main agent.
+So open up your telegram,
+or whatever app you're using to chat with OpenClaw,
+and paste in this prompt.
+I'll also leave it in the description of this video.
+Create a new persistent agent named Samantha,
+or however you want to call it,
+and make her my dedicated coding assistant.
+Set GPT 5.3 Codex as her primary model,
+and use Samantha for all coding related tasks.
+Leave my main agent unchanged
+and tell me when Samantha is ready.
+And that's it.
+Now, go back to the gateway dashboard and refresh the page.
+And as you can see, we now have a new agent
+that Mono will use for all coding tasks.
+Now, let's talk about skills.
+These are basically new abilities you give to your agent,
+which literally makes it more powerful.
+When you just install OpenClaw for the first time,
+you will be prompted to install some official skills.
+The one that I highly recommend is ClawHub.
+ClawHub is basically the app store for your agents,
+a marketplace where you can find, install, and update
+thousands of community built skills.
+And this skill gives your agent the ability
+to use that website and install skills for itself.
+For example, one of my favorite skills
+is last 30 days.
+It teaches your agent to search through Reddit,
+X, YouTube, and the web from the last 30 days
+to get you the latest news and viral trends
+on any topic you want.
+The beauty of it is you can just copy the link to this skill,
+paste it to your agent, and ask it to install it for you.
+Basically, the more skills you install,
+the more powerful your agent becomes.
+For example, this one gives it the ability to search the web
+and this one to interact with GitHub.
+And if you don't find the skill you need,
+you can just ask your agent to search for it
+or even build one itself.
+But be careful when installing skills from ClawHub.
+It's a community-driven marketplace,
+meaning anyone can publish a skill
+and not everyone out there has good intentions.
+So some skills might contain malicious code.
+All right, so what makes OpenClaw different from chatbots?
+Is it can actually be proactive and autonomous?
+You don't always have to prompt it in order for it to do something,
+but only if you set it upright.
+For example, every morning at 8 a.m.,
+my agent sends me a morning brief
+that contains the latest AI news.
+A few content ideas I can create,
+tasks I need to complete today based on my to-do list,
+and a few tasks the agent can do for me.
+All of that autonomously without me asking.
+To set this up, copy this prompt from the description
+and modify it based on your needs.
+It basically says, I wanna set up a morning brief.
+Every morning at 8 a.m., send me a report that includes
+and then your list of everything you want your morning brief
+to contain.
+And if that doesn't impress you
+and you wanna make it even more proactive,
+try out this prompt.
+Every day, I want you to work on your own
+to iterate and improve.
+Surprise me daily at 9 a.m.
+with a new task or project you completed
+to improve my pre-existing workflows.
+What it does is it makes your agent improve every day
+and build new things for you
+based on all the information it knows about you.
+Now, the most common problem people have is memory.
+It forgets a lot of things over time.
+And here's why that happens.
+As you use OpenClaw, your context window slowly fills up
+and to prevent it from being full
+and save you some money on tokens,
+OpenClaw automatically runs compaction,
+which summarizes older conversations
+into a compact summary entry.
+The problem is, after each compaction,
+your agent forgets about lots of things.
+To fix this, use this single prompt.
+What it does is right before that compression happens,
+your agent saves the most important things
+from the context to a memory file.
+So nothing gets lost.
+Now, there's a lot more going on with memory
+and how to make it even better.
+If you want me to create a separate video about it,
+let me know in the comments.
+But for now, I'd highly recommend reading this Reddit post.
+It's a little bit technical,
+but it clearly explains the actual problem
+with OpenClaw memory and how to make it almost permanent.
+Finally, the best way to improve your agent
+is to make it improve itself over time.
+We can create an infinite self-improving loop
+that makes your agent continuously learn and get better.
+On ClawHub, there's a skill called self-improving agent.
+What it does is it creates a self-improving folder
+with a few simple files and folders
+that it uses to store hot memory, correction logs,
+and context specific patterns.
+So every time you correct it, it remembers that
+and avoids the same mistake in the future.
+Basically, the more you use it,
+the more it learns what you want it to be,
+how to act and how not to.
+But if you don't want to install a community skill,
+you can get almost the same system with this single prompt.
+Copy it from the description
+and your agent will build the whole setup itself.
+Or you can just copy the link to this skill
+and ask your agent to build it for you,
+which avoids any chance of downloading malicious code.
+And if you want to learn how to make OpenClaw 90% cheaper,
+check out this video right here,
+and I'll see you in the next one.

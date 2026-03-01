@@ -38,7 +38,7 @@
 
 **Key Activities:**
 - Daily: Client work + content
-- Weekly: Outreach to 10 SMBs
+- Weekly: Outreach to 10 target users (SMB/founders/operators)
 - Focus: Delivery excellence, testimonial collection
 
 ---
@@ -96,6 +96,16 @@
 - Skills documented
 - GitHub commits
 - Agentic systems built
+
+### Upskill
+- Weekly deep-work hours on AI/business skill building
+- Number of applied drills completed
+- New frameworks converted into reusable assets
+
+### Life System
+- Weekly planning/review completion rate
+- Priority execution rate (top 3 tasks completed)
+- Consistency score across workdays
 
 ---
 

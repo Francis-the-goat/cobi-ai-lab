@@ -1,131 +1,193 @@
-# HEARTBEAT.md — Autonomous Task Queue
+# HEARTBEAT.md — Autonomous Capability Elevation
 
-**Purpose:** Tasks I run during Cobi's warehouse hours (8am–3pm, ~3 days/week)  
-**Goal:** Generate value while Cobi is away — research, drafts, preparation
-
----
-
-## Daily Checks (Every 30 min during active hours)
-
-### 1. Content Opportunity Scan
-**What:** Check X, GitHub trending, AI news for content ideas  
-**Action:** Log 2-3 potential thread ideas in CONTENT_BACKLOG.md  
-**Sources:**
-- X: @bindureddy, @karpathy, @naval, @natebjones, @kylepathy
-- GitHub: Trending TypeScript repos (agentic tools)
-- Hacker News: /show, AI-related posts
-
-### 2. GitHub Intelligence
-**What:** Scan for useful tools, patterns, projects  
-**Action:** 
-- Log interesting repos in MEMORY.md
-- Check if any should be integrated into Cobi's stack
-- Note emerging patterns in agentic systems
+## Purpose
+When Cobi is away, don't just execute tasks — elevate the capability architecture.
 
 ---
 
-## Weekly Tasks (Run once per week)
+## Phase 1: Context Synthesis
+Read:
+- PROJECTS.md (active objectives)
+- Today's memory (what happened)
+- MEMORY.md (established patterns)
+- Refinement log (how articulation has evolved)
 
-### Monday: Content Prep
-- Draft 2-3 X threads from weekend learnings
-- Prepare visual assets for Instagram (if applicable)
-- Review content backlog, prioritize upcoming week
-
-### Wednesday: Research Sprint
-- Deep dive into one technical topic (e.g., MCP servers, new OpenClaw features)
-- Summarize findings in daily note
-- Suggest implementation to Cobi
-
-### Friday: Week Review & Planning
-- Update PROJECTS.md with progress
-- Update GOALS.md metrics
-- Prepare prioritized action list for weekend deep work
-- Draft "week in review" content (optional)
+**Synthesize:** What's the current capability state? What's trying to emerge?
 
 ---
 
-## Trigger-Based Tasks (Run when detected)
+## Phase 2: Pattern Harvest & Refinement
 
-### YouTube Uploads (Nate B Jones, Kyle Pathy)
-**Trigger:** New video detected  
-**Action:**
-1. Transcribe video
-2. Extract key insights
-3. Synthesize how it applies to Cobi's goals
-4. Draft thread/reel idea based on content
-5. Alert Cobi with summary + action items
+### If Fresh Sources Exist:
+1. Extract thinking patterns (not summaries)
+2. Refine: What does this pattern actually mean?
+3. Apply: How does this elevate Cobi's constraint profile?
+4. Synthesize: What non-obvious insight emerges?
+5. **Elevation:** How does this upgrade how I interpret Cobi's inputs?
 
-### GitHub Releases (OpenClaw, Claude Code, relevant tools)
-**Trigger:** New release detected  
-**Action:**
-1. Read changelog
-2. Identify features relevant to Cobi's setup
-3. Draft implementation guide
-4. Suggest upgrade/update
-
-### X/Twitter Mentions (if Cobi's account active)
-**Trigger:** Mention or DM  
-**Action:** Alert Cobi immediately for response
+### If No Fresh Sources:
+1. Review recent Cobi inputs
+2. Detect: What refinement patterns are emerging?
+3. Propose: How can I improve my articulation refinement?
+4. Build: Capability that makes future refinements better
 
 ---
 
-## Content Backlog Maintenance
+## Phase 3: Constraint-Optimized Elevation
 
-**Daily:** Add new ideas  
-**Weekly:** Review, prioritize, draft top 3  
-**When Cobi requests:** Pull from backlog, expand into full thread/post
-
-Backlog format: See CONTENT_BACKLOG.md
-
----
-
-## Research Topics (Rotate Through)
-
-1. **SMB Pain Points** — What do lash artists, tradies actually struggle with?
-2. **Agentic System Patterns** — Common architectures, best practices
-3. **Pricing Models** — How do AI agencies charge? Value-based vs hourly
-4. **Content Strategy** — What's working for respected AI voices?
-5. **Tool Landscape** — Emerging tools, what's worth integrating
-6. **Case Studies** — Document other agencies' success stories
-
-**Rotation:** Focus on one per week, deep dive
+Map everything to:
+- Split attention → Autonomous elevation capability
+- $200 budget → Cost-efficient refinement models
+- 90-day sprint → Fast validation cycles
+- 10K MRR → Leverage-compounding outputs
 
 ---
 
-## Output Expectations
+## Phase 4: Meta-Learning Log
 
-When Cobi gets home from warehouse, he should find:
-
-1. **Research summary** — What I learned today, why it matters
-2. **Content drafts** — 1-2 thread/reel drafts ready for review
-3. **Action list** — Prioritized options for his evening work
-4. **Opportunity alerts** — Anything time-sensitive (new tools, trends)
-
----
-
-## Execution Notes
-
-- Don't wait for permission — these are autonomous tasks
-- Log everything in daily notes (memory/YYYY-MM-DD.md)
-- When uncertain, make a reasonable choice and note it
-- Cobi can override priorities when he's back
-- Focus on OUTPUT, not just research (drafts > summaries)
+Document in memory/YYYY-MM-DD.md:
+```
+Elevation Log:
+  Source/Input: [what was processed]
+  Refined To: [elevated articulation]
+  Applied: [to constraint X]
+  Insight: [non-obvious synthesis]
+  Capability Upgraded: [refinement quality improved]
+  Next Elevation: [what this enables]
+```
 
 ---
 
-## Current Status
+## Priority Intelligence (Not Ladder)
 
-**Setup Phase:** Still building initial task automation  
-**Manual Mode:** Until skills are built, I run these checks on-demand  
-**Goal:** Full autonomy within 2 weeks
+### Track Balance Algorithm
+```
+1. Check last 24h outputs per track
+2. Identify most under-served track
+3. Check: Does it have blocked dependencies?
+4. If no → Prioritize
+5. If yes → Unblock first, then prioritize
+```
+
+### Leverage Scoring
+Score potential work:
+- **Immediate leverage:** Revenue/buyer impact this week (+3)
+- **Capability unlock:** Enables future outputs (+2)
+- **Maintenance:** Keeps system running (+1)
+- **Exploration:** Might be useful (0)
+
+Do highest score. Tie → Under-served track wins.
 
 ---
 
-## Next: Build These Skills
+## Quality Gates (Autonomous)
 
-1. YouTube monitoring/transcription
-2. X content scanning
-3. GitHub trending analysis
-4. Daily briefing generator
+Before logging HEARTBEAT_OK, verify:
+- [ ] Detected deeper intent behind surface activity?
+- [ ] Refined articulation more precise than input?
+- [ ] Applied to Cobi's constraints?
+- [ ] Non-obvious insight generated?
+- [ ] Capability upgraded?
+- [ ] Logged with evolution format?
 
-These become autonomous once built.
+If any fail → BLOCK: "Insufficient elevation. Next action: [specific upgrade needed]"
+
+---
+
+## Token Strategy
+
+| Elevation Task | Model | Cost |
+|---------------|-------|------|
+| Intent detection | Local (llama3.2:3b) | $0 |
+| Articulation refinement | Local (qwen2.5:7b) | $0 |
+| Validation synthesis | Kimi (kimi-k2.5) | $0.50 |
+| Architecture design | Kimi (kimi-k2.5) | $0.50 |
+| Code building | Codex (gpt-5.3-codex) | $2 |
+| Quality validation | Local (qwen2.5:7b) | $0 |
+
+**Target:** 90% local, 10% premium for synthesis only.
+
+---
+
+## Failure Modes (Auto-Detect)
+
+| Symptom | Root Cause | Response |
+|---------|-----------|----------|
+| No insight generated | Pattern extraction failed | Queue more sources, dig deeper |
+| Generic output | Synthesis insufficient | Force pattern collision |
+| Blocked work | Dependency unclear | Escalate to Cobi with options |
+| Track imbalance | Auto-prioritization failed | Force under-served track |
+| High token usage | Model routing broken | Audit and fix routing |
+
+---
+
+## Output Format
+
+```
+Track: [primary track]
+Input Processed: [source/task]
+Refined To: [elevated articulation]
+Insight: [non-obvious synthesis]
+Capability: [refinement upgraded]
+Built: [concrete asset]
+Next Elevation: [highest-leverage action]
+```
+
+Or if blocked:
+```
+BLOCKED: [refinement failed]
+Detected Intent: [hypothesis]
+Clarification Needed: [what's ambiguous]
+```
+
+---
+
+## Elevation Metric
+
+**Target:** Cobi's inputs become more precise over time because my refinements teach him patterns.
+
+**Measure:** 
+- Session 1: "Fix files" → I refined to "capability architecture"
+- Session 5: Cobi says "upgrade capability architecture" → He learned from my refinement
+- Success: Articulation precision improved through elevation
+
+---
+
+## Legacy Loop (Preserved)
+
+When not in elevation mode:
+1. Check current priorities in `PROJECTS.md` and today's `memory` file.
+2. If no fresh research exists today, run: `bash ~/.openclaw/workspace/scripts/value_resource_harvest.sh 2`.
+3. Process transcription retry queue once: `bash ~/.openclaw/workspace/scripts/transcription_queue.sh process --limit 2`.
+4. Execute one highest-leverage micro-task from the ladder below.
+5. Log concrete outputs to `memory/YYYY-MM-DD.md`.
+6. If no high-value task is available, return `HEARTBEAT_OK`.
+
+---
+
+## Priority Ladder (Legacy)
+1. Any blocked objective that prevents same-day progress.
+2. Most under-served track from the last 24h of outputs.
+3. `SMB` — buyer/revenue tasks and asset progress when evidence supports immediate upside.
+4. `UPSKILL` / `BRAND` — capability and distribution from real work.
+5. `LIFE` / `SYSTEM` — consistency and reliability upgrades.
+
+---
+
+## Heartbeat Output Rules (Legacy)
+Use short form:
+- Track
+- What I Did
+- What Matters
+- Next Action
+
+If blocked:
+`BLOCKED: <reason> | fastest unblock: <action>`
+
+---
+
+## Token Discipline
+- Keep heartbeat updates brief.
+- Use script-first automation for repetitive ingestion.
+- Use local models for low-stakes scans.
+- Escalate only when strategic quality is required.

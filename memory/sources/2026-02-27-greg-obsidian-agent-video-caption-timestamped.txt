@@ -1,0 +1,1557 @@
+00:00:00 | This is Obsidian. And Obsidian is this
+00:00:03 | little tool that people are using as
+00:00:05 | their second brain. But what's really
+00:00:07 | cool about it is they're pairing it with
+00:00:09 | Claw Code and they're getting crazy
+00:00:12 | results out of it. It's literally a
+00:00:14 | gamecher. Now, I've been slow to adopt
+00:00:17 | Obsidian cuz to me, it's been a little
+00:00:19 | daunting to look at. So, I had my friend
+00:00:21 | Vin and he clearly explains what
+00:00:25 | Obsidian is, how to use it with Claude
+00:00:27 | Code, how to set up these commands that
+00:00:30 | really drive the most out of Claude and
+00:00:34 | all the LLMs. And it's an incredible
+00:00:36 | episode, like a really gamechanging
+00:00:38 | episode because I think that people who
+00:00:40 | understand how to use Obsidian and how
+00:00:42 | to use Claude Code together, they're
+00:00:44 | going to be able to live happier,
+00:00:46 | healthier, and wealthier lives. Why?
+00:00:49 | because it gives incredible ideas to you
+00:00:53 | on tap. So, I know that the people that
+00:00:55 | stick around to the end of this episode,
+00:00:58 | I think that for a lot of them, it's
+00:00:59 | going to absolutely change how they use
+00:01:02 | AI and it's going to be a super
+00:01:04 | impactful way because you're going to
+00:01:05 | get better ideas at the right time, the
+00:01:08 | right moment, and it's going to make you
+00:01:10 | happier, healthier, and wealthier. Enjoy
+00:01:12 | the episode.
+00:01:21 | I've got my dear friend Vin, also known
+00:01:24 | as Internet Vin, on the podcast. I
+00:01:26 | literally begged him to come on. I I
+00:01:30 | begged him. I begged this man to come on
+00:01:33 | and to teach us a very specific thing.
+00:01:36 | Vin, by the end of this podcast episode,
+00:01:39 | what are people going to learn? I want
+00:01:41 | you to have an understanding of how you
+00:01:44 | can use claude code and obsidian as a
+00:01:46 | thinking partner. I want you to have an
+00:01:49 | understanding of how you can stop uh
+00:01:52 | having to explain things to agents over
+00:01:54 | and over again and just pass specific
+00:01:55 | files in. And I want you to understand
+00:01:57 | how you can use Obsidian and Cloud Code
+00:01:59 | to notice things about the way you think
+00:02:01 | that you would not have noticed on your
+00:02:03 | own without these tools.
+00:02:04 | All right, from your lips to God's ears,
+00:02:07 | let's get into it.
+00:02:09 | Okay. So, first is like what is cloud
+00:02:13 | code? So, claude code is this like agent
+00:02:17 | that you can use um in a command line
+00:02:20 | interface. So, it's just basically this
+00:02:22 | tool you can use that can control your
+00:02:24 | computer and you can use it through
+00:02:26 | natural language. Right? So, I can say
+00:02:29 | make a file or make a file on my desktop
+00:02:33 | that says hello Greg in plain text.
+00:02:37 | Right. And it's going to go and do this.
+00:02:41 | That's really cool. That's that's
+00:02:42 | something that's that's new that wasn't
+00:02:44 | possible before. Before this, I had to
+00:02:47 | go to the desktop, open some text
+00:02:49 | editor, and then like create that file,
+00:02:51 | right? And now this file is on my
+00:02:53 | desktop. So, I can say open the file.
+00:02:56 | There we go. Hello, Greg. That's crazy,
+00:03:00 | right? Um, now what's interesting about
+00:03:04 | this is if you have this agent that can
+00:03:06 | like control and do things on your
+00:03:07 | computer, that means that whatever you
+00:03:10 | can describe to it, like it can start to
+00:03:13 | do. And so when you if you describe a
+00:03:16 | project to it or you get into these long
+00:03:17 | conversations uh with an agent,
+00:03:21 | um, it can do more and more complex
+00:03:22 | things. The more information it has, the
+00:03:24 | more complex things it can do. But the
+00:03:26 | problem is that if you have to let's say
+00:03:28 | you know like I write some super long
+00:03:30 | description about a particular project
+00:03:32 | or I have like an hour conversation with
+00:03:34 | this agent about a particular project
+00:03:36 | it's like I don't want to have to create
+00:03:38 | a new session to explain that all I
+00:03:40 | don't want to have to explain that over
+00:03:41 | and over and over again. Um, a lot of
+00:03:44 | people are using like claude uh or
+00:03:46 | chatbt on the web and it has things like
+00:03:48 | memory but you you can't like control
+00:03:51 | you don't know what's in that memory
+00:03:53 | right you don't know what it knows and
+00:03:54 | what it doesn't know and so there needs
+00:03:56 | to be some way of like you know passing
+00:03:59 | information into these agents that is
+00:04:01 | easier and faster and the better
+00:04:04 | information you can give it and the
+00:04:05 | faster the information you can give it
+00:04:07 | the more stuff if it can do for you and
+00:04:09 | the better the faster you can delegate
+00:04:11 | to it. Okay. So now even if I let's say
+00:04:16 | let's say I had like you know let's say
+00:04:18 | I wrote like a big project description
+00:04:20 | here, right? create a file that
+00:04:23 | describes, you know, a project um
+00:04:29 | about
+00:04:31 | a to-do list app that um
+00:04:36 | is very minimally designed
+00:04:39 | and reads from uh all of my calendar
+00:04:43 | and my messages and um my Slack and
+00:04:48 | Slack and interprets it into a task list
+00:04:52 | that of tasks that it thinks that I
+00:04:56 | should do. I don't know some some idea,
+00:04:59 | right? So now this this is a file that
+00:05:01 | could be on my desktop and what I can do
+00:05:04 | when I use cloud code is I can reference
+00:05:06 | that file and pass it in whenever I
+00:05:08 | want.
+00:05:08 | And why that's important is because
+00:05:12 | it's the context, right?
+00:05:14 | Yes.
+00:05:14 | The whole game is
+00:05:17 | feeding the beast good context. Yes,
+00:05:21 | exactly. And I don't want to have to do
+00:05:23 | this over and over again. And and and
+00:05:25 | when I work on this uh over days, I I'm
+00:05:28 | not going to remember like what we
+00:05:29 | talked about, right? So, I want some
+00:05:31 | kind of file uh that I can like pass in.
+00:05:34 | Oh, sorry, Greg. One sec.
+00:05:36 | Yeah. And that's that's sort of the
+00:05:38 | problem that a lot of people are facing
+00:05:39 | with cloud code is like they're using it
+00:05:41 | and then they're saying, well, it's it's
+00:05:43 | okay. It's not like gamechanging. Mhm.
+00:05:46 | And the issue is they don't have they're
+00:05:48 | not they're not feeding the right
+00:05:50 | context at the right time.
+00:05:51 | Yes, exactly. And so here's so here's
+00:05:55 | like a a project description that it
+00:05:57 | wrote and obviously I can pass this in
+00:05:59 | and this is like a this is like a
+00:06:00 | general one that I just created but you
+00:06:02 | you can make these like very complex you
+00:06:04 | can build them into like robust files
+00:06:06 | right over time. So we know that uh
+00:06:09 | cloud code can create files and it can
+00:06:11 | repeat and it can um uh read files right
+00:06:13 | so now I can say let's say I created a
+00:06:15 | new session so here's a new session and
+00:06:18 | now I can say like I want to work on
+00:06:22 | this project and I go here and it's
+00:06:24 | going to be um to-do app here it is boom
+00:06:29 | now I didn't need to explain the file
+00:06:30 | again I need I didn't need to explain
+00:06:31 | the project again right so it's going to
+00:06:34 | read this file and it's going to start
+00:06:35 | like you know That saved me a lot of
+00:06:37 | time. Great project. Before diving in, a
+00:06:39 | few questions to scope the first
+00:06:40 | session. So that'll continue. So now
+00:06:42 | what is Obsidian? Right. Obsidian is
+00:06:46 | this tool that it's kind of like an
+00:06:49 | interface that sits on top of um uh a
+00:06:53 | collection of markdown files, right? So
+00:06:56 | here like this is reading a markdown
+00:06:58 | file. How I use Obsidian story
+00:07:00 | development, right? Um I have uh daily
+00:07:04 | notes. This is my daily notes. This is a
+00:07:07 | This is also um a markdown file. I
+00:07:10 | should do my own fundamental analysis
+00:07:12 | into thing into how things stay pure
+00:07:14 | when they grow and become more
+00:07:15 | mainstream. Right. This is just a file
+00:07:17 | that I have. I have um you know like a
+00:07:21 | file on Greg Eisenberg that I haven't
+00:07:23 | put in.
+00:07:23 | Oh, that's weird. That's weird.
+00:07:25 | Yeah,
+00:07:26 | that's pretty weird.
+00:07:27 | And so I I make files like notes of
+00:07:29 | things that I'm learning from people and
+00:07:31 | stuff like that, too. So I have
+00:07:32 | different um files for everything,
+00:07:35 | right? And the interesting thing that
+00:07:37 | makes a vault, which is Obsidian, what
+00:07:39 | Obsidian interacts with, this whole
+00:07:40 | thing is called a vault. What makes it
+00:07:42 | different than a folder is that Obsidian
+00:07:46 | is not only interacting with just like a
+00:07:49 | you know a folder of files. Um but what
+00:07:52 | it does is it also allows you to make
+00:07:54 | inter uh to connect relationships
+00:07:57 | between files. So I can say today I am
+00:08:00 | on um a podcast with Greg Eisenberg. Now
+00:08:05 | this file is linked to that Greg
+00:08:08 | Eisenberg file. Super interesting. Super
+00:08:10 | interesting. And so when people like
+00:08:12 | like like people uh there's a lot of
+00:08:14 | people who really really like using
+00:08:16 | Obsidian and tools like Obsidian because
+00:08:18 | of this ability to form inter
+00:08:20 | relationships. This is unique to just
+00:08:23 | having a folder. a folder on your
+00:08:25 | computer cannot show these inter
+00:08:27 | relationships.
+00:08:28 | And so it gets really interesting when
+00:08:31 | you start to um keep making these like
+00:08:34 | interreationships over time, right? And
+00:08:37 | so what happens here's a little
+00:08:39 | visualization. And so in the here, these
+00:08:42 | are each one of these circles is a file
+00:08:45 | and and and it's it's showing how it's
+00:08:47 | like connected to all of these other
+00:08:49 | files where I've written things about.
+00:08:51 | So here's like personal agent
+00:08:53 | infrastructure,
+00:08:55 | right? And so I could look, you know,
+00:08:58 | and I guess I should also add just kind
+00:09:00 | of a comment on this and what was
+00:09:01 | difficult about doing this demo, there's
+00:09:03 | like so much personal information in
+00:09:05 | here because this is like my personal
+00:09:06 | thing. So I don't even know like what's
+00:09:08 | going to show up on the screen here,
+00:09:10 | right? Um, but that's part of doing
+00:09:12 | demos like this, which is which are kind
+00:09:13 | of weird and interesting. But you can
+00:09:16 | see personal agent infrastructure. It
+00:09:17 | links to like Aentic AI. There's like a
+00:09:20 | link here to Telegram. There's a link
+00:09:22 | here to like Toby,
+00:09:24 | the founder of Shopify. There's a link
+00:09:25 | to like Presence Log, Claudebot, you
+00:09:29 | know, and then here's like I I have a
+00:09:31 | podcast too called the other stuff. And
+00:09:32 | like you'd see I'm obviously doing a lot
+00:09:35 | of like thinking about that a lot,
+00:09:37 | right? And so I can also, let's say if I
+00:09:42 | go to Greg Eisenberg and I go to local
+00:09:44 | graph. So, here's like all the times
+00:09:46 | I've written about Greg Eisenberg,
+00:09:48 | right? Notes on time constraints, how I
+00:09:50 | use Obsidian, which is just kind of
+00:09:52 | interesting. Um, so if I'm listening to
+00:09:55 | I love you, too, Vin. I love you, too.
+00:09:57 | If I'm listening to a show and I'm
+00:09:59 | picking up different patterns, I can I
+00:10:00 | can reference that back to to Greg. So,
+00:10:03 | that's really interesting. But here's
+00:10:05 | the thing. The reason why people love
+00:10:07 | Obsidian is because of these
+00:10:09 | interreationships. the idea that you
+00:10:10 | could open a file and then you know I
+00:10:13 | just open this file and then I'm like oh
+00:10:14 | interesting I mentioned Greg Eisenberg I
+00:10:16 | can click that and it goes to that file
+00:10:17 | that's interesting right it shows it
+00:10:19 | works more to uh it works more like the
+00:10:22 | way your brain works your brain connects
+00:10:24 | these patterns all the time
+00:10:27 | here question yeah
+00:10:29 | so I see why it's interesting
+00:10:32 | but how does this get me better output
+00:10:36 | exactly yeah so the next thing is
+00:10:39 | obsidian in released this new tool
+00:10:41 | called Obsidian CLI. And what that
+00:10:44 | allows you to do is it allows you to use
+00:10:47 | Cloud Code and it can go and it can read
+00:10:51 | all of the files in your Obsidian Vault,
+00:10:53 | which is a folder of text files.
+00:10:56 | But with the Obsidian CLI, it can give
+00:10:59 | Claude code not only those files that it
+00:11:01 | can read and access, but it can also
+00:11:04 | give Claude code information about the
+00:11:07 | inter relationships of those files. So
+00:11:09 | you can see so cloud code can see that
+00:11:12 | oh this file is connected to this file
+00:11:14 | and this file and this file and that
+00:11:16 | gets very interesting in terms of what
+00:11:19 | claude code can understand about you and
+00:11:21 | what claude code can uh understand about
+00:11:24 | uh all of the relationships between the
+00:11:26 | things that you're working on. It can
+00:11:28 | start to surface patterns about what
+00:11:30 | you're thinking about that you are not
+00:11:32 | seeing for yourself. some idea that you
+00:11:34 | might have been writing about for a year
+00:11:35 | in this vault. It could be a latent idea
+00:11:38 | and it can just immediately say like,
+00:11:39 | hey, did you know that you've been
+00:11:41 | writing about this same pattern in
+00:11:43 | startups or in this particular project
+00:11:45 | you're working on in every single note
+00:11:47 | you're making across these different
+00:11:49 | domains and and in seeing that for the
+00:11:51 | first time can be like a huge light bulb
+00:11:53 | effect. It can cause like huge
+00:11:55 | progressions in your learning and your
+00:11:56 | understanding and your point of view on
+00:11:58 | the world but also in what you're
+00:12:00 | working on. Um, so I've written out I
+00:12:04 | wanted to demonstrate how that actually
+00:12:06 | works in terms of how I can pass
+00:12:08 | information into an agent that would be
+00:12:10 | impossible without Obsidian and Cloud
+00:12:11 | Code.
+00:12:13 | So here's some commands that I have that
+00:12:15 | I use. And I don't want you to be afraid
+00:12:17 | of like all this stuff. I know this can
+00:12:19 | look intense, but um here here's what um
+00:12:23 | here's what I've got some commands. And
+00:12:26 | this is just terminal that I've created
+00:12:27 | and I'm running it in Obsidian. You
+00:12:30 | don't need to use this. You can just
+00:12:31 | also do this in your own terminal
+00:12:33 | session on in whatever tool you want.
+00:12:35 | But I put it in obsidian because I want
+00:12:37 | to see it all together and I wanted to
+00:12:39 | show you the ways in which you can like
+00:12:40 | integrate and customize this
+00:12:42 | environment.
+00:12:43 | So here's a cool thing. So
+00:12:46 | context/context
+00:12:48 | load full context about my life, work,
+00:12:51 | and current state. Reads context files,
+00:12:53 | daily notes, and follows back links to
+00:12:55 | build a complete picture. So I'll just
+00:12:56 | show you that right here. So, like let's
+00:12:58 | say I open a new session in in uh in
+00:13:02 | Claude just on my desktop. And now it's
+00:13:05 | like I'm about to work on something, but
+00:13:06 | before I work on it, I can just type
+00:13:08 | context demo. Now, it's going to read a
+00:13:10 | whole bunch of files about where I'm
+00:13:12 | currently at. Done.
+00:13:15 | Like, I've already preloaded I've
+00:13:16 | already preloaded in all this context
+00:13:18 | now. So, you can see it's going to start
+00:13:20 | reading all these files. It's reading a
+00:13:22 | read me. It's reading context about new,
+00:13:24 | which is a media company that I'm
+00:13:25 | working on. It's reading about other
+00:13:27 | stuff. It's reading my personal the
+00:13:29 | other stuff is my show. It's reading a
+00:13:30 | personal workflow context. And so I
+00:13:33 | don't have to worry about it not knowing
+00:13:35 | the key information that I wanted to
+00:13:37 | know. I just did that one command and
+00:13:38 | now it's going to get all that
+00:13:39 | information done. So I can use slash
+00:13:42 | today, which is a morning review. It
+00:13:44 | pulls calendar, tasks, IME messages, and
+00:13:46 | the past week of daily notes in into a
+00:13:48 | prioritized plan for the day. Why does
+00:13:50 | this matter? Well, okay, sure. You can
+00:13:53 | set up an agent and give it access to
+00:13:55 | your calendar and your tasks and iMes
+00:13:57 | and things like that, but it's miss it's
+00:13:59 | that's that doesn't have all of the
+00:14:01 | information about what you're thinking
+00:14:02 | about and why. If I'm writing daily
+00:14:04 | notes about some particular technology
+00:14:06 | or project or thing that I'm interested
+00:14:07 | in, does my calendar reflect actively
+00:14:11 | like does it match the subjects I'm
+00:14:13 | actually writing about? If an agent has
+00:14:15 | that context, you can it can it can uh
+00:14:18 | more effectively give you um information
+00:14:21 | about what you should do or not do or
+00:14:23 | and it can more effectively make
+00:14:25 | decisions on what should be in your
+00:14:26 | calendar or not in your calendar. Here's
+00:14:28 | another one. Slashclose day
+00:14:30 | end of day processing extracts action
+00:14:33 | items, surfaces vault connections,
+00:14:35 | checks confidence markers, needs to be
+00:14:36 | updating. So I have a bunch of
+00:14:38 | hypotheses that I I think about and I
+00:14:41 | give them a confidence rating. This is
+00:14:43 | an idea I'm working on. I feel very
+00:14:45 | solid about it. Here's another idea I'm
+00:14:46 | working on. I'm not sure about it. So,
+00:14:48 | these are like um daily operations
+00:14:51 | things, but
+00:14:54 | this is what I use Obsidian for the
+00:14:56 | most, which is thinking tools. I really,
+00:14:59 | really, really like working with LLMs as
+00:15:02 | a thinking partner. It's my favorite way
+00:15:04 | of using LLM. I know people like to use
+00:15:07 | uh agents and LLMs to build things, but
+00:15:09 | I really like using them to think
+00:15:11 | alongside me and build when I feel like,
+00:15:14 | you know, I really have a novel way of
+00:15:16 | viewing things. So, let's see here. Um,
+00:15:21 | so ghost here's here's a command I have.
+00:15:25 | It answers a question the way I would.
+00:15:27 | It builds a voice profile from the
+00:15:29 | vault, writes in that voice, then
+00:15:30 | evaluates the fidelity. So, I can just
+00:15:33 | say, "What do I think of AI?" And I'm
+00:15:35 | going to show you this challenge topic.
+00:15:38 | It pressure tests current beliefs using
+00:15:40 | the vault's own history, finds
+00:15:42 | contradictions, counter evidence, and
+00:15:43 | shifts in thinking. Why does that
+00:15:45 | matter? Well, if I want to make sure
+00:15:47 | that I'm continually developing as a
+00:15:49 | human being and as a as a as in my
+00:15:51 | skills, I want to make sure that, you
+00:15:54 | know, the POV I have isn't overly biased
+00:15:56 | or limited. So, this can challenge me.
+00:16:00 | Emerge surface ideas the vault implies
+00:16:03 | but never states. conclusions from
+00:16:05 | scattered premises, unnamed patterns,
+00:16:07 | unarticulated directions. This is super
+00:16:09 | super useful because a lot of times, you
+00:16:13 | know, I I can be stuck just surfacing
+00:16:15 | ideas in a in in um in a lot of
+00:16:18 | different ways, like for years, and just
+00:16:20 | having someone say a simple thing to me
+00:16:22 | that just says, "Hey, this is just
+00:16:24 | naming the idea. Hey, did you know that
+00:16:26 | you keep circling around this pattern?"
+00:16:28 | Huge breakthroughs.
+00:16:30 | Uh slashdrift. It compares it compares
+00:16:33 | my stated attention intentions against
+00:16:36 | actual behavior over 30 to 60 days.
+00:16:39 | Surfaces what I am avoiding ideas.
+00:16:42 | People on this podcast, the listeners
+00:16:43 | will probably like this one. Deep 30-day
+00:16:45 | vault scan with cross-domain pattern
+00:16:48 | techni detection and graph analysis to
+00:16:50 | gen generate ideas across all domains.
+00:16:52 | This gives me um not just ideas on like
+00:16:55 | things I should work on. like it gives
+00:16:57 | me ideas for tools and things like this,
+00:16:58 | but it also gives me ideas on like films
+00:17:00 | I should watch, products I should buy.
+00:17:03 | Again, all influenced by like like
+00:17:05 | things I'm writing about in my vault.
+00:17:08 | Um,
+00:17:09 | trace tracks how an idea has evolved
+00:17:12 | over time across the vault. So, let's
+00:17:14 | see some of this stuff. The trace demo.
+00:17:17 | So, I did this one already. And the way
+00:17:19 | this would work is I just like create a
+00:17:21 | tab here and I could just be like claude
+00:17:25 | trace and I had to create demo versions
+00:17:28 | of all of these um commands because of
+00:17:30 | how much personal information is in my
+00:17:32 | vault. But still I don't even know like
+00:17:34 | I I I can't even control what is going
+00:17:36 | to show up on the screen. And I I have
+00:17:39 | just a dumb question. Like all those
+00:17:40 | commands that
+00:17:42 | we saw,
+00:17:43 | is that commands that you created or is
+00:17:46 | that what Obsidian created?
+00:17:48 | That those are commands that I created.
+00:17:50 | Mhm.
+00:17:51 | And um you can create them very easily
+00:17:54 | by just asking Cloud Code to create a
+00:17:56 | specific command.
+00:17:57 | Mhm. Um,
+00:17:58 | we can include I'll include in the show
+00:18:01 | notes and in the description
+00:18:03 | just like a link where people can click
+00:18:06 | to get access to some of Vin's
+00:18:10 | uh skills if that's if that's
+00:18:12 | Yeah, for sure. Totally. Yeah.
+00:18:14 | So, you can see here what I did was I
+00:18:16 | just typed slashtrace demo. Demo is just
+00:18:18 | because I'm showing this publicly how I
+00:18:19 | use Obsidian. And so what this does is
+00:18:22 | it tracks my I u the way I've developed
+00:18:26 | and um the way I've navigated this idea
+00:18:29 | through my vault. So I have an example
+00:18:31 | here. It's really interesting.
+00:18:34 | So here I I did it and I and I and I let
+00:18:36 | it run. And what it's doing is as it
+00:18:39 | says like I'll trace how your
+00:18:41 | relationship with obsidian has evolved.
+00:18:42 | Let me start by building a vocabulary
+00:18:44 | map and searching across a vault. So it
+00:18:47 | when you have OB like so now it starts
+00:18:50 | going through the vault reading all of
+00:18:52 | these different files and it can see all
+00:18:53 | of the files that are connected using
+00:18:56 | the Obsidian CLI. This is a lot man.
+00:18:58 | This is this is something that I would
+00:19:00 | never be able to do on my own and to
+00:19:02 | read all of these files to know what how
+00:19:05 | they're interconnected with each other.
+00:19:06 | This is just not possible for me to do
+00:19:08 | as a human being. And then it spits this
+00:19:10 | out. I now have everything I need to
+00:19:12 | construct this trace. Here's the full
+00:19:13 | evolution trace how I use Obsidian.
+00:19:16 | First appeared January 11th, 2025. Time
+00:19:20 | span 13 months. That's in relation to
+00:19:22 | this vault specifically, meaning all the
+00:19:24 | files in here.
+00:19:26 | It says prevaults December 2024. The
+00:19:30 | essay how I take notes in the west end
+00:19:32 | of Toronto dated December 1st, 2024
+00:19:34 | describes a complete system where
+00:19:36 | Obsidian plays no role at all. The
+00:19:38 | system is audio dumps via Mac Whisper,
+00:19:40 | LLM dialogue loops, Canopia for spatial
+00:19:43 | mapping, physical notebooks for
+00:19:44 | cognitive friction, Fuseland for
+00:19:46 | tracking, arena for fragments. The
+00:19:47 | pipeline is capture process
+00:19:49 | crystallization. This is the baseline.
+00:19:51 | Obsidian is not in the picture.
+00:19:53 | Discovery and skepticism, January to May
+00:19:56 | 2025.
+00:19:58 | The first daily note in the vault, raw
+00:20:00 | excitement mixed with uncertainty. I
+00:20:02 | could probably drop transcriptions in
+00:20:04 | here, too, as a way of storing them. The
+00:20:06 | current theory is that in terms of
+00:20:08 | note-taking birectional linking is not
+00:20:10 | that useful but I don't know then
+00:20:14 | it says the chosen tool
+00:20:17 | um originally I was back link it says um
+00:20:20 | here how I use obsidian note a pivotal
+00:20:23 | realization about backlinking originally
+00:20:25 | I was backlinking to general terms
+00:20:27 | podcast or physical fitness or film
+00:20:29 | making I'm realizing it's not the most
+00:20:31 | useful way to use obsidian the most
+00:20:33 | important thing to do is to create notes
+00:20:34 | for each of my patterns theories,
+00:20:36 | projects or perspectives and get them
+00:20:38 | documented and out of my head and then
+00:20:40 | link to those notes. So, it's just it's
+00:20:42 | just like pulling from things I've
+00:20:46 | written and it's forming this historical
+00:20:49 | this history of this concept. And I
+00:20:51 | could do this with anything. I can do
+00:20:53 | this with like startups. I can do this
+00:20:55 | with a particular project, with foods,
+00:20:57 | my relationships, like a hobby,
+00:21:00 | anything, right? And then phase four,
+00:21:02 | January 2026, a month of explosive
+00:21:05 | building,
+00:21:06 | everything still require and then like
+00:21:08 | everything still requires me to actively
+00:21:10 | prompt and manage each section session.
+00:21:12 | The next unlocked is figuring out how to
+00:21:14 | get agents task to run automatically.
+00:21:16 | The friction is no longer with obsidian
+00:21:17 | itself, but with the boundary between
+00:21:19 | the vault and agent execution. So you
+00:21:21 | can see I'm really pushing myself,
+00:21:23 | right? And it's cool. This is this is a
+00:21:28 | very useful thing for me to understand
+00:21:31 | how my um use of this tool is evolving.
+00:21:35 | And it's just I think it's just absurd
+00:21:37 | that I can just be making notes and then
+00:21:41 | about all of these different things
+00:21:42 | through my life. Like even as a parent I
+00:21:45 | I can I can like reflect on the
+00:21:47 | different things I'm learning. I just
+00:21:48 | think this is insane that an a computer
+00:21:52 | can have this much information about me
+00:21:54 | and surface these patterns. I would not
+00:21:56 | be able to do this on my own and this
+00:21:58 | fast. And what a great tool it is for me
+00:22:01 | like like I can just like now write in
+00:22:03 | here and I'm you know as I'm thinking
+00:22:05 | about things and it gives me ideas right
+00:22:08 | about um my life and the projects that
+00:22:11 | I'm working on. So I can say you know
+00:22:14 | it's interesting the way that my
+00:22:17 | relationship with Obsidian has evolved
+00:22:20 | over time.
+00:22:23 | It makes me think a lot about
+00:22:28 | the way in which my relationship with
+00:22:31 | computers has evolved over time since I
+00:22:34 | was a kid to now. It's interesting
+00:22:39 | how these things just happen and
+00:22:42 | compound over time and we don't really
+00:22:45 | realize it. So, it's just like a note,
+00:22:48 | right? It's an idea. So that's an
+00:22:50 | example of something.
+00:22:52 | So I think a part of getting good at
+00:22:55 | Obsidian sounds like refle, you know,
+00:22:58 | inserting reflection into your everyday
+00:23:02 | life because a lot of people,
+00:23:04 | you know, we're moving from meeting to
+00:23:06 | meeting. We're busy. We're parents. Um,
+00:23:09 | you know, we grow up and we of course
+00:23:12 | write things down in notebooks and stuff
+00:23:14 | like that, but I feel like as we get
+00:23:15 | older, we actually write and reflect
+00:23:18 | less and less.
+00:23:19 | Yes.
+00:23:20 | Uh, you know, h how do you
+00:23:24 | how have you been able to insert
+00:23:26 | reflection into into your life?
+00:23:29 | Yeah. I think um for me it's really
+00:23:32 | about there's there's two reasons that I
+00:23:34 | think reflection is interesting and
+00:23:36 | making notes a lot are is interesting.
+00:23:38 | One is that it's great to be able to
+00:23:41 | look back on them. Like for me now,
+00:23:43 | obviously I can use an agent, but to for
+00:23:45 | me to go back and see these notes and
+00:23:47 | realizing that, oh, like I'm a person
+00:23:49 | that's continually changing. My skill is
+00:23:51 | continually changing. Projects are
+00:23:53 | continually evolving, it's it's just
+00:23:55 | it's an amazing part of life to be able
+00:23:57 | to reflect on how things are changing
+00:23:59 | over time and how you are changing over
+00:24:01 | time and how the world is changing over
+00:24:02 | time. But the other thing is that
+00:24:04 | there's like a functional reason too.
+00:24:07 | The reason I like to make notes a lot is
+00:24:08 | because that's how I generate ideas.
+00:24:10 | When I like get when I sit down on my
+00:24:12 | computer and I write things down, that's
+00:24:13 | where ideas come. For example, this
+00:24:15 | thing I just wrote here, it's just a
+00:24:16 | quick note. I'm just doing it in real
+00:24:17 | time. I'm just making it up right now.
+00:24:20 | But um by writing it out, I feel like I
+00:24:23 | internalize it more. And I like having
+00:24:25 | good ideas. I like progressing. So
+00:24:28 | because I like having good ideas and I
+00:24:29 | like progressing, writing is how I do
+00:24:32 | that. And so I think um to you know if
+00:24:35 | you want to cultivate like a writing as
+00:24:38 | a habit I think first you have to uh
+00:24:40 | connect it with the idea that this is
+00:24:42 | how you progress and this is how you
+00:24:44 | generate ideas and this is how you uh
+00:24:46 | have form original ways of thinking. Um
+00:24:49 | the other thing I'll say is that writing
+00:24:53 | right now is a big way of how you
+00:24:55 | delegate things to agents. That's like a
+00:24:58 | whole new that's a whole new aspect of
+00:25:00 | it. So if you can develop a writing
+00:25:01 | habit,
+00:25:03 | you have a lot more context that you can
+00:25:05 | pass over to an agent which then um
+00:25:08 | dramatically I think increases the
+00:25:10 | amount of like things you can delegate
+00:25:11 | and the amount of things you can build.
+00:25:13 | I hope that was a good answer.
+00:25:16 | How does how does this relate to open
+00:25:19 | claw? Because if you think of open claw,
+00:25:22 | it's essentially,
+00:25:25 | you know, at the best case an extension
+00:25:28 | of you. Yeah,
+00:25:29 | that could go and do things you know uh
+00:25:33 | independently
+00:25:35 | slashbased on your guidance. So how can
+00:25:39 | you use commands obsidian
+00:25:42 | and open claw and reflection
+00:25:45 | harmoniously?
+00:25:47 | Yeah. So I think if you look at like
+00:25:49 | here's an example of one command that I
+00:25:52 | do. It's just like a schedule command.
+00:25:54 | Um, and so what I asked this thing to do
+00:25:58 | is I said schedule I said can I take a
+00:26:00 | meeting with Greg Eisenberg today at at
+00:26:02 | Feb 20 at 2 p.m. Right? And what this
+00:26:05 | does is of course it can look at my
+00:26:07 | calendar and stuff like that but it's
+00:26:08 | also going to look through my daily
+00:26:10 | notes. It's going to look through what I
+00:26:12 | care about and then it's going to give
+00:26:14 | me some perspective. So it says your day
+00:26:17 | is stacked. You're already recording on
+00:26:19 | Greg's podcast this morning followed by
+00:26:21 | a team lunch outing and meeting with
+00:26:22 | Peter and Vince. Your Feb 17 note show
+00:26:25 | the Greg episode has been top of mind.
+00:26:26 | The vault has a dedicated Greg Eisenberg
+00:26:28 | note. No, not a two. So the
+00:26:30 | recommendation is no, not a 2pm, but you
+00:26:32 | might not need a separate meeting at
+00:26:33 | all. Yeah, that's val that's actually
+00:26:35 | the correct answer. How does that relate
+00:26:37 | to OpenClaw? Well, OpenClaw is this like
+00:26:41 | autonomous agent that can go and do
+00:26:43 | things if you uh set it up to do that.
+00:26:46 | Like it can do things without you having
+00:26:48 | to prompt it all the time. it can just
+00:26:49 | go and make decisions and build things
+00:26:50 | for you um on your own. So now what
+00:26:55 | OpenClaw can do is in the same way I
+00:26:57 | just did this command, OpenClaw can do
+00:26:59 | this on its own as well. And it can go
+00:27:02 | and read my vault, find connections and
+00:27:04 | then make decisions uh on behalf of me
+00:27:07 | with like a deeper understanding of me.
+00:27:08 | And now instead of like managing an
+00:27:10 | agent or talking to another human about
+00:27:13 | working on something, I just focus on
+00:27:14 | managing this vault. This is like the
+00:27:16 | new source. I just continually try and
+00:27:19 | make it so that this vault has all of
+00:27:21 | the information needed so that I can
+00:27:23 | delegate to an agent and um the agent
+00:27:26 | can just pull from this vault source and
+00:27:28 | make decisions. And if it's not making
+00:27:30 | the right decisions, I'm changing
+00:27:31 | something on the vault, I'm not
+00:27:33 | necessarily working with the agent
+00:27:34 | specifically.
+00:27:35 | Um
+00:27:38 | kind of kind of um that's my speculation
+00:27:41 | on that subject. I think it's very
+00:27:42 | interesting. Yeah, I think uh one thing
+00:27:45 | that worries me a little bit about it is
+00:27:47 | if Obsidian is really your second brain,
+00:27:51 | giving openclaw access to your second
+00:27:53 | brain
+00:27:55 | is
+00:27:56 | scary.
+00:27:57 | Yeah, scary. And I would say that is the
+00:28:01 | um
+00:28:03 | fundamental um
+00:28:06 | the the weird element of this technology
+00:28:09 | I would say and I have purposely given
+00:28:13 | um Obsidian I mean sorry a claude code
+00:28:16 | or any agent access to a lot of
+00:28:18 | information. I've purposely done that
+00:28:20 | because my um relationship with this is
+00:28:23 | I want to understand what these things
+00:28:25 | are and I want to understand what
+00:28:27 | they're revealing about, you know, how
+00:28:29 | our relationship with computers is
+00:28:30 | changing. But um it's weird. It's like
+00:28:34 | you have to really think about how much
+00:28:36 | information you're sharing with these
+00:28:39 | agents and whether that's the right
+00:28:41 | decision or not the right decision. And
+00:28:44 | I think um it's going to be very
+00:28:46 | interesting to see how privacy as a
+00:28:47 | concept evolves and changes and what we
+00:28:50 | fight for or don't fight for in like the
+00:28:52 | in the future of our society and our
+00:28:55 | world. Even with every one of these
+00:28:56 | commands, I had to create a new version
+00:28:59 | of them, a demo version, so that I
+00:29:02 | wouldn't reveal too much personal
+00:29:04 | information while I'm on screen on this
+00:29:05 | podcast. And even then, it's like a it's
+00:29:08 | a tossup. You know, I could type the
+00:29:09 | demo version, but who knows what's going
+00:29:11 | to be shown on screen, you know?
+00:29:14 | What other commands do you want to show?
+00:29:17 | Um, so
+00:29:20 | there's connect which is allow it allows
+00:29:23 | me to take two domains and connect um
+00:29:26 | them using the vaults link graph. So I
+00:29:28 | can just say I did one here
+00:29:33 | and I just asked it to uh connect
+00:29:38 | film making and world building. And so
+00:29:40 | it goes through and it reads all of
+00:29:42 | these different files and then it can
+00:29:44 | start to say okay let's let's connect
+00:29:46 | these two concepts. So notes in film
+00:29:49 | making uh notes in filmmak's
+00:29:52 | neighborhood. So I was like 35 film
+00:29:54 | watch list my first meeting with Toby
+00:29:57 | notes in the world building neighborhood
+00:30:00 | um the worldbuing essay um new as a
+00:30:04 | media company. So these are different
+00:30:05 | things I'm thinking about. So bridge one
+00:30:08 | the interview portal and the constructed
+00:30:10 | world in film making if I notice
+00:30:12 | something specific and asked a question
+00:30:14 | about it it would open a portal into a
+00:30:16 | person's internal world which is often a
+00:30:18 | vast universe of concepts and beliefs
+00:30:20 | and visions. So worldbuilding essay I
+00:30:23 | want my blog to show you what I value
+00:30:25 | what I believe what I worry about like a
+00:30:27 | tomb from ancient Egypt. I want my blog
+00:30:29 | to be a place that you dig up and
+00:30:30 | examine long after I'm gone. These are
+00:30:33 | things that I've written and I can start
+00:30:34 | to see how these ideas connect together.
+00:30:37 | Bridge to always on documentary equals
+00:30:39 | continuous world building.
+00:30:42 | Always on documentary is a creative
+00:30:44 | strategy where companies continuously
+00:30:45 | narrativize their characters, pursuits,
+00:30:47 | conflicts, and visions through
+00:30:48 | documentary. So these are like things
+00:30:50 | that I'm writing about and it's showing
+00:30:52 | me the ways in which these are
+00:30:53 | connected. Um, I think this can get very
+00:30:58 | interesting depending on the kinds of
+00:31:00 | things that you're willing to connect
+00:31:01 | together. You could get probably pretty
+00:31:03 | crazy with it as well, depending on what
+00:31:05 | you're writing about in your vault. I
+00:31:06 | could connect like shawarma and startups
+00:31:08 | if I wanted to, for example, and see the
+00:31:11 | kind of connections that are coming
+00:31:12 | between these things. Um, again, really
+00:31:15 | interesting because all of this is
+00:31:17 | happening super quickly and I don't need
+00:31:19 | to explain any of this to an LLM. I can
+00:31:21 | just type something like slashconnect
+00:31:24 | filmm worldbuilding.
+00:31:26 | The the a lot of the examples you're
+00:31:28 | using is personal reflection. Yes. Yes.
+00:31:31 | How do you think about
+00:31:34 | uh you know for example note-taking in
+00:31:37 | meetings like maybe you have like a
+00:31:40 | granola or Gemini notes taking you know
+00:31:44 | uh taking notes or and and and sort of
+00:31:47 | putting it into Obsidian or um and by
+00:31:52 | the way when I say notes those could be
+00:31:54 | meetings that you're not even in. They
+00:31:56 | could just be like,
+00:31:57 | you know, Tommy met with Vince and they
+00:32:00 | had this meeting and I want to put it in
+00:32:01 | here.
+00:32:02 | Yes.
+00:32:03 | Um, how do you think about that?
+00:32:05 | So, it's a really good question. So, I
+00:32:07 | think you can use these vaults however
+00:32:09 | you want to use them in terms of like um
+00:32:11 | you could put any text you want in here.
+00:32:13 | If you want to put your granola meeting
+00:32:14 | transcripts in here, you can put them in
+00:32:16 | here. And you have to just make sure you
+00:32:17 | know maybe you're doing something like
+00:32:19 | this, right? So, you're just like
+00:32:20 | meetings and then you're like, "Okay,
+00:32:22 | these are this is, you know, project
+00:32:24 | one." And then every time you do a
+00:32:26 | meeting, um, you take your granola notes
+00:32:29 | and you just put them in here, right? So
+00:32:30 | you're like meeting Greg Eisenberg Vin
+00:32:34 | plus VIN and then you know that file is
+00:32:38 | created now and you can just drop your
+00:32:40 | trans you can just drop your meeting
+00:32:41 | notes in here and now that's in the
+00:32:43 | vault and then you can pass that into
+00:32:44 | the agent or the agent will discover it,
+00:32:46 | right? Especially if you start tagging
+00:32:47 | like oh I'm going to tag this back to
+00:32:50 | you know like my podcast or something
+00:32:51 | there. Now it's connected. So now the
+00:32:53 | the the agent it has like more context
+00:32:56 | and now it knows that trans this
+00:32:57 | transcript is related to this other
+00:32:59 | file. Great. Um I think that's up to
+00:33:02 | you. I think the way that you the the
+00:33:04 | amount of information that you put in
+00:33:05 | here is up to how you want to use the
+00:33:07 | vault and how you want to delegate to
+00:33:09 | things to agents and maybe you even want
+00:33:10 | to create different vaults for different
+00:33:12 | purposes. For me per for me I use LLM
+00:33:16 | and agents as a way to increase my own
+00:33:20 | level of understanding of subjects. So I
+00:33:21 | use it for a lot of reflection and
+00:33:23 | things like that. So I don't want an
+00:33:25 | agent to write into the files. Like I
+00:33:28 | could easily get it to do that. Like I
+00:33:30 | could just say like even here I' I've
+00:33:32 | asked it to write a description of some
+00:33:34 | commands that I can talk about today.
+00:33:36 | But I don't I don't I don't want it to
+00:33:37 | make a file to do this because I want to
+00:33:39 | control all the files in my Obsidian
+00:33:41 | vault because I I always want it to pull
+00:33:44 | from what I think about things, right?
+00:33:46 | Not what it thinks about things. And if
+00:33:48 | it starts making its own files in this
+00:33:50 | vault, then I don't know like is like
+00:33:52 | when it's finding these patterns, is it
+00:33:53 | finding patterns about things it's
+00:33:55 | written or is it finding patterns about
+00:33:57 | things I've written? So I create a rule
+00:34:00 | for myself which is like a strict
+00:34:02 | separation between these things. I only
+00:34:04 | want it to write things on the side here
+00:34:06 | and then I will take that and and and
+00:34:08 | and write what I think um should be
+00:34:11 | included.
+00:34:13 | Right. Some
+00:34:15 | Yeah. Go ahead. No, I was just going to
+00:34:17 | say like,
+00:34:18 | you know, I could see the power of just
+00:34:22 | using it for your own reflections.
+00:34:25 | I can also see the power of,
+00:34:28 | you know, AI is really good at, you
+00:34:31 | know, going out on the internet, finding
+00:34:34 | information based on trends and stuff
+00:34:36 | like that. Distilling it in a way that
+00:34:38 | you want and having that being put into
+00:34:41 | your world is also interesting. Yes,
+00:34:45 | totally. I think that and also like
+00:34:48 | let's say if you asked um the Obsidian
+00:34:51 | if you asked the um cloud code to go
+00:34:53 | through your Obsidian file and generate
+00:34:55 | ideas
+00:34:57 | which um you know ideas for tools that
+00:34:59 | you should build well then you can just
+00:35:01 | like say okay cool if that's if I have
+00:35:03 | an idea for a tool that I should build
+00:35:04 | just generate a description of that and
+00:35:07 | then just build the tool. So
+00:35:09 | exactly.
+00:35:11 | Yeah. I want to show this one so that
+00:35:15 | it's like less on reflection.
+00:35:18 | Like for example like you know I'm a I
+00:35:22 | built this thing called ideab
+00:35:23 | browser.com and every single day we give
+00:35:25 | this validated startup idea like someone
+00:35:28 | theoretically can go and
+00:35:30 | you know grab that information put it in
+00:35:32 | an obsidian vault and then based on that
+00:35:36 | basic you know help them build the
+00:35:38 | actual thing right
+00:35:40 | totally yes so I want to show you this
+00:35:43 | because I think it'll it'll really make
+00:35:45 | it it'll take it out of the realm of
+00:35:47 | reflection ction and into the realm of
+00:35:48 | building. But the only issue is this
+00:35:50 | takes a bit. So
+00:35:54 | yeah, so the other thing is that with
+00:35:56 | all of these like with these commands,
+00:35:58 | another pattern that I'm noticing is
+00:36:00 | that they take a bit because it's
+00:36:02 | reading so many files. And I would say
+00:36:04 | that's a big difference between using
+00:36:06 | Obsidian and like or using cloud code
+00:36:09 | with access to this Obsidian vault that
+00:36:11 | I'm noticing is all of my requests are
+00:36:14 | taking way longer and it's just because
+00:36:16 | it's reading so much more. So like look
+00:36:18 | at this one. So this is ideas demo. So
+00:36:21 | I'll run a comprehensive ideas
+00:36:23 | generation. Let me start by gathering
+00:36:25 | vault structure and context in parallel.
+00:36:26 | And then if you look it's really
+00:36:28 | interesting to see what it's doing,
+00:36:30 | right? So it's like Obsidian orphans,
+00:36:34 | right? So it's it's it's it's like I
+00:36:37 | guess orphans are like files that are on
+00:36:39 | their own, not connected to things,
+00:36:40 | right? So that's interesting that it
+00:36:42 | knows that. Obsidian dead ends, Obsidian
+00:36:44 | Resolved, Obsidian tag counts. So it's
+00:36:46 | just trying to it's trying to figure out
+00:36:48 | like some connection between all these
+00:36:50 | things. Um and then it says, okay, daily
+00:36:53 | read. So it's reading my daily notes.
+00:36:55 | Then it found this file called new
+00:36:56 | context, which is new is this media
+00:36:58 | company I'm working on. Then it's like
+00:37:00 | read file the other stuff context that
+00:37:02 | that's podcast. The other thing I would
+00:37:04 | say to you guys is I do manage
+00:37:08 | um I write uh I create context files for
+00:37:10 | projects that are pretty extensive. I'll
+00:37:13 | show you I I was I didn't know if I was
+00:37:16 | going to show this because it's very
+00:37:17 | personal but like for the other stuff.
+00:37:19 | Look at this. So other stuff working
+00:37:21 | context. What shifted recently
+00:37:24 | frontloading profile by traveling to San
+00:37:26 | Francisco, New York City to record
+00:37:27 | guests. This is super personal stuff,
+00:37:29 | but what is the other stuff? The format,
+00:37:31 | core beliefs of the show. Research is
+00:37:34 | the foundation. Solid. The best
+00:37:36 | conversations feel like discovery solid.
+00:37:39 | You know, here's the team that's working
+00:37:41 | on it. And so what happens is this again
+00:37:45 | very personal, but this is um context
+00:37:48 | that it just pulled in. So now it knows
+00:37:50 | who's working on my podcast, what are
+00:37:53 | the what are the recent hypothesis
+00:37:55 | hypotheses I'm exploring. Um, and it
+00:37:58 | just got that information. That's just
+00:37:59 | like one of the things it did. Personal
+00:38:01 | workflow context. Super personal file,
+00:38:05 | but it shows like um, you know, like uh,
+00:38:09 | what my daily schedules is like, you
+00:38:11 | know, things that I have to do like in
+00:38:13 | my personal life. So it's like pulling
+00:38:14 | that how I like to work, how I don't
+00:38:17 | like to work. Personal agent
+00:38:19 | infrastructure is another thing. Let's
+00:38:22 | see what happens if I pull this up.
+00:38:25 | This is a project in which I want to
+00:38:26 | take a step towards increasing my
+00:38:28 | personal infrastructure workflow,
+00:38:29 | delegation, however you want to describe
+00:38:31 | it with agents, understanding what it
+00:38:32 | means to delegate to agents more and
+00:38:34 | more implementation approach. So this is
+00:38:37 | like what I'm writing about the file
+00:38:40 | about how I'm thinking about using
+00:38:42 | agents personally. And again, that's an
+00:38:44 | example of one of the files it's
+00:38:46 | reading. That's just one of them. So you
+00:38:48 | saw like the other stuff, the personal
+00:38:49 | workflow, and it's factoring that all in
+00:38:52 | to this task I've asked it to do, which
+00:38:54 | is generate ideas for me. Gathering data
+00:38:56 | from your daily notes, calendar, and
+00:38:58 | vault structure. This takes a moment
+00:38:59 | since it's pulling from multiple
+00:39:01 | sources. Again, one of the um things
+00:39:04 | with this is that it's just going
+00:39:06 | through a lot of information, man. A lot
+00:39:08 | of information, so it takes longer. You
+00:39:10 | know, it's already been going for five
+00:39:12 | minutes, right? And so that's that's
+00:39:14 | something I'm noticing. But for me,
+00:39:17 | that's what I want. I want that. I want
+00:39:20 | I want a response from LLMs that is very
+00:39:23 | very contextual uh to the things that
+00:39:25 | I'm writing about. And I think a lot and
+00:39:28 | I think that's how me and an agent can
+00:39:30 | work best together where I just focus on
+00:39:32 | continually um noting that my the the
+00:39:37 | where I'm currently at in terms of the
+00:39:38 | projects I'm working on and what my
+00:39:40 | understanding is and what I find
+00:39:41 | interesting. I want to maintain that and
+00:39:43 | make it as current and as deep as
+00:39:45 | possible. So whenever I'm talking to an
+00:39:47 | agent, it has the best representation at
+00:39:49 | all times of who I am in that moment
+00:39:51 | when I ask the agent for something.
+00:39:53 | Yeah, I mean that's the goal, right? You
+00:39:56 | that's the question that we all should
+00:39:58 | be asking of ourselves, which is
+00:40:00 | does the agent have the most upto-date
+00:40:03 | information on the projects, on my
+00:40:05 | preferences and my dreams and my hopes
+00:40:07 | and my goals? Um because you're it's
+00:40:12 | only as good as the up-to-date version
+00:40:14 | of that. Correct.
+00:40:15 | Yes, 100%. The quality the the quality
+00:40:19 | of information that the agent has
+00:40:21 | entirely determines what it can do for
+00:40:23 | you. Right. If it doesn't know a lot
+00:40:25 | about you, it's not going to be able to
+00:40:27 | do a lot for you. But if it knows a lot,
+00:40:28 | then it can it can it can do things for
+00:40:31 | you that I I think like even some of
+00:40:34 | your in some it's kind of weird to say,
+00:40:36 | but I mean like that you don't even know
+00:40:37 | about yourself in ways.
+00:40:40 | I mean it makes sense, right? Cuz
+00:40:42 | ultimately what this is doing like to
+00:40:45 | distill it to its core, it's connecting
+00:40:47 | the dots.
+00:40:48 | Yes.
+00:40:48 | Obsidian and Obsidian and Claude code
+00:40:51 | here are are connecting the dots. Now,
+00:40:54 | it's actually quite difficult as a as a
+00:40:57 | business owner or just as a personal in
+00:41:00 | our personal lives to connect the dots.
+00:41:01 | Like why do people in a lot of ways go
+00:41:03 | to you know coaches, therapists?
+00:41:06 | Yes.
+00:41:06 | Um you know if you go to a therapist and
+00:41:10 | you know you have someone who is you're
+00:41:14 | doing most of the talking, right? Think
+00:41:16 | about it. You're doing a lot of the
+00:41:17 | reflection and the therapist and coach
+00:41:19 | is sort of guiding you. That's that's
+00:41:21 | what this is doing in a lot of ways. And
+00:41:24 | I'm not saying by the way that don't go
+00:41:25 | to your therapist, you know, just
+00:41:28 | but I'm but my point is it helps it
+00:41:31 | helps you helps you uncover what are
+00:41:34 | their dots and how you can connect them.
+00:41:37 | Yeah, absolutely. And for me, yeah, it's
+00:41:40 | just it's just really exciting. Um, and
+00:41:43 | yeah, it's just it's just a crazy time
+00:41:45 | with computers. So, let's look at this.
+00:41:47 | This thing finished. So, this is an idea
+00:41:48 | generation report. vault relationship
+00:41:51 | exploration. This is this is pretty
+00:41:53 | extensive, right? Like to get an idea
+00:41:57 | report
+00:41:59 | like I I think this is this is really
+00:42:02 | going to show how we can move you move
+00:42:04 | from reflection to something actionable.
+00:42:08 | So
+00:42:09 | structural highlights. So again, this is
+00:42:12 | just Obsidian stuff, right? Orphans
+00:42:14 | worth noting. There's some defense
+00:42:16 | technology stuff here. just a theme
+00:42:18 | that's growing in Canada. Massive
+00:42:21 | intellectual investment sitting in
+00:42:23 | isolation. Also, orphan agentic
+00:42:24 | software. So, orphan just means these
+00:42:26 | are files I haven't really linked.
+00:42:27 | Random notes I just wrote once or
+00:42:29 | something. Um, unresolved links that
+00:42:31 | reveal latent interests.
+00:42:34 | Uh, hidden relationships. Again, all
+00:42:36 | reflection stuff. Fine. What's working?
+00:42:39 | Obsidian cloud code as a combined system
+00:42:41 | is working for me. This is producing
+00:42:43 | genuine breakthroughs in thinking and
+00:42:45 | output day per domain structure. when
+00:42:47 | enforced. This is basically I started u
+00:42:50 | splitting my schedule where each day has
+00:42:52 | a specific focus. This is cool and this
+00:42:55 | is very true. The Greg Eisenberg episode
+00:42:57 | as a forcing function. It's compressing
+00:42:59 | months of thinking about Obsidian and
+00:43:01 | agents into a clear thesis with demos.
+00:43:03 | Very true. It, you know, coming on the
+00:43:06 | show and doing this forced me to um
+00:43:09 | synthesize everything I knew and present
+00:43:10 | it.
+00:43:12 | But here's where we're going to the
+00:43:14 | actionable stuff. Tools to build
+00:43:18 | The slashgraduate slash command daily
+00:43:20 | note idea extractor based on daily notes
+00:43:23 | are full of idea sorry daily notes are
+00:43:25 | full of idea tags and interesting
+00:43:27 | thinking that never gets developed. The
+00:43:29 | vault has nine idea tags but hundreds of
+00:43:30 | undiscovered insights. Build a command
+00:43:33 | that scans recent daily notes,
+00:43:35 | identifies ideas tagged or not, and
+00:43:38 | prompts you to decide create a
+00:43:40 | standalone note, add to an existing
+00:43:42 | file, or dismiss. This turns a daily
+00:43:45 | node stream into a structured idea
+00:43:46 | pipeline. Obsidian vault for new. It
+00:43:49 | says I just have to manage and set up a
+00:43:51 | central Obsidian vault for new. What
+00:43:53 | that means is in the same way that I'm
+00:43:56 | creating this vault and it has all my
+00:43:58 | ideas and my patterns and everything
+00:43:59 | like that. Um why would I not create one
+00:44:02 | for my team where they like as a team we
+00:44:05 | can go and ask this vault questions and
+00:44:07 | we can all uh contribute to it. Here we
+00:44:10 | go. Tools to start using. What is this?
+00:44:13 | Typed for all external documents.
+00:44:17 | Uh, interesting. A time blocking act
+00:44:19 | that enforces day. A time blocking app
+00:44:21 | that enforces day per domain. Meaning
+00:44:23 | since I'm trying to focus on one thing
+00:44:25 | each day, one aspect of my life, it's
+00:44:28 | saying why not create a time blocking
+00:44:29 | app that forces you to do that.
+00:44:31 | Interesting
+00:44:33 | systems to implement.
+00:44:35 | One sentence in Obsidian agent handles
+00:44:38 | arrests. This is literally the demo 3
+00:44:40 | version of the Greg Eisener.
+00:44:42 | Eisenberg prep, you're already imagining
+00:44:44 | it. The next step is to actually
+00:44:45 | building it. Start small. Write schedule
+00:44:48 | a call with person about topic this week
+00:44:49 | in a daily note and have Otis or
+00:44:51 | Claudebot or OpenClaw pick it up and
+00:44:54 | handle it. So, it's saying maybe you can
+00:44:56 | delegate right from the note itself is
+00:44:58 | how I'm interpreting that. Super
+00:45:00 | interesting.
+00:45:01 | Yeah, I just inline inline delegation
+00:45:04 | like
+00:45:04 | maybe that's even like a new UX pattern.
+00:45:07 | I don't even know, right? That you could
+00:45:08 | build into like these different tools.
+00:45:10 | Um, subjects to investigate. Christopher
+00:45:14 | Alexander's pattern language applied to
+00:45:16 | digital spaces. Interesting. Um, Black
+00:45:20 | Mountain College as a model for the
+00:45:22 | stadium. Stadium is a physical space we
+00:45:23 | have in Toronto. Authorless media as a
+00:45:25 | concept. Uh, how Shenzen's hardware
+00:45:28 | ecosystem actually works. Things to
+00:45:31 | write and publish. That'd be useful.
+00:45:34 | Context architecture essay. The computer
+00:45:36 | as a place. Software will become
+00:45:38 | fashion. What Toronto theory actually
+00:45:42 | is. Editorial thinking zen conversations
+00:45:45 | to have. This is interesting. These are
+00:45:48 | real people. Aaron stadium workshop host
+00:45:50 | about becoming an anchor of technical
+00:45:52 | programming. This is a space we have in
+00:45:53 | Toronto. Trun another person program
+00:45:57 | about making program the flagship
+00:45:58 | series. Steph ango obsidian CEO about
+00:46:00 | the vault as a place. Um and so this is
+00:46:04 | like
+00:46:06 | yeah this is crazy. It's it's suggesting
+00:46:08 | people I should meet, right? Top five
+00:46:11 | high impact do now. Build the graduate
+00:46:14 | command or do a manual weekly idea
+00:46:16 | review. Um,
+00:46:18 | this is crazy, dude. This is actually
+00:46:21 | crazy. Like, and the fact that it's in
+00:46:25 | plain text and it just not be it's not
+00:46:28 | there's no images. It It doesn't make it
+00:46:30 | easy to read, but I kind of like it
+00:46:32 | because it's it's like dressed down. You
+00:46:35 | know what I mean?
+00:46:36 | Yeah. I mean, I like that aesthetic cuz
+00:46:38 | I'm a nerd, but you could just say, you
+00:46:40 | know, you could you could just say,
+00:46:41 | obviously, you could just say, can you
+00:46:42 | turn this into a beautiful readable HTML
+00:46:47 | file that is on my desktop? This is hard
+00:46:50 | to read and it's going to do that.
+00:46:52 | Mhm.
+00:46:53 | Right. So, I mean, if you don't that
+00:46:54 | says if you don't like that, just do it
+00:46:56 | however you want to do it. You know what
+00:46:57 | I mean? I I like it like this in this
+00:46:59 | kind of like this aesthetic. Um, but
+00:47:02 | yeah, that's how you can move out of
+00:47:04 | reflection. And of course, you know, of
+00:47:06 | course, we could also say like here, you
+00:47:08 | know, if we don't if we don't want to do
+00:47:10 | this, uh, we could also say like it it
+00:47:12 | recommended that /graduate command. So I
+00:47:15 | could just say build the slashgraduate
+00:47:17 | command.
+00:47:18 | Mhm.
+00:47:20 | Right. Which is interesting.
+00:47:22 | And is that how you started building a
+00:47:24 | lot of your commands? Like it it sort of
+00:47:27 | it started suggesting it and you're like
+00:47:29 | just go build it.
+00:47:30 | Well, I started off actually like
+00:47:32 | building them myself. Like I'm like, oh,
+00:47:34 | trying to think about commands myself.
+00:47:35 | But then yeah, I said I started asking
+00:47:37 | the agent like, well, wait a second.
+00:47:40 | What commands do you think would be
+00:47:41 | interesting? And I just and this might
+00:47:43 | be useful. Another thing that I like to
+00:47:45 | do is I like to move to like higher
+00:47:48 | levels of abstraction when I'm using an
+00:47:50 | an LLM. What I mean by that is I could
+00:47:53 | say like, oh, make a command that um
+00:47:57 | tells me what I should focus on each
+00:47:59 | day. And that's that's like um a command
+00:48:02 | that I thought of. But when I when I
+00:48:04 | another thing you can do is you can step
+00:48:06 | back and I can say based on my obsidian
+00:48:09 | vault and what you know about me form an
+00:48:13 | understanding of what you think my level
+00:48:15 | of understand like where you think my
+00:48:18 | skill level is in terms of of a person
+00:48:20 | and the projects that I'm working on and
+00:48:23 | based on that suggest the kinds of
+00:48:25 | commands I should use that would take me
+00:48:27 | from the level I'm at to a higher level.
+00:48:30 | Right? get like, you know, get it to
+00:48:33 | suggest the commands for me instead of
+00:48:35 | me suggesting the commands and I could
+00:48:36 | pick between them. So, look at this.
+00:48:38 | This is this is it was this was the
+00:48:40 | agent's idea based on what it read in my
+00:48:42 | vault based on the notes I'm taking.
+00:48:44 | Right? So, let's see what this is. Daily
+00:48:45 | note idea extractor ideas, insights, and
+00:48:48 | original thinking accumulate in detail
+00:48:50 | in daily notes, but rarely graduate into
+00:48:52 | standalone notes where it can where they
+00:48:55 | can compound through back links. This
+00:48:56 | command scans recent daily notes,
+00:48:58 | surfaces the best candidates, and helps
+00:49:00 | decide what to promote into like an idea
+00:49:02 | or something, right? Sure. So, this is
+00:49:05 | how it's going to work. It scans all the
+00:49:07 | recent daily notes. It cross references
+00:49:09 | with the existing vault. It presents
+00:49:11 | candidates. It graduates selected ideas.
+00:49:15 | If uh if creating a new standalone note,
+00:49:17 | create the note in the vault route.
+00:49:19 | Write the note as a mini essay or
+00:49:21 | working document that captures the core
+00:49:24 | claim or question context from the daily
+00:49:26 | note where it originated connections to
+00:49:28 | other vaults notes as backlinks. Now all
+00:49:31 | this stuff like it captures the core
+00:49:32 | claimer question. You might be looking
+00:49:35 | at this and think like okay this is just
+00:49:36 | the text that the agent generated and it
+00:49:39 | is but also it hits differently for me
+00:49:43 | because I know like I'm writing a lot
+00:49:46 | about these things. I know. I know. Like
+00:49:48 | even like the mini essay thing. These
+00:49:49 | are words that mean specific things to
+00:49:51 | me, which is just so it's just so crazy.
+00:49:54 | It's very contextual. I know what it's
+00:49:56 | talking about because I spend a lot of
+00:49:57 | time in this tool and I spend a lot of
+00:49:59 | time writing. So yeah, created and it's
+00:50:02 | going to create that command,
+00:50:05 | right? And it's like that's that's nuts
+00:50:08 | because I'm just going about making
+00:50:10 | notes and I have this parallel agent
+00:50:12 | that is looking at my notes and giving
+00:50:14 | me ideas on how I can improve my
+00:50:16 | workflow, improve my life. And then and
+00:50:18 | then not only can it just suggest it, it
+00:50:19 | just build the thing and it's done. And
+00:50:22 | we have it right here. I could just hit
+00:50:25 | it and it's going to run. That's crazy.
+00:50:29 | If if I'm Open AI or anthropic, I'm
+00:50:33 | buying Obsidian.
+00:50:38 | Right. Cuz it's the missing link.
+00:50:40 | Yeah, it's nuts.
+00:50:40 | It's the missing link. Why? The fact
+00:50:42 | that there are people like you've sold
+00:50:45 | me on this, by the way. I have
+00:50:47 | I've downloaded Obsidian. I think it's a
+00:50:49 | free tool, right?
+00:50:50 | It is.
+00:50:51 | It's open sourced. I've downloaded it,
+00:50:54 | but I have not
+00:50:57 | created my vault because I wanted
+00:51:00 | you, Vin, to take me through. I knew
+00:51:03 | that this was going to be great. I knew
+00:51:05 | that I would go through this. This
+00:51:07 | actually exceeded my expectations. Like
+00:51:09 | this is the the fact like it makes no
+00:51:14 | sense to me. It
+00:51:15 | makes no sense.
+00:51:16 | The the fact like that if you are if you
+00:51:19 | are using if you are serious about
+00:51:23 | using LLMs to take your ideas and put
+00:51:26 | and and and get the most out of them. If
+00:51:28 | you're serious about building, you know,
+00:51:30 | what people are calling a personal OS,
+00:51:33 | uh, and you are not using a centralized
+00:51:36 | note-taking tool like this,
+00:51:38 | Yeah.
+00:51:39 | that uses markdown as the foundation,
+00:51:43 | then you are not using LLMs properly.
+00:51:47 | Yeah. Or at least not at the limit.
+00:51:50 | Yeah. Yeah. Exactly. You're not getting
+00:51:51 | the most out of it.
+00:51:52 | Yeah.
+00:51:53 | You're not getting the most out of it.
+00:51:54 | So I think what's what's difficult about
+00:51:56 | this is that it require it does require
+00:51:59 | a lot of time.
+00:52:00 | Mhm.
+00:52:01 | And to actually set it up properly. It
+00:52:04 | requires
+00:52:05 | uh like
+00:52:08 | Yeah. I mean, it takes a lot of time and
+00:52:10 | and and the UI isn't is is so daunting
+00:52:13 | in the sense that it's a blank canvas
+00:52:15 | and it's not like, hey, you should like
+00:52:17 | write your preferences over here or, you
+00:52:19 | know, you kind of just have to you have
+00:52:22 | to
+00:52:24 | come up with these ideas yourselves.
+00:52:26 | Yes. But
+00:52:29 | that's still so amazing, right? Because
+00:52:31 | I mean, even when we work with other
+00:52:33 | humans, we have to find a way to explain
+00:52:35 | things to them. And I just think it's so
+00:52:37 | cool that now we can work with these
+00:52:40 | agents and we still have to explain
+00:52:41 | things to them, but we only need to
+00:52:43 | explain them once because once we get it
+00:52:45 | down on into a file, we can always
+00:52:47 | reference that file. That explanation of
+00:52:48 | a project or a preference or anything
+00:52:50 | and it's always there and you can pass
+00:52:52 | it in.
+00:52:53 | Yeah. A file is like essentially perfect
+00:52:56 | a perfect memory.
+00:52:57 | Yes.
+00:52:58 | Right. Human beings have memories like
+00:53:00 | we recall things.
+00:53:02 | Yes. But there's tons of studies that
+00:53:03 | show that what we remember in fact is
+00:53:06 | completely different than reality. For
+00:53:09 | example, when we went and got our that
+00:53:12 | haircut in Missaga,
+00:53:14 | I could have thought that I had the best
+00:53:16 | haircut.
+00:53:19 | You know, that's what my memory
+00:53:20 | remembers. It was a great haircut, but
+00:53:22 | who knows? It could have been the worst
+00:53:24 | haircut I had ever gotten.
+00:53:27 | Now,
+00:53:29 | Obsidian or whatever tool you end up
+00:53:32 | using like you know if I had written
+00:53:36 | yes
+00:53:36 | like it it the memory the file the
+00:53:39 | markdown file is perfect so that when I
+00:53:41 | link that or I I recall it it is going
+00:53:44 | to give me a perfect
+00:53:46 | uh you know data point and the other
+00:53:49 | thing about you know these files is that
+00:53:51 | you hope well they're not biased
+00:53:53 | basically they're as biased as the human
+00:53:55 | being is in terms of writing the
+00:53:58 | reflections.
+00:53:59 | Yes.
+00:53:59 | At that moment in time.
+00:54:01 | Yes.
+00:54:03 | It's crazy, man. And
+00:54:07 | yeah, it's just crazy. And there's all
+00:54:09 | there's all of these different aspects
+00:54:10 | to it. There's the privacy of it and
+00:54:12 | what that means. There's the power of
+00:54:15 | it, the fact that now you can just work
+00:54:17 | with these computers in natural language
+00:54:18 | and just delegate to them. Um, there's a
+00:54:21 | fact that there's people like me that
+00:54:23 | are that are using these tools and
+00:54:25 | trying to figure out how to delegate
+00:54:26 | stuff to agents in this way. There's
+00:54:28 | people that are like me that are even
+00:54:29 | more hardcore in in different ways and
+00:54:31 | and pushing them. And I just think it's
+00:54:33 | such a crazy time to be alive because I
+00:54:37 | think we are potentially watching a
+00:54:40 | fundamental shift in the human
+00:54:42 | relationship to computers. And it's just
+00:54:45 | I just I'm just really happy to be alive
+00:54:47 | while this is happening. And I'm curious
+00:54:48 | like how's this all going to unravel?
+00:54:50 | Well, what's what's cool about this is
+00:54:53 | 99.99%
+00:54:55 | of people are not going to spend the
+00:54:58 | time to actually set up something like
+00:55:02 | this and make it a part of their daily
+00:55:05 | lives. And the alpha, so to speak, is in
+00:55:10 | terms of leading a more productive,
+00:55:12 | happier, healthier, better, more
+00:55:16 | money-making career is in in in using
+00:55:20 | something like this with an LLM,
+00:55:22 | I think. So,
+00:55:24 | I'm not saying download Obsidian today,
+00:55:26 | and I have no affiliation or whatever
+00:55:27 | with them, but I'm saying like pick a It
+00:55:31 | sounds like what we should all be doing.
+00:55:33 | And I'm I'm talking I'm giving myself
+00:55:34 | this this advice is like
+00:55:38 | there's no excuse anymore for me not to
+00:55:40 | be writing down and reflecting
+00:55:42 | Yes.
+00:55:43 | into markdown files.
+00:55:44 | Yes.
+00:55:45 | In a world that where LLMs use markdown
+00:55:47 | files as the oxygen.
+00:55:49 | Yes.
+00:55:51 | Like people think tokens are the oxygen.
+00:55:54 | Yes.
+00:55:54 | But they're not.
+00:55:56 | Yes.
+00:55:56 | The markdown fires are the memories.
+00:55:58 | Like think about what a human being is.
+00:56:01 | Yes.
+00:56:02 | You know,
+00:56:04 | is a human being the the energy of a
+00:56:08 | human being or is it the memories of you
+00:56:11 | know what we recall? you know,
+00:56:13 | I mean, that's like a philosophical
+00:56:14 | question and maybe it's a a bit, you
+00:56:16 | know, a bit of both, but it's,
+00:56:20 | you know, I think that there's something
+00:56:23 | really really fascinating about MD files
+00:56:27 | as
+00:56:28 | an underrated about them in order to to
+00:56:31 | have a true
+00:56:34 | computer experience in in today's day
+00:56:36 | and age.
+00:56:37 | Yeah, there's definitely something going
+00:56:39 | on here. Some fundamental shift. Yeah,
+00:56:41 | it's awesome.
+00:56:42 | Yeah. And like I have bad my word, you
+00:56:45 | know, I'm learning in real time, right?
+00:56:46 | Like and I I don't have the right
+00:56:47 | vocabulary to even explain this.
+00:56:49 | Yes. And neither do I, man. Neither do
+00:56:52 | I. I'm trying to I'm trying to figure it
+00:56:54 | out in real time. That's that's why I
+00:56:56 | think like I know I show something and
+00:56:57 | and for me I'll do something or or I'll
+00:57:00 | see something and my friends are like
+00:57:02 | they kind of laugh because I'll just be
+00:57:03 | sitting at my computer just tripping
+00:57:05 | out. And I think it's because I really
+00:57:08 | like computers and and I cannot believe
+00:57:11 | that this is possible. I cannot believe
+00:57:13 | that I can just be making notes on my
+00:57:16 | computer like I have been since I was a
+00:57:17 | kid and then all of a sudden this agent
+00:57:21 | can scan through it and build things
+00:57:23 | because of it and and like connect
+00:57:25 | patterns that I could never see. It's
+00:57:27 | nuts, man. It's nuts. And and at the
+00:57:31 | root of it, you're right, is just a
+00:57:32 | collection of interrelated markdown
+00:57:34 | files.
+00:57:35 | Yeah. Cool, man.
+00:57:37 | I appreciate you. I don't know if you
+00:57:39 | can see my mind, but my mind is blown
+00:57:41 | right now.
+00:57:42 | Thank God.
+00:57:43 | Yeah.
+00:57:44 | I wanted to do right by you. I also just
+00:57:46 | like
+00:57:46 | I say this every time, man, but I'm just
+00:57:49 | going to keep always saying it to you
+00:57:50 | all the time. I really, really, really,
+00:57:52 | really appreciate everything that you
+00:57:54 | do. I think your pattern recognition and
+00:57:56 | your pattern matching is like like
+00:57:59 | really underrated. I think there's a lot
+00:58:01 | of things that you do that I don't think
+00:58:02 | it's like difficult to see if you're not
+00:58:04 | really paying attention. I I just want
+00:58:06 | to say like thank you for uh for
+00:58:07 | everything that you do. You're always
+00:58:09 | putting on like new voices on your show.
+00:58:11 | I see it. I really appreciate it and
+00:58:13 | it's just been it's an honor to know you
+00:58:15 | and yeah, just thanks for the
+00:58:16 | opportunity. Thanks for everything, man.
+00:58:18 | I appreciate you, Vin. You're a legend.
+00:58:20 | I'll include links for where to follow
+00:58:24 | criminally underfollowed internet vin on
+00:58:28 | on X on his YouTube show uh podcast in
+00:58:33 | the show notes and description. You can
+00:58:35 | go and check him out there. Uh people,
+00:58:39 | please play with some of these tools uh
+00:58:42 | and let me know what you think. Let Vin
+00:58:44 | know what you think,
+00:58:46 | please.
+00:58:46 | And uh Vin, I will beg you to come back
+00:58:50 | on the show another time. And I hope you
+00:58:53 | come back on again.
+00:58:54 | For sure, man. Thank you.

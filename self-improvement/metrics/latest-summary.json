@@ -1,0 +1,146 @@
+{
+  "window": {
+    "runs": 14,
+    "success": 12,
+    "errors": 2,
+    "successRate": 0.857,
+    "avgDurationMs": 166490,
+    "p95DurationMs": 403760,
+    "avgTokens": 19314,
+    "totalTokens": 251089,
+    "modelMismatchRuns": 4,
+    "deliveryFailures": 0
+  },
+  "jobs": [
+    {
+      "job": "radar-daily-scan",
+      "runs": 5,
+      "successRate": 1.0,
+      "avgDurationMs": 127313,
+      "avgTokens": 19197,
+      "modelMismatchRuns": 4,
+      "deliveryFailures": 0,
+      "configuredModel": "ollama/qwen2.5:7b",
+      "topActualModel": "moonshot/kimi-k2.5",
+      "actualModelCounts": {
+        "ollama/qwen2.5:7b": 1,
+        "moonshot/kimi-k2.5": 4
+      }
+    },
+    {
+      "job": "foundry-daily-build-candidate",
+      "runs": 3,
+      "successRate": 0.667,
+      "avgDurationMs": 106913,
+      "avgTokens": 27316,
+      "modelMismatchRuns": 0,
+      "deliveryFailures": 0,
+      "configuredModel": "moonshot/kimi-k2.5",
+      "topActualModel": "moonshot/kimi-k2.5",
+      "actualModelCounts": {
+        "moonshot/kimi-k2.5": 3
+      }
+    },
+    {
+      "job": "self-improvement-daily-loop",
+      "runs": 2,
+      "successRate": 1.0,
+      "avgDurationMs": 63383,
+      "avgTokens": 14214,
+      "modelMismatchRuns": 0,
+      "deliveryFailures": 0,
+      "configuredModel": "moonshot/kimi-k2.5",
+      "topActualModel": "moonshot/kimi-k2.5",
+      "actualModelCounts": {
+        "moonshot/kimi-k2.5": 2
+      }
+    },
+    {
+      "job": "transcription-retry-worker",
+      "runs": 2,
+      "successRate": 0.5,
+      "avgDurationMs": 501878,
+      "avgTokens": 8810,
+      "modelMismatchRuns": 0,
+      "deliveryFailures": 0,
+      "configuredModel": "ollama/llama3.2:3b",
+      "topActualModel": "unknown",
+      "actualModelCounts": {
+        "unknown": 1,
+        "ollama/llama3.2:3b": 1
+      }
+    },
+    {
+      "job": "warehouse-shift-handoff",
+      "runs": 1,
+      "successRate": 1.0,
+      "avgDurationMs": 65428,
+      "avgTokens": 18600,
+      "modelMismatchRuns": 0,
+      "deliveryFailures": 0,
+      "configuredModel": "moonshot/kimi-k2.5",
+      "topActualModel": "moonshot/kimi-k2.5",
+      "actualModelCounts": {
+        "moonshot/kimi-k2.5": 1
+      }
+    },
+    {
+      "job": "proof-daily-content-draft",
+      "runs": 1,
+      "successRate": 1.0,
+      "avgDurationMs": 177604,
+      "avgTokens": 17314,
+      "modelMismatchRuns": 0,
+      "deliveryFailures": 0,
+      "configuredModel": "moonshot/kimi-k2.5",
+      "topActualModel": "moonshot/kimi-k2.5",
+      "actualModelCounts": {
+        "moonshot/kimi-k2.5": 1
+      }
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "high",
+      "type": "reliability",
+      "job": "foundry-daily-build-candidate",
+      "issue": "Success rate is 67%.",
+      "change": "Shorten prompt scope and add deterministic pre-check steps.",
+      "targetMetric": "successRate>=95% over next 10 runs"
+    },
+    {
+      "priority": "high",
+      "type": "routing",
+      "job": "radar-daily-scan",
+      "issue": "Configured model does not match runtime model consistently.",
+      "change": "Pin payload.model to explicit provider/model and verify provider health.",
+      "targetMetric": "modelMismatchRuns=0 over next 5 runs"
+    },
+    {
+      "priority": "medium",
+      "type": "cost",
+      "job": "foundry-daily-build-candidate",
+      "issue": "Average tokens per run is 27316.",
+      "change": "Trim system context for this lane and add explicit output length caps.",
+      "targetMetric": "avgTokens reduced by 20%"
+    },
+    {
+      "priority": "medium",
+      "type": "cost",
+      "job": "radar-daily-scan",
+      "issue": "Average tokens per run is 19197.",
+      "change": "Trim system context for this lane and add explicit output length caps.",
+      "targetMetric": "avgTokens reduced by 20%"
+    }
+  ],
+  "generatedAt": "2026-02-25T09:50:08.675986+00:00",
+  "profile": "dev",
+  "aliases": {
+    "Strategist": "moonshot/kimi-k2.5",
+    "LocalFast": "ollama/llama3.2:3b",
+    "LocalCode": "ollama/deepseek-coder:1.3b",
+    "Builder": "openai-codex/gpt-5.3-codex",
+    "LocalSmart": "ollama/qwen2.5:7b"
+  },
+  "newRowsIngested": 4
+}

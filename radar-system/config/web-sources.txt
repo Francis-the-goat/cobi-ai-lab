@@ -1,0 +1,7 @@
+# name|url|css_selector|priority|focus
+openai-news|https://openai.com/news/|main|high|model-and-product-launches
+anthropic-news|https://www.anthropic.com/news|main|high|model-releases-and-enterprise-moves
+google-ai-blog|https://blog.google/technology/ai/|main|medium|foundation-model-and-product-signals
+microsoft-ai-blog|https://blogs.microsoft.com/ai/|main|medium|enterprise-ai-rollouts
+ycombinator-blog|https://www.ycombinator.com/blog|main|medium|startup-and-smb-shift-signals
+openclaw-docs|https://docs.openclaw.ai/|main|high|openclaw-capability-and-workflow-changes

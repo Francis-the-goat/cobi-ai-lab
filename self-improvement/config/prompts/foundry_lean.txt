@@ -1,0 +1,23 @@
+Select the strongest current leverage opportunity from existing workspace evidence and output one decision:
+BUILD NOW, PROTOTYPE, or REJECT.
+
+Pre-checks (must run first):
+1. Confirm these files exist: QUALITY_BAR.md, OUTPUT_STANDARD.md, PROJECTS.md, LEVERAGE_OS.md.
+2. If any are missing, stop and return BLOCKED with the missing file list.
+
+Required output (strict):
+1) What I Did (max 4 bullets)
+2) What Matters (max 3 bullets, each with one concrete metric or source)
+3) Tonight's Top 3 (numbered)
+4) Risk (one risk + one mitigation)
+5) One-Line Focus
+
+Decision rule:
+- Do not default to SMB unless today's evidence is stronger for SMB than other tracks.
+- If a non-SMB opportunity has higher leverage this week, choose it explicitly and explain why.
+
+Also update one asset pack under:
+asset-foundry/YYYY-MM-DD-<slug>/
+Include decision, 7-day plan, acceptance criteria, and rollback condition.
+
+Keep output concise and deterministic. No generic filler.

@@ -10,15 +10,155 @@
 ### When to Use Which Model
 | Task Type | Model | Example |
 |-----------|-------|---------|
-| Simple Q&A, summaries | Local (Llama 3.2 3B) | "What is OpenClaw?" |
-| Code, debugging | LocalCode (DeepSeek 1.3B) | "Debug this Python script" |
-| Creative, strategic, important | Kimi (K2.5) | "Write client proposal" |
+| Strategic decisions, final outputs, business reasoning | Strategist (Kimi K2.5) | Offer design, pricing, positioning |
+| Complex build specs, coding architecture, multimodal tasks | Builder (GPT-5.3 Codex) | Tool design, code implementation plan |
+| Offline local reasoning (higher quality local) | LocalSmart (Qwen 2.5 7B) | Local draft synthesis and analysis |
+| Fast local code scaffolding | LocalCode (DeepSeek Coder 1.3B) | Small code transforms, snippets |
+| Low-heat triage and summaries | LocalFast (Llama 3.2 3B) | Quick summaries, low-stakes transforms |
 
 ### Override Commands
 ```bash
-openclaw agent --model Local "task"        # Force free model
-openclaw agent --model Kimi "task"         # Force best quality
-openclaw agent --model LocalCode "task"    # Force code model
+openclaw models set Strategist              # Quality-first default
+openclaw models set Builder                 # Build-focused default
+openclaw models set LocalFast               # Cool/low-power default
+openclaw models fallbacks list              # Confirm fallback chain
+bash ~/.openclaw/workspace/scripts/model_mode.sh quality
+```
+
+---
+
+## AI Business Asset Foundry
+
+### What It Does
+- Turns research into build-ready assets (skill/tool/automation specs)
+- Forces evidence-based opportunity scoring (non-generic ideas only)
+- Produces a 3-file asset pack with execution and validation plan
+
+### Paths
+- Skill: `~/.openclaw/skills/ai-business-asset-foundry/SKILL.md`
+- Scoring script: `~/.openclaw/skills/ai-business-asset-foundry/scripts/opportunity_score.py`
+- Pack scaffold script: `~/.openclaw/skills/ai-business-asset-foundry/scripts/bootstrap_asset_pack.sh`
+
+### Quick Usage
+```bash
+# Scaffold a new opportunity package
+~/.openclaw/skills/ai-business-asset-foundry/scripts/bootstrap_asset_pack.sh <slug> ~/.openclaw/workspace
+
+# Score an opportunity from JSON inputs (1-5 scale on rubric fields)
+~/.openclaw/skills/ai-business-asset-foundry/scripts/opportunity_score.py /tmp/opportunity.json
+```
+
+---
+
+## SMB Agentic Opportunity Radar
+
+### What It Does
+- Tracks high-signal AI changes that can be monetized for SMB operators
+- Filters out generic trends and promotes only economically viable opportunities
+- Extends foundry output with a dedicated radar brief for faster decision-making
+
+### Paths
+- Skill: `~/.openclaw/skills/smb-agentic-opportunity-radar/SKILL.md`
+- Radar pack script: `~/.openclaw/skills/smb-agentic-opportunity-radar/scripts/new_radar_pack.sh`
+- Radar template: `~/.openclaw/skills/smb-agentic-opportunity-radar/references/radar-brief-template.md`
+
+### Quick Usage
+```bash
+# Create a full radar + foundry pack
+~/.openclaw/skills/smb-agentic-opportunity-radar/scripts/new_radar_pack.sh <slug> ~/.openclaw/workspace
+```
+
+---
+
+## Video Source Intelligence
+
+### What It Does
+- Transcribes YouTube videos reliably (subtitles first, Whisper fallback)
+- Supports optional cloud fallback (Groq/OpenAI/Deepgram) for hard videos
+- Creates source cards in `memory/sources/` for structured analysis
+- Converts source intelligence into concrete next actions
+
+### Paths
+- Skill: `~/.openclaw/skills/video-source-intelligence/SKILL.md`
+- Skill wrapper: `~/.openclaw/skills/video-source-intelligence/scripts/ingest_video_source.sh`
+- Workspace ingest script: `~/.openclaw/workspace/scripts/ingest_video_source.sh`
+- Transcriber: `~/.openclaw/workspace/tools/yt-transcribe`
+- Retry queue: `~/.openclaw/workspace/scripts/transcription_queue.sh`
+
+### Quick Usage
+```bash
+# Ingest video into transcript + source card
+bash ~/.openclaw/workspace/scripts/ingest_video_source.sh QWzLPn164w0 nate-offer-design
+
+# Direct transcript output
+~/.openclaw/workspace/tools/yt-transcribe QWzLPn164w0 text
+
+# Retry queue
+bash ~/.openclaw/workspace/scripts/transcription_queue.sh add QWzLPn164w0 nate-offer-design "Nate Offer Design"
+bash ~/.openclaw/workspace/scripts/transcription_queue.sh process --limit 3
+```
+
+---
+
+## Leverage Automation Suite
+
+### What It Does
+- Installs an idempotent cron system for daily scanning, asset selection, and weekly planning
+- Audits whether your live profile is aligned to your intended workspace/models/auth
+
+### Paths
+- Cron installer: `~/.openclaw/workspace/scripts/install_leverage_crons.sh`
+- Setup audit: `~/.openclaw/workspace/scripts/leverage_setup_audit.sh`
+- Telegram target updater: `~/.openclaw/workspace/scripts/set_telegram_target.sh`
+- Self-improvement cycle: `~/.openclaw/workspace/scripts/self_improvement_cycle.sh`
+- Operating system: `~/.openclaw/workspace/LEVERAGE_OS.md`
+- Self-improvement OS: `~/.openclaw/workspace/SELF_IMPROVEMENT_OS.md`
+- Daily handoff template: `~/.openclaw/workspace/DAILY_HANDOFF_TEMPLATE.md`
+- Output standard: `~/.openclaw/workspace/OUTPUT_STANDARD.md`
+- Quality bar: `~/.openclaw/workspace/QUALITY_BAR.md`
+
+### Quick Usage
+```bash
+# Verify setup integrity for the dev profile
+bash ~/.openclaw/workspace/scripts/leverage_setup_audit.sh dev
+
+# Install/update leverage cron jobs (requires running gateway)
+bash ~/.openclaw/workspace/scripts/install_leverage_crons.sh dev Australia/Brisbane
+# Optional explicit Telegram destination:
+bash ~/.openclaw/workspace/scripts/install_leverage_crons.sh dev Australia/Brisbane <telegram_chat_id_or_username>
+
+# Update existing cron jobs with your Telegram target
+bash ~/.openclaw/workspace/scripts/set_telegram_target.sh dev <telegram_chat_id_or_username>
+
+# Generate a performance/optimization report from cron run history
+bash ~/.openclaw/workspace/scripts/self_improvement_cycle.sh dev 7
+```
+
+---
+
+## Operator Skill Reliability
+
+### What It Does
+- Enforces skill contracts (input/output/failure semantics/SLOs/tests)
+- Scores every skill for operational readiness
+- Produces an audit report with concrete hardening actions
+
+### Paths
+- Skill: `~/.openclaw/skills/operator-skill-reliability/SKILL.md`
+- Contract scaffold: `~/.openclaw/skills/operator-skill-reliability/scripts/init_contract_bundle.sh`
+- Audit runner: `~/.openclaw/skills/operator-skill-reliability/scripts/run_skill_checks.py`
+- Latest report: `~/.openclaw/workspace/memory/reports/latest-skill-contract-audit.md`
+
+### Quick Usage
+```bash
+# Initialize contract files for a skill
+bash ~/.openclaw/skills/operator-skill-reliability/scripts/init_contract_bundle.sh ~/.openclaw/skills/video-source-intelligence
+
+# Audit all skills
+python3 ~/.openclaw/skills/operator-skill-reliability/scripts/run_skill_checks.py \
+  --skills-root ~/.openclaw/skills \
+  --report ~/.openclaw/workspace/memory/reports/latest-skill-contract-audit.md \
+  --write-json ~/.openclaw/workspace/memory/reports/latest-skill-contract-audit.json
 ```
 
 ---
@@ -74,6 +214,13 @@ openclaw agent --model LocalCode "task"    # Force code model
 3. Test if relevant to Cobi's stack
 4. Log in MEMORY.md
 5. Suggest integration if valuable
+
+### Web Signal Monitoring (Scrapling)
+1. Install runtime: `bash ~/.openclaw/workspace/scripts/install_scrapling_runtime.sh`
+2. Configure sources: `~/.openclaw/workspace/radar-system/config/web-sources.txt`
+3. Run monitor: `bash ~/.openclaw/workspace/radar-system/monitors/web-scrapling.sh`
+4. Review output: `~/.openclaw/workspace/radar-system/queue/web-signals-*.json`
+5. Route high-signal changes into leverage briefs or asset foundry work
 
 ---
 
@@ -150,9 +297,11 @@ If 2 yes → Consider carefully
 If <2 yes → Kill it
 
 ### Model Selection
-1. Is it code-related? → LocalCode
-2. Is it creative/strategic/important? → Kimi
-3. Is it simple transformation/research? → Local
+1. Is this a final decision, strategy, or client-facing deliverable? → Strategist
+2. Is this implementation-heavy (code/tools/specs)? → Builder
+3. Need local/offline quality? → LocalSmart
+4. Need fast local coding support? → LocalCode
+5. Need low heat for lightweight tasks? → LocalFast
 
 ---
 
@@ -165,7 +314,9 @@ openclaw gateway restart                  # Restart gateway
 openclaw channels list                    # Check connected channels
 openclaw plugins list                     # List installed plugins
 openclaw agent "task"                     # Run with default model
-openclaw agent --model Local "task"       # Run with local model
+openclaw models set Strategist            # Set default model by alias
+openclaw models set Builder               # Set default coding model
+openclaw models fallbacks list            # Inspect fallback order
 ```
 
 ### Ollama

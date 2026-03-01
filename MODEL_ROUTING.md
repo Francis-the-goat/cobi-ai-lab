@@ -1,55 +1,40 @@
-# Model Routing Configuration
+# MODEL_ROUTING.md
 
-This file defines when to use which model for optimal cost/performance.
+Current routing is policy-driven from:
+- `config/model_routing_policy.json`
 
-## Model Stack
+Runtime enforcer:
+- `scripts/enforce_model_routing.sh`
 
-| Model | Alias | Cost | Best For | Avoid For |
-|-------|-------|------|----------|-----------|
-| **Llama 3.2 3B** | `Local` | FREE | Simple Q&A, summaries, formatting, research, basic analysis | Complex reasoning, creative writing, coding |
-| **DeepSeek Coder 1.3B** | `LocalCode` | FREE | Code tasks, technical explanations, debugging simple code | Non-code tasks, complex architecture |
-| **Kimi K2.5** | `Kimi` | API $ | Complex reasoning, creative content, coding, analysis, anything important | Simple tasks that local models handle |
+## Fast Rules
 
-## Routing Rules
+- Default ops/chat: `LocalFast` (`ollama/qwen2.5:3b`)
+- Deeper local analysis: `LocalSmart` (`ollama/qwen2.5:7b`)
+- Heavy code/build: `Builder` (`openai-codex/gpt-5.3-codex`)
+- High-stakes strategy/content: `Strategist` (`moonshot/kimi-k2.5`) only on allowlisted lanes
 
-### ALWAYS use Local (free) for:
-- Simple Q&A and factual lookups
-- Summarizing articles/content
-- Formatting/transforming text
-- Research compilation
-- Brainstorming lists
-- Simple explanations
-- Routine tasks
+Strict guards:
+- Enabled jobs are enforced by policy.
+- Every enabled job must have an explicit model mapping or it is forced to local fallback.
+- `moonshot/*` only runs on `allowedMoonshotJobs`.
+- `openai-codex/*` only runs on `allowedOpenAICodexJobs`.
+- Any non-allowlisted premium route is auto-downgraded to local fallback.
 
-### ALWAYS use LocalCode (free) for:
-- Code generation (simple scripts)
-- Code explanation
-- Debugging straightforward errors
-- Technical documentation
-- Regex patterns
-- Shell commands
+## Why
 
-### ALWAYS use Kimi (paid) for:
-- Complex multi-step reasoning
-- Creative writing/content creation
-- Business strategy
-- Client-facing content
-- Important decisions
-- Novel problems
-- When quality > cost
+- Prevent silent premium token burn.
+- Keep day-to-day response speed high.
+- Reserve premium intelligence for high-leverage decisions.
 
-## Usage
+## Operational Commands
 
-**Override routing manually:**
 ```bash
-# Force local model
-openclaw agent --model Local "simple question"
+# enforce policy now
+bash ~/.openclaw/workspace/scripts/enforce_model_routing.sh main
 
-# Force Kimi for important task
-openclaw agent --model Kimi "write client proposal"
+# inspect active cron model map
+jq -r '.jobs[] | select(.enabled==true) | [.name,.payload.model] | @tsv' ~/.openclaw-main/cron/jobs.json
 
-# Force code model
-openclaw agent --model LocalCode "debug this Python script"
+# inspect default model/fallbacks
+jq -r '.agents.defaults.model' ~/.openclaw-main/openclaw.json
 ```
-
-**I'll route automatically based on task characteristics.**
