@@ -1,0 +1,15 @@
+# OpenClaw 10x Power Automation
+# Activated: Sun Mar 1 2026
+
+# Morning briefing at 6 AM
+0 6 * * * /bin/bash ~/.openclaw/workspace/scripts/morning-briefing.sh >> ~/.openclaw/workspace/logs/morning-briefing.log 2>&1
+
+# Full pipeline (harvest → analyze → detect) at 5 AM and 5 PM
+0 5 * * * /bin/bash ~/.openclaw/workspace/scripts/full-pipeline.sh >> ~/.openclaw/workspace/logs/pipeline.log 2>&1
+0 17 * * * /bin/bash ~/.openclaw/workspace/scripts/full-pipeline.sh >> ~/.openclaw/workspace/logs/pipeline.log 2>&1
+
+# Daily self-improvement task at 9 AM
+0 9 * * * /bin/bash ~/.openclaw/workspace/scripts/self-improvement-loop.sh --daily-surprise >> ~/.openclaw/workspace/logs/self-improvement.log 2>&1
+
+# Pre-compaction save (runs before known compaction times)
+0 */6 * * * /bin/bash ~/.openclaw/workspace/scripts/pre-compaction-save.sh >> ~/.openclaw/workspace/logs/pre-compaction.log 2>&1
