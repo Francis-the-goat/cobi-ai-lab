@@ -1,0 +1,1745 @@
+{
+  "generatedAt": "2026-03-01T21:20:54.985343+00:00",
+  "policyVersion": 1,
+  "thresholds": {
+    "minRelevanceScore": 17,
+    "minImportanceScore": 6,
+    "minAcceptedSources": 3,
+    "maxAcceptedSources": 5
+  },
+  "candidateCount": 30,
+  "acceptedCount": 0,
+  "rejectedCount": 30,
+  "blocked": true,
+  "blockedReason": "accepted_sources_below_min:0<3",
+  "accepted": [],
+  "rejected": [
+    {
+      "sourceType": "news",
+      "id": "https://news.ycombinator.com/item?id=46710688",
+      "title": "Show HN: Automatically build sales playbook. For founders doing sales",
+      "url": "https://news.ycombinator.com/item?id=46710688",
+      "query": "AI founder workflows automation",
+      "uploader": "hn",
+      "rawScore": 10,
+      "meta": {
+        "points": 9,
+        "comments": 1,
+        "created_at": "2026-01-21T19:53:35Z"
+      },
+      "fingerprint": "b380193883191af287cee749cef1d318e5defcca",
+      "focusAreasMatched": [
+        "agentic_ai_architecture",
+        "ai_business_resources"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "workflow"
+          ],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": [
+            "founder",
+            "sales"
+          ]
+        },
+        "implementationEvidence": [
+          "workflow"
+        ],
+        "actionability48h": [
+          "build",
+          "playbook",
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [
+            "sales"
+          ],
+          "delivery": [
+            "automation",
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 5,
+        "implementationDepth": 1,
+        "businessLeverage": 2,
+        "novelty": 5,
+        "actionability48h": 3,
+        "relevanceTotal": 16,
+        "entrepreneurImportance": 6,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 1,
+          "timeSavedLeverage": 2,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 3
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:16<17"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "AO5aW01DKHo",
+      "title": "Agentic Workflows Just Changed AI Automation Forever! (Claude Code)",
+      "url": "https://www.youtube.com/watch?v=AO5aW01DKHo",
+      "query": "anthropic tool use workflows",
+      "uploader": "Nate Herk | AI Automation",
+      "rawScore": 6,
+      "meta": {
+        "view_count": 186253,
+        "upload_date": ""
+      },
+      "fingerprint": "b8bd98607543f750c85b5685c159435455bad3ed",
+      "focusAreasMatched": [
+        "agentic_ai_architecture",
+        "claude_code_workflows"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "agentic",
+            "workflow"
+          ],
+          "claude_code_workflows": [
+            "anthropic",
+            "claude",
+            "claude code"
+          ],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "code",
+          "workflow"
+        ],
+        "actionability48h": [
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "automation",
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 5,
+        "implementationDepth": 3,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 2,
+        "relevanceTotal": 16,
+        "entrepreneurImportance": 6,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 2,
+          "moatStrength": 1,
+          "riskReduction": 0,
+          "nearTermExecutability": 3
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:16<17"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "8QN23ZThdRY",
+      "title": "Cursor AI Agents Work Like 10 Developers (Cursor VP Live Demo)",
+      "url": "https://www.youtube.com/watch?v=8QN23ZThdRY",
+      "query": "agent engineering production workflows",
+      "uploader": "Greg Isenberg",
+      "rawScore": 6,
+      "meta": {
+        "view_count": 161236,
+        "upload_date": ""
+      },
+      "fingerprint": "076567e068c5de117ed48c8eee57f4f29fafa188",
+      "focusAreasMatched": [
+        "agentic_ai_architecture"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "production",
+            "workflow"
+          ],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "pr",
+          "workflow"
+        ],
+        "actionability48h": [
+          "pr",
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 4,
+        "implementationDepth": 3,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 3,
+        "relevanceTotal": 16,
+        "entrepreneurImportance": 5,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 1,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 4
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:16<17",
+        "importance_below_threshold:5<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "C6rxEGJay70",
+      "title": "Microsoft Foundry - AI app & agent factory",
+      "url": "https://www.youtube.com/watch?v=C6rxEGJay70",
+      "query": "openai agents production workflows",
+      "uploader": "Microsoft Mechanics",
+      "rawScore": 6,
+      "meta": {
+        "view_count": 120723,
+        "upload_date": ""
+      },
+      "fingerprint": "8497865f8a289ef7c09139a5e51bc19915e73458",
+      "focusAreasMatched": [
+        "agentic_ai_architecture"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "production",
+            "workflow"
+          ],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "pr",
+          "workflow"
+        ],
+        "actionability48h": [
+          "pr",
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 4,
+        "implementationDepth": 3,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 3,
+        "relevanceTotal": 16,
+        "entrepreneurImportance": 5,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 1,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 4
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:16<17",
+        "importance_below_threshold:5<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "7GOxUgVTz3s",
+      "title": "How to Build Human-in-the-Loop for AI Agents (Practical Guide)",
+      "url": "https://www.youtube.com/watch?v=7GOxUgVTz3s",
+      "query": "openai agents production workflows",
+      "uploader": "Dave Ebbelaar",
+      "rawScore": 4,
+      "meta": {
+        "view_count": 6223,
+        "upload_date": ""
+      },
+      "fingerprint": "797d2783026c42f060c26f27c3f23e66a72cde35",
+      "focusAreasMatched": [
+        "agentic_ai_architecture"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "production",
+            "workflow"
+          ],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "pr",
+          "workflow"
+        ],
+        "actionability48h": [
+          "build",
+          "guide",
+          "how to",
+          "pr",
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 4,
+        "implementationDepth": 3,
+        "businessLeverage": 1,
+        "novelty": 1,
+        "actionability48h": 5,
+        "relevanceTotal": 14,
+        "entrepreneurImportance": 7,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 2,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 5
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:14<17"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "44eFf-tRiSg",
+      "title": "Intro to Agent Builder",
+      "url": "https://www.youtube.com/watch?v=44eFf-tRiSg",
+      "query": "agent engineering production workflows",
+      "uploader": "OpenAI",
+      "rawScore": 8,
+      "meta": {
+        "view_count": 1639059,
+        "upload_date": ""
+      },
+      "fingerprint": "a9db034362f4bb92fa951f9c4cf59c98c466d1a1",
+      "focusAreasMatched": [
+        "agentic_ai_architecture"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "production",
+            "workflow"
+          ],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "pr",
+          "workflow"
+        ],
+        "actionability48h": [
+          "build",
+          "pr",
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 4,
+        "implementationDepth": 3,
+        "businessLeverage": 1,
+        "novelty": 1,
+        "actionability48h": 4,
+        "relevanceTotal": 13,
+        "entrepreneurImportance": 7,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 2,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 5
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:13<17"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "3_p8yZsa3Uc",
+      "title": "Automation Agency Sales Process 101",
+      "url": "https://www.youtube.com/watch?v=3_p8yZsa3Uc",
+      "query": "automation agency systems",
+      "uploader": "Nick Saraev",
+      "rawScore": 4,
+      "meta": {
+        "view_count": 26742,
+        "upload_date": ""
+      },
+      "fingerprint": "87ef52c90dbadab929e4ea9a1a24fb94bf010574",
+      "focusAreasMatched": [
+        "ai_business_resources"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": [
+            "sales"
+          ]
+        },
+        "implementationEvidence": [
+          "pr"
+        ],
+        "actionability48h": [
+          "pr"
+        ],
+        "entrepreneur": {
+          "revenue": [
+            "sales"
+          ],
+          "delivery": [
+            "automation",
+            "process"
+          ],
+          "moat": [
+            "system"
+          ],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 3,
+        "implementationDepth": 2,
+        "businessLeverage": 3,
+        "novelty": 5,
+        "actionability48h": 1,
+        "relevanceTotal": 14,
+        "entrepreneurImportance": 6,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 2,
+          "timeSavedLeverage": 2,
+          "moatStrength": 1,
+          "riskReduction": 0,
+          "nearTermExecutability": 1
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:14<17"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "31cp_OXKzkI",
+      "title": "3 AI Habits So Powerful It Feels Like Cheating",
+      "url": "https://www.youtube.com/watch?v=31cp_OXKzkI",
+      "query": "jeff su ai productivity workflows",
+      "uploader": "Jeff Su",
+      "rawScore": 2,
+      "meta": {
+        "view_count": 186557,
+        "upload_date": ""
+      },
+      "fingerprint": "b2d1b1ad7a43626b4ca64a5fc7edef5c6d96fb02",
+      "focusAreasMatched": [
+        "agentic_ai_architecture"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "workflow"
+          ],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "pr",
+          "workflow"
+        ],
+        "actionability48h": [
+          "pr",
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 3,
+        "implementationDepth": 3,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 3,
+        "relevanceTotal": 15,
+        "entrepreneurImportance": 5,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 1,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 4
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:15<17",
+        "importance_below_threshold:5<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "3GAxd90fEE4",
+      "title": "How I\u2019d Teach a 10 Year Old to Build Agentic Workflows (Claude Code)",
+      "url": "https://www.youtube.com/watch?v=3GAxd90fEE4",
+      "query": "anthropic tool use workflows",
+      "uploader": "Nate Herk | AI Automation",
+      "rawScore": 4,
+      "meta": {
+        "view_count": 97858,
+        "upload_date": ""
+      },
+      "fingerprint": "b55e7923954a4e449e13d34b68a9a3dd6f0c0e80",
+      "focusAreasMatched": [
+        "agentic_ai_architecture",
+        "claude_code_workflows"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "agentic",
+            "workflow"
+          ],
+          "claude_code_workflows": [
+            "anthropic",
+            "claude",
+            "claude code"
+          ],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "code",
+          "workflow"
+        ],
+        "actionability48h": [
+          "build",
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 5,
+        "implementationDepth": 3,
+        "businessLeverage": 1,
+        "novelty": 1,
+        "actionability48h": 3,
+        "relevanceTotal": 13,
+        "entrepreneurImportance": 6,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 1,
+          "moatStrength": 1,
+          "riskReduction": 0,
+          "nearTermExecutability": 4
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:13<17"
+      ]
+    },
+    {
+      "sourceType": "news",
+      "id": "https://news.ycombinator.com/item?id=46715824",
+      "title": "Show HN: Aident, agentic automations as plain-English playbooks",
+      "url": "https://aident.ai/",
+      "query": "AI founder workflows automation",
+      "uploader": "hn",
+      "rawScore": 4,
+      "meta": {
+        "points": 4,
+        "comments": 0,
+        "created_at": "2026-01-22T06:04:02Z"
+      },
+      "fingerprint": "31852084363cfe6dec8b112da102bb4b56a55a7d",
+      "focusAreasMatched": [
+        "agentic_ai_architecture",
+        "ai_business_resources"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "agentic",
+            "workflow"
+          ],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": [
+            "founder"
+          ]
+        },
+        "implementationEvidence": [
+          "workflow"
+        ],
+        "actionability48h": [
+          "playbook",
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "automation",
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 5,
+        "implementationDepth": 1,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 2,
+        "relevanceTotal": 14,
+        "entrepreneurImportance": 4,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 2,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 2
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:14<17",
+        "importance_below_threshold:4<6"
+      ]
+    },
+    {
+      "sourceType": "news",
+      "id": "https://news.ycombinator.com/item?id=47023609",
+      "title": "Ask HN: How to sell SaaS without AI features in 2026?",
+      "url": "https://news.ycombinator.com/item?id=47023609",
+      "query": "AI founder workflows automation",
+      "uploader": "hn",
+      "rawScore": 5,
+      "meta": {
+        "points": 1,
+        "comments": 4,
+        "created_at": "2026-02-15T13:45:28Z"
+      },
+      "fingerprint": "7cdf8d9051767cefcdf8deb1503525627f404766",
+      "focusAreasMatched": [
+        "agentic_ai_architecture",
+        "ai_business_resources"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "workflow"
+          ],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": [
+            "founder"
+          ]
+        },
+        "implementationEvidence": [
+          "workflow"
+        ],
+        "actionability48h": [
+          "how to",
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "automation",
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 4,
+        "implementationDepth": 1,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 2,
+        "relevanceTotal": 13,
+        "entrepreneurImportance": 4,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 2,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 2
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:13<17",
+        "importance_below_threshold:4<6"
+      ]
+    },
+    {
+      "sourceType": "news",
+      "id": "https://news.ycombinator.com/item?id=47058199",
+      "title": "Ask HN: Any AI / Agent power users out there? Do you have any tips?",
+      "url": "https://news.ycombinator.com/item?id=47058199",
+      "query": "AI founder workflows automation",
+      "uploader": "hn",
+      "rawScore": 18,
+      "meta": {
+        "points": 9,
+        "comments": 9,
+        "created_at": "2026-02-18T07:15:50Z"
+      },
+      "fingerprint": "d5f92b4f33837ca6dbd9bc8e2b8ccf57fbcab271",
+      "focusAreasMatched": [
+        "agentic_ai_architecture",
+        "ai_business_resources"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [
+            "workflow"
+          ],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": [
+            "founder"
+          ]
+        },
+        "implementationEvidence": [
+          "workflow"
+        ],
+        "actionability48h": [
+          "workflow"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "automation",
+            "workflow"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 4,
+        "implementationDepth": 1,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 1,
+        "relevanceTotal": 12,
+        "entrepreneurImportance": 3,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 2,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 1
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "relevance_below_threshold:12<17",
+        "importance_below_threshold:3<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "4VDZRR07Eqw",
+      "title": "How to Get Into Silicon Valley\u2019s $600 Billion Startup School | The Circuit with Emily Chang",
+      "url": "https://www.youtube.com/watch?v=4VDZRR07Eqw",
+      "query": "y combinator ai startup operations",
+      "uploader": "Bloomberg Originals",
+      "rawScore": 4,
+      "meta": {
+        "view_count": 1142593,
+        "upload_date": ""
+      },
+      "fingerprint": "124387f0f0e8b25555aae5c5f4144b991614f4ee",
+      "focusAreasMatched": [],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "ci"
+        ],
+        "actionability48h": [
+          "ci",
+          "how to"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "implementationDepth": 2,
+        "businessLeverage": 0,
+        "novelty": 5,
+        "actionability48h": 2,
+        "relevanceTotal": 9,
+        "entrepreneurImportance": 3,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 0,
+          "moatStrength": 0,
+          "riskReduction": 1,
+          "nearTermExecutability": 2
+        }
+      },
+      "gates": {
+        "focusMatch": false,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": false
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_focus_area_match",
+        "no_entrepreneur_importance",
+        "relevance_below_threshold:9<17",
+        "importance_below_threshold:3<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "4q5sK9kMjzc",
+      "title": "How I Automated My 7 Figure Agency (FREE OPS COURSE)",
+      "url": "https://www.youtube.com/watch?v=4q5sK9kMjzc",
+      "query": "automation agency systems",
+      "uploader": "Austin Schneider",
+      "rawScore": 4,
+      "meta": {
+        "view_count": 9262,
+        "upload_date": ""
+      },
+      "fingerprint": "4a70fdee00104ddcc4f451f971ff1a9c70a229f3",
+      "focusAreasMatched": [],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [],
+        "actionability48h": [
+          "automate"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "automation",
+            "ops"
+          ],
+          "moat": [
+            "system"
+          ],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "implementationDepth": 0,
+        "businessLeverage": 2,
+        "novelty": 5,
+        "actionability48h": 1,
+        "relevanceTotal": 8,
+        "entrepreneurImportance": 4,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 2,
+          "moatStrength": 1,
+          "riskReduction": 0,
+          "nearTermExecutability": 1
+        }
+      },
+      "gates": {
+        "focusMatch": false,
+        "implementationEvidence": false,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_focus_area_match",
+        "no_implementation_evidence",
+        "relevance_below_threshold:8<17",
+        "importance_below_threshold:4<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "6Ait5R-3-lI",
+      "title": "Alex Hormozi\u2019s New Playbook: Entrepreneurship in the Age of AI",
+      "url": "https://www.youtube.com/watch?v=6Ait5R-3-lI",
+      "query": "ai entrepreneurship case study",
+      "uploader": "Replit",
+      "rawScore": 8,
+      "meta": {
+        "view_count": 22608601,
+        "upload_date": ""
+      },
+      "fingerprint": "5d75eece847b9dbf35c0a7b9870b3de36e132d7f",
+      "focusAreasMatched": [
+        "ai_business_resources"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": [
+            "case study",
+            "entrepreneur"
+          ]
+        },
+        "implementationEvidence": [],
+        "actionability48h": [
+          "playbook"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 4,
+        "implementationDepth": 0,
+        "businessLeverage": 0,
+        "novelty": 5,
+        "actionability48h": 1,
+        "relevanceTotal": 10,
+        "entrepreneurImportance": 1,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 0,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 1
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": false,
+        "actionability48h": true,
+        "entrepreneurImportance": false
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_implementation_evidence",
+        "no_entrepreneur_importance",
+        "relevance_below_threshold:10<17",
+        "importance_below_threshold:1<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "0Z7u6DTDZ8o",
+      "title": "How to Build an Agent with the OpenAI Agents SDK",
+      "url": "https://www.youtube.com/watch?v=0Z7u6DTDZ8o",
+      "query": "openai agents sdk tutorials",
+      "uploader": "Sam Witteveen",
+      "rawScore": 4,
+      "meta": {
+        "view_count": 30362,
+        "upload_date": ""
+      },
+      "fingerprint": "df95f9ea1c4c7e6b085fde54e14a5959d3897953",
+      "focusAreasMatched": [],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "tutorial"
+        ],
+        "actionability48h": [
+          "build",
+          "how to"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "implementationDepth": 2,
+        "businessLeverage": 0,
+        "novelty": 5,
+        "actionability48h": 2,
+        "relevanceTotal": 9,
+        "entrepreneurImportance": 2,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 0,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 2
+        }
+      },
+      "gates": {
+        "focusMatch": false,
+        "implementationEvidence": true,
+        "actionability48h": true,
+        "entrepreneurImportance": false
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_focus_area_match",
+        "no_entrepreneur_importance",
+        "relevance_below_threshold:9<17",
+        "importance_below_threshold:2<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "-bQcWs1Z9a0",
+      "title": "$1,000 a Day in AI Costs. Three Engineers. No Writing Code. No Code Review. But More Output.",
+      "url": "https://www.youtube.com/watch?v=-bQcWs1Z9a0",
+      "query": "nate b jones ai business systems",
+      "uploader": "AI News & Strategy Daily | Nate B Jones",
+      "rawScore": 0,
+      "meta": {
+        "view_count": 87582,
+        "upload_date": ""
+      },
+      "fingerprint": "4ee874cc4048a69e233fcf2061837b054ca271c1",
+      "focusAreasMatched": [],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "code"
+        ],
+        "actionability48h": [],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [],
+          "moat": [
+            "system"
+          ],
+          "risk": [
+            "cost"
+          ]
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "implementationDepth": 2,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 0,
+        "relevanceTotal": 8,
+        "entrepreneurImportance": 2,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 0,
+          "moatStrength": 1,
+          "riskReduction": 1,
+          "nearTermExecutability": 0
+        }
+      },
+      "gates": {
+        "focusMatch": false,
+        "implementationEvidence": true,
+        "actionability48h": false,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_focus_area_match",
+        "no_48h_actionability",
+        "relevance_below_threshold:8<17",
+        "importance_below_threshold:2<6"
+      ]
+    },
+    {
+      "sourceType": "news",
+      "id": "https://news.ycombinator.com/item?id=46979781",
+      "title": "Show HN: Agent framework that generates its own topology and evolves at runtime",
+      "url": "https://github.com/adenhq/hive/blob/main/README.md",
+      "query": "AI agents business execution",
+      "uploader": "hn",
+      "rawScore": 143,
+      "meta": {
+        "points": 107,
+        "comments": 36,
+        "created_at": "2026-02-11T19:39:43Z"
+      },
+      "fingerprint": "f622173b115707de3fbac67009686fd731caf912",
+      "focusAreasMatched": [],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [],
+        "actionability48h": [
+          "framework"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "execution"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "implementationDepth": 0,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 1,
+        "relevanceTotal": 7,
+        "entrepreneurImportance": 2,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 1,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 1
+        }
+      },
+      "gates": {
+        "focusMatch": false,
+        "implementationEvidence": false,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_focus_area_match",
+        "no_implementation_evidence",
+        "relevance_below_threshold:7<17",
+        "importance_below_threshold:2<6"
+      ]
+    },
+    {
+      "sourceType": "news",
+      "id": "https://news.ycombinator.com/item?id=45186904",
+      "title": "Show HN: Superagents \u2013 connect spreadsheets to any database, API or MCP server",
+      "url": "https://sourcetable.com/superagents",
+      "query": "AI agents business execution",
+      "uploader": "hn",
+      "rawScore": 48,
+      "meta": {
+        "points": 35,
+        "comments": 13,
+        "created_at": "2025-09-09T18:55:35Z"
+      },
+      "fingerprint": "eab6f9e6903973288c79ea441fba183f4d7ac4ff",
+      "focusAreasMatched": [],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [],
+        "actionability48h": [],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "execution"
+          ],
+          "moat": [
+            "data"
+          ],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "implementationDepth": 0,
+        "businessLeverage": 2,
+        "novelty": 5,
+        "actionability48h": 0,
+        "relevanceTotal": 7,
+        "entrepreneurImportance": 2,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 1,
+          "moatStrength": 1,
+          "riskReduction": 0,
+          "nearTermExecutability": 0
+        }
+      },
+      "gates": {
+        "focusMatch": false,
+        "implementationEvidence": false,
+        "actionability48h": false,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_focus_area_match",
+        "no_implementation_evidence",
+        "no_48h_actionability",
+        "relevance_below_threshold:7<17",
+        "importance_below_threshold:2<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "9RvWcXVaAng",
+      "title": "Integrating Generative AI Into Business Strategy: Dr. George Westerman",
+      "url": "https://www.youtube.com/watch?v=9RvWcXVaAng",
+      "query": "ai entrepreneurship case study",
+      "uploader": "MIT Corporate Relations",
+      "rawScore": 6,
+      "meta": {
+        "view_count": 204168,
+        "upload_date": ""
+      },
+      "fingerprint": "35a28b5ac8c3a8a09ca00d9ad65efb1c7b8e1582",
+      "focusAreasMatched": [
+        "ai_business_resources"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": [
+            "case study",
+            "entrepreneur"
+          ]
+        },
+        "implementationEvidence": [],
+        "actionability48h": [],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 4,
+        "implementationDepth": 0,
+        "businessLeverage": 0,
+        "novelty": 5,
+        "actionability48h": 0,
+        "relevanceTotal": 9,
+        "entrepreneurImportance": 0,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 0,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 0
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": false,
+        "actionability48h": false,
+        "entrepreneurImportance": false
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_implementation_evidence",
+        "no_48h_actionability",
+        "no_entrepreneur_importance",
+        "relevance_below_threshold:9<17",
+        "importance_below_threshold:0<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "0PFGmyVTTV4",
+      "title": "AI in Business: Case Studies and Success Stories",
+      "url": "https://www.youtube.com/watch?v=0PFGmyVTTV4",
+      "query": "ai entrepreneurship case study",
+      "uploader": "AI in Business (IA en la empresa)",
+      "rawScore": 4,
+      "meta": {
+        "view_count": 1604,
+        "upload_date": ""
+      },
+      "fingerprint": "929596150e167871acdbf8b3188243e2a02caf96",
+      "focusAreasMatched": [
+        "ai_business_resources"
+      ],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": [
+            "case study",
+            "entrepreneur"
+          ]
+        },
+        "implementationEvidence": [],
+        "actionability48h": [],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 4,
+        "implementationDepth": 0,
+        "businessLeverage": 0,
+        "novelty": 5,
+        "actionability48h": 0,
+        "relevanceTotal": 9,
+        "entrepreneurImportance": 0,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 0,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 0
+        }
+      },
+      "gates": {
+        "focusMatch": true,
+        "implementationEvidence": false,
+        "actionability48h": false,
+        "entrepreneurImportance": false
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_implementation_evidence",
+        "no_48h_actionability",
+        "no_entrepreneur_importance",
+        "relevance_below_threshold:9<17",
+        "importance_below_threshold:0<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "8Ruw4SzZwGQ",
+      "title": "Use AI To Build A 7 Figure Personal Brand In 2026",
+      "url": "https://www.youtube.com/watch?v=8Ruw4SzZwGQ",
+      "query": "personal brand ai business strategy",
+      "uploader": "Omar Eltakrori and Neel Dhingra",
+      "rawScore": 4,
+      "meta": {
+        "view_count": 22597,
+        "upload_date": ""
+      },
+      "fingerprint": "613f40c9730c6cff4b5f4f8a26fcaacc1e096b38",
+      "focusAreasMatched": [],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [],
+        "actionability48h": [
+          "build"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [],
+          "moat": [
+            "brand"
+          ],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "implementationDepth": 0,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 1,
+        "relevanceTotal": 7,
+        "entrepreneurImportance": 2,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 0,
+          "moatStrength": 1,
+          "riskReduction": 0,
+          "nearTermExecutability": 1
+        }
+      },
+      "gates": {
+        "focusMatch": false,
+        "implementationEvidence": false,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_focus_area_match",
+        "no_implementation_evidence",
+        "relevance_below_threshold:7<17",
+        "importance_below_threshold:2<6"
+      ]
+    },
+    {
+      "sourceType": "video",
+      "id": "8psoB8EFdc8",
+      "title": "Make $500-$5K/mo with ChatGPT\u2014Steal my Side-Gig System and Build Your Hustle with AI!",
+      "url": "https://www.youtube.com/watch?v=8psoB8EFdc8",
+      "query": "nate b jones ai business systems",
+      "uploader": "AI News & Strategy Daily | Nate B Jones",
+      "rawScore": 4,
+      "meta": {
+        "view_count": 90310,
+        "upload_date": ""
+      },
+      "fingerprint": "dc2309608be4aca7f8d8d80a2b12276241951b90",
+      "focusAreasMatched": [],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [],
+        "actionability48h": [
+          "build"
+        ],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [],
+          "moat": [
+            "system"
+          ],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "implementationDepth": 0,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 1,
+        "relevanceTotal": 7,
+        "entrepreneurImportance": 2,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 0,
+          "moatStrength": 1,
+          "riskReduction": 0,
+          "nearTermExecutability": 1
+        }
+      },
+      "gates": {
+        "focusMatch": false,
+        "implementationEvidence": false,
+        "actionability48h": true,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_focus_area_match",
+        "no_implementation_evidence",
+        "relevance_below_threshold:7<17",
+        "importance_below_threshold:2<6"
+      ]
+    },
+    {
+      "sourceType": "news",
+      "id": "https://news.ycombinator.com/item?id=43227853",
+      "title": "We Built AI Agents That Replace Outsourcing Firms (Live with 25 Companies)",
+      "url": "https://news.ycombinator.com/item?id=43227853",
+      "query": "AI agents business execution",
+      "uploader": "hn",
+      "rawScore": 9,
+      "meta": {
+        "points": 5,
+        "comments": 4,
+        "created_at": "2025-03-02T06:05:04Z"
+      },
+      "fingerprint": "b1b676411b6e37231b0bcebd2d6960371edd7cb5",
+      "focusAreasMatched": [],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [],
+        "actionability48h": [],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "execution"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "implementationDepth": 0,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 0,
+        "relevanceTotal": 6,
+        "entrepreneurImportance": 2,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 1,
+          "moatStrength": 0,
+          "riskReduction": 1,
+          "nearTermExecutability": 0
+        }
+      },
+      "gates": {
+        "focusMatch": false,
+        "implementationEvidence": false,
+        "actionability48h": false,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_focus_area_match",
+        "no_implementation_evidence",
+        "no_48h_actionability",
+        "relevance_below_threshold:6<17",
+        "importance_below_threshold:2<6"
+      ]
+    },
+    {
+      "sourceType": "news",
+      "id": "https://news.ycombinator.com/item?id=47117621",
+      "title": "Show HN: Coasty.ai \u2013 We just hit SOTA on OSWorld (computer-use agent benchmark)",
+      "url": "https://news.ycombinator.com/item?id=47117621",
+      "query": "AI agents business execution",
+      "uploader": "hn",
+      "rawScore": 5,
+      "meta": {
+        "points": 2,
+        "comments": 3,
+        "created_at": "2026-02-23T03:13:02Z"
+      },
+      "fingerprint": "2440f07c426f869b588405fd14419872334a5b28",
+      "focusAreasMatched": [],
+      "keywordHits": {
+        "focus": {
+          "agentic_ai_architecture": [],
+          "claude_code_workflows": [],
+          "codex_workflows": [],
+          "ai_business_resources": []
+        },
+        "implementationEvidence": [
+          "benchmark"
+        ],
+        "actionability48h": [],
+        "entrepreneur": {
+          "revenue": [],
+          "delivery": [
+            "execution"
+          ],
+          "moat": [],
+          "risk": []
+        }
+      },
+      "scores": {
+        "relevance": 0,
+        "implementationDepth": 1,
+        "businessLeverage": 1,
+        "novelty": 5,
+        "actionability48h": 0,
+        "relevanceTotal": 7,
+        "entrepreneurImportance": 1,
+        "entrepreneurBreakdown": {
+          "revenueImpact": 0,
+          "timeSavedLeverage": 1,
+          "moatStrength": 0,
+          "riskReduction": 0,
+          "nearTermExecutability": 0
+        }
+      },
+      "gates": {
+        "focusMatch": false,
+        "implementationEvidence": true,
+        "actionability48h": false,
+        "entrepreneurImportance": true
+      },
+      "passed": false,
+      "rejectionReasons": [
+        "no_focus_area_match",
+        "no_48h_actionability",
+        "relevance_below_threshold:7<17",
+        "importance_below_threshold:1<6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,625 @@
+[
+  {
+    "_highlightResult": {
+      "author": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "subh10"
+      },
+      "story_text": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "Hey HN,<p>We’re the team behind Bestsys &amp; Maven AI Agents. We believe the future of work isn’t just AI-assisted—it’s AI-driven. Today, businesses spend over $500B annually on outsourcing repetitive work (finance, HR, customer support, data entry). We built Maven AI Agents to replace human-driven outsourcing with autonomous AI workers that learn, execute, and improve over time.<p>How It Works:\nMaven AI Agents learn workflows by observing human employees.\nThey autonomously execute tasks with near-human accuracy and 24/7 availability.\nUnlike RPA or AI assistants, they don’t just assist—they replace entire teams.\nWhy Now?\nBusinesses are realizing generic AI isn’t enough—they need company-trained AI workers.\nThe shift from SaaS (tools) to SaaS 2.0 (autonomous execution) is happening now.\nAdvances in LLMs &amp; multi-agent AI enable scalable, company-specific automation.\nTraction So Far\n25+ companies onboarded\nAI agents improving at 64% efficiency per month\nAutomating finance, HR, and customer workflows for real businesses\nPreparing for multi-tenancy &amp; SaaS launch\nWhat’s Next?\nWe’re scaling quickly and looking for feedback from developers, AI researchers, and startup founders. If you’re building in the AI automation space, we’d love to hear your thoughts.<p>→ Try Bestsys (early access): Bestsys.co<p>What do you think about AI replacing human outsourcing?"
+      },
+      "title": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "We Built AI Agents That Replace Outsourcing Firms (Live with 25 Companies)"
+      }
+    },
+    "_tags": [
+      "story",
+      "author_subh10",
+      "story_43227853",
+      "ask_hn"
+    ],
+    "author": "subh10",
+    "children": [
+      43227888,
+      43227896,
+      43228049,
+      43229942
+    ],
+    "created_at": "2025-03-02T06:05:04Z",
+    "created_at_i": 1740895504,
+    "num_comments": 4,
+    "objectID": "43227853",
+    "points": 5,
+    "story_id": 43227853,
+    "story_text": "Hey HN,<p>We’re the team behind Bestsys &amp; Maven AI Agents. We believe the future of work isn’t just AI-assisted—it’s AI-driven. Today, businesses spend over $500B annually on outsourcing repetitive work (finance, HR, customer support, data entry). We built Maven AI Agents to replace human-driven outsourcing with autonomous AI workers that learn, execute, and improve over time.<p>How It Works:\nMaven AI Agents learn workflows by observing human employees.\nThey autonomously execute tasks with near-human accuracy and 24&#x2F;7 availability.\nUnlike RPA or AI assistants, they don’t just assist—they replace entire teams.\nWhy Now?\nBusinesses are realizing generic AI isn’t enough—they need company-trained AI workers.\nThe shift from SaaS (tools) to SaaS 2.0 (autonomous execution) is happening now.\nAdvances in LLMs &amp; multi-agent AI enable scalable, company-specific automation.\nTraction So Far\n25+ companies onboarded\nAI agents improving at 64% efficiency per month\nAutomating finance, HR, and customer workflows for real businesses\nPreparing for multi-tenancy &amp; SaaS launch\nWhat’s Next?\nWe’re scaling quickly and looking for feedback from developers, AI researchers, and startup founders. If you’re building in the AI automation space, we’d love to hear your thoughts.<p>→ Try Bestsys (early access): Bestsys.co<p>What do you think about AI replacing human outsourcing?",
+    "title": "We Built AI Agents That Replace Outsourcing Firms (Live with 25 Companies)",
+    "updated_at": "2025-03-04T07:01:58Z",
+    "url": "",
+    "hn_url": "https://news.ycombinator.com/item?id=43227853",
+    "comments": 4,
+    "query": "AI agents business execution",
+    "score": 9
+  },
+  {
+    "_highlightResult": {
+      "author": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "edunteman"
+      },
+      "story_text": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "Hi HN! Erik here from Pig.dev, and today I'd like to share a new project we've just open sourced:<p>Muscle Mem is an SDK that records your agent's tool-calling patterns as it solves tasks, and will deterministically replay those learned trajectories whenever the task is encountered again, falling back to agent mode if edge cases are detected. Like a JIT compiler, for behaviors.<p>At Pig, we built computer-use agents for automating legacy Windows applications (healthcare, lending, manufacturing, etc).<p>A recurring theme we ran into was that businesses <i>already</i> had RPA (pure-software scripts), and it worked for them in most cases. The pull to agents as an RPA alternative was <i>not</i> to have an infinitely flexible &quot;AI Employees&quot; as tech Twitter/X may want you to think, but simply because their RPA breaks under occasional edge-cases and agents can gracefully handle those cases.<p>Using a pure-agent approach proved to be highly wasteful. Window's accessibility APIs are poor, so you're generally stuck using pure-vision agents, which can run around $40/hr in token costs and take 5x longer than a human to perform a workflow. At this point, you're better off hiring a human.<p>The goal of Muscle-Mem is to get LLMs out of the hot path of repetitive automations, intelligently swapping between script-based execution for repeat cases, and agent-based automations for discovery and self-healing.<p>While inspired by computer-use environments, Muscle Mem is designed to generalize to any automation performing discrete tasks in dynamic environments. It took a great deal of thought to figure out an API that generalizes, which I cover more deeply in this blog:\n<a href=\"https://erikdunteman.com/blog/muscle-mem/\" rel=\"nofollow\">https://erikdunteman.com/blog/muscle-mem/</a><p>Check out the repo, consider giving it a star, or dive deeper into the above blog. I look forward to your feedback!"
+      },
+      "title": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "Show HN: Muscle-Mem, a behavior cache for AI agents"
+      },
+      "url": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "https://github.com/pig-dot-dev/muscle-mem"
+      }
+    },
+    "_tags": [
+      "story",
+      "author_edunteman",
+      "story_43988381",
+      "show_hn"
+    ],
+    "author": "edunteman",
+    "children": [
+      43991197,
+      43989752,
+      43988789,
+      43992832,
+      43990420,
+      43989430,
+      43988590,
+      43989033,
+      43989862,
+      43989464,
+      43991632,
+      43994379,
+      43991958,
+      43989416,
+      43990883,
+      43989296,
+      43989110,
+      43988980,
+      43992034,
+      43989382,
+      43990185,
+      43992435,
+      43994344
+    ],
+    "created_at": "2025-05-14T19:38:26Z",
+    "created_at_i": 1747251506,
+    "num_comments": 51,
+    "objectID": "43988381",
+    "points": 226,
+    "story_id": 43988381,
+    "story_text": "Hi HN! Erik here from Pig.dev, and today I&#x27;d like to share a new project we&#x27;ve just open sourced:<p>Muscle Mem is an SDK that records your agent&#x27;s tool-calling patterns as it solves tasks, and will deterministically replay those learned trajectories whenever the task is encountered again, falling back to agent mode if edge cases are detected. Like a JIT compiler, for behaviors.<p>At Pig, we built computer-use agents for automating legacy Windows applications (healthcare, lending, manufacturing, etc).<p>A recurring theme we ran into was that businesses <i>already</i> had RPA (pure-software scripts), and it worked for them in most cases. The pull to agents as an RPA alternative was <i>not</i> to have an infinitely flexible &quot;AI Employees&quot; as tech Twitter&#x2F;X may want you to think, but simply because their RPA breaks under occasional edge-cases and agents can gracefully handle those cases.<p>Using a pure-agent approach proved to be highly wasteful. Window&#x27;s accessibility APIs are poor, so you&#x27;re generally stuck using pure-vision agents, which can run around $40&#x2F;hr in token costs and take 5x longer than a human to perform a workflow. At this point, you&#x27;re better off hiring a human.<p>The goal of Muscle-Mem is to get LLMs out of the hot path of repetitive automations, intelligently swapping between script-based execution for repeat cases, and agent-based automations for discovery and self-healing.<p>While inspired by computer-use environments, Muscle Mem is designed to generalize to any automation performing discrete tasks in dynamic environments. It took a great deal of thought to figure out an API that generalizes, which I cover more deeply in this blog:\n<a href=\"https:&#x2F;&#x2F;erikdunteman.com&#x2F;blog&#x2F;muscle-mem&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;erikdunteman.com&#x2F;blog&#x2F;muscle-mem&#x2F;</a><p>Check out the repo, consider giving it a star, or dive deeper into the above blog. I look forward to your feedback!",
+    "title": "Show HN: Muscle-Mem, a behavior cache for AI agents",
+    "updated_at": "2025-10-29T05:50:06Z",
+    "url": "https://github.com/pig-dot-dev/muscle-mem",
+    "hn_url": "https://news.ycombinator.com/item?id=43988381",
+    "comments": 51,
+    "query": "AI agents business execution",
+    "score": 277
+  },
+  {
+    "_highlightResult": {
+      "author": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "mceoin"
+      },
+      "story_text": {
+        "fullyHighlighted": false,
+        "matchLevel": "full",
+        "matchedWords": [
+          "ai",
+          "agents",
+          "business",
+          "execution"
+        ],
+        "value": "Hi HN, I’m Eoin, founder of Sourcetable (<a href=\"https://sourcetable.com\" rel=\"nofollow\">https://sourcetable.com</a>).<p>Today, we’re launching Superagents. You can now connect your spreadsheet to any database, API or MCP server on the Internet. All of that data is available inside your spreadsheet, and you can use <em>AI</em> to analyze it and build models, reports and visualizations.<p>The reason I started the company is because I spent 10 years at startups across engineering and operations roles and realized that Excel and Sheets weren't architected for the modern information environment. This creates a tremendous amount of nuisance and busywork cobbling together SaaS tools, reporting suites, and the misery of endless coordination meetings to make it all happen. (Boo meetings!)<p>Spreadsheets aren’t just a <em>business</em> application: they’re the original thinking tool. The quality of these tools has a downstream impact on analytical thinking and creativity writ large, so this is a problem worth solving. Fast forward to today, we’re a 6 person team taking on Excel, Sheets and ChatGPT, so we’re excited to hear what you think!<p>Who are Superagents for?\nAnalysts, operators, and anyone doing data-centric work in spreadsheets. We see a tonne of finance people, of course, but also students, researchers and mom &amp; pop shops. Sourcetable's superagents democratize data access and analysis, which is nice because our company’s mission is to make data accessible to everyone.<p>Why “Superagents”? \nBecause they can plan and orchestrate other task-specific <em>agents</em> to complete your work for you. We have a lot of different <em>AI</em> tools and <em>agents</em> inside Sourcetable, but there’s a whole lot more on the Agentic Web. Superagents are like the conductor that coordinates them all and calls on them when needed. Also, it’s a fun feature name (thanks, Alyssa!)<p>If you remember the linked-data dream of the semantic web movement, that future is now: all of your <em>business</em> data is available and connected in Sourcetable.<p>How does it work?\nSourcetable is running a python virtual machine under the hood. Everything is sandboxed, and there are hundreds of <em>AI</em> tools and libraries our <em>AI</em> can access. Superagents are also doing code-gen on the fly to solve problems. The closest system we have found is Replit’s sandboxed operating systems. Beyond that Mixtral, ChatGPT and Anthropic offer some limited data connectivity features, except these <em>AI</em> chat services lack the storage, compute, and code <em>execution</em> that Sourcetable and Replit provide. This is all very new.<p>How is this different to your previous data connectors, etc? \nWe started out using ETL services to sync data and provide a GUI-driven PowerBI like experience in your spreadsheet. This was useful for people who knew SQL and how to write joins to combine fragmented data, but for everyone else (read: practically everyone), this solution just didn’t provide the frictionless, self-serve experience that we wanted.<p>Our choices were to switch the GTM motion or change the product, so we shelved that reporting suite and focused on our <em>AI</em> spreadsheet and waited for models to catch up with our ambitions. Now that they have, we’re re-launching Sourcetable with our original goal in mind: building a spreadsheet-based operating system for the Agent Web, with fully networked data access for <i>everyone</i> on your team.<p><em>AI</em> is the great UX enabler.<p>Caveats:<p>* We heavily use Postgres, Google Analytics, Stripe and Google Search Console with Superagents.<p>* We haven’t tested every endpoint on the Internet. We find that mainstream, well documented applications work best.<p>* Yes, you can write data back to 3rd party applications and databases. We generally advise against this unless you understand the risks involved in giving <em>AI</em> write-access to your data.<p>Bonus round:<p>* All data connectors added during this launch week are FREE. (Regular <em>AI</em> messaging limits still apply.)<p>Product Feedback?\neoin@sourcetable.com"
+      },
+      "title": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "Show HN: Superagents – connect spreadsheets to any database, API or MCP server"
+      },
+      "url": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "https://sourcetable.com/superagents"
+      }
+    },
+    "_tags": [
+      "story",
+      "author_mceoin",
+      "story_45186904",
+      "show_hn"
+    ],
+    "author": "mceoin",
+    "children": [
+      45187116,
+      45191577,
+      45187372,
+      45189407,
+      45191634,
+      45193184,
+      45191690,
+      45187200,
+      45207752
+    ],
+    "created_at": "2025-09-09T18:55:35Z",
+    "created_at_i": 1757444135,
+    "num_comments": 13,
+    "objectID": "45186904",
+    "points": 35,
+    "story_id": 45186904,
+    "story_text": "Hi HN, I’m Eoin, founder of Sourcetable (<a href=\"https:&#x2F;&#x2F;sourcetable.com\" rel=\"nofollow\">https:&#x2F;&#x2F;sourcetable.com</a>).<p>Today, we’re launching Superagents. You can now connect your spreadsheet to any database, API or MCP server on the Internet. All of that data is available inside your spreadsheet, and you can use AI to analyze it and build models, reports and visualizations.<p>The reason I started the company is because I spent 10 years at startups across engineering and operations roles and realized that Excel and Sheets weren&#x27;t architected for the modern information environment. This creates a tremendous amount of nuisance and busywork cobbling together SaaS tools, reporting suites, and the misery of endless coordination meetings to make it all happen. (Boo meetings!)<p>Spreadsheets aren’t just a business application: they’re the original thinking tool. The quality of these tools has a downstream impact on analytical thinking and creativity writ large, so this is a problem worth solving. Fast forward to today, we’re a 6 person team taking on Excel, Sheets and ChatGPT, so we’re excited to hear what you think!<p>Who are Superagents for?\nAnalysts, operators, and anyone doing data-centric work in spreadsheets. We see a tonne of finance people, of course, but also students, researchers and mom &amp; pop shops. Sourcetable&#x27;s superagents democratize data access and analysis, which is nice because our company’s mission is to make data accessible to everyone.<p>Why “Superagents”? \nBecause they can plan and orchestrate other task-specific agents to complete your work for you. We have a lot of different AI tools and agents inside Sourcetable, but there’s a whole lot more on the Agentic Web. Superagents are like the conductor that coordinates them all and calls on them when needed. Also, it’s a fun feature name (thanks, Alyssa!)<p>If you remember the linked-data dream of the semantic web movement, that future is now: all of your business data is available and connected in Sourcetable.<p>How does it work?\nSourcetable is running a python virtual machine under the hood. Everything is sandboxed, and there are hundreds of AI tools and libraries our AI can access. Superagents are also doing code-gen on the fly to solve problems. The closest system we have found is Replit’s sandboxed operating systems. Beyond that Mixtral, ChatGPT and Anthropic offer some limited data connectivity features, except these AI chat services lack the storage, compute, and code execution that Sourcetable and Replit provide. This is all very new.<p>How is this different to your previous data connectors, etc? \nWe started out using ETL services to sync data and provide a GUI-driven PowerBI like experience in your spreadsheet. This was useful for people who knew SQL and how to write joins to combine fragmented data, but for everyone else (read: practically everyone), this solution just didn’t provide the frictionless, self-serve experience that we wanted.<p>Our choices were to switch the GTM motion or change the product, so we shelved that reporting suite and focused on our AI spreadsheet and waited for models to catch up with our ambitions. Now that they have, we’re re-launching Sourcetable with our original goal in mind: building a spreadsheet-based operating system for the Agent Web, with fully networked data access for <i>everyone</i> on your team.<p>AI is the great UX enabler.<p>Caveats:<p>* We heavily use Postgres, Google Analytics, Stripe and Google Search Console with Superagents.<p>* We haven’t tested every endpoint on the Internet. We find that mainstream, well documented applications work best.<p>* Yes, you can write data back to 3rd party applications and databases. We generally advise against this unless you understand the risks involved in giving AI write-access to your data.<p>Bonus round:<p>* All data connectors added during this launch week are FREE. (Regular AI messaging limits still apply.)<p>Product Feedback?\neoin@sourcetable.com",
+    "title": "Show HN: Superagents – connect spreadsheets to any database, API or MCP server",
+    "updated_at": "2025-09-11T18:11:15Z",
+    "url": "https://sourcetable.com/superagents",
+    "hn_url": "https://news.ycombinator.com/item?id=45186904",
+    "comments": 13,
+    "query": "AI agents business execution",
+    "score": 48
+  },
+  {
+    "_highlightResult": {
+      "author": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "Mrakermo"
+      },
+      "story_text": {
+        "fullyHighlighted": false,
+        "matchLevel": "partial",
+        "matchedWords": [
+          "ai",
+          "workflows"
+        ],
+        "value": "Hi HN,<p>I’m Eric, and I built www.meetgoran.com<p>Goran is a Mac/Windows desktop app for sales teams that turns your calls into actionable coaching: what was covered (and what wasn’t), what to improve next time, and patterns across reps.<p>First 5 meetings free (no credit card) ~ 10 min setup.<p>Connect Google Calendar so it can join scheduled meetings and capture the call context<p>What it does (practical, not “<em>AI</em> magic”):<p>- Produces structured sales notes + highlights key moments (pricing pushback, next steps, etc.)<p>- Scores calls against frameworks like MEDDIC/BANT (or your own checklist)<p>- Helps managers compare “top vs median” behaviors without rewatching hours of recordings<p>- Makes good examples searchable so new reps can copy what’s already working<p>Why I built it:<p>In most teams, the best talk-tracks stay trapped in recordings nobody rewatches, and managers don’t have time to coach every rep. I wanted something that turns calls into a “self-building playbook” reps will actually use.<p>What I’d love feedback on:<p>- Where would this not fit (team size, <em>workflow</em>, compliance constraints)?<p>- What should be the “default” output: rep coaching, manager dashboard, or team playbook?<p>Super happy with all responses."
+      },
+      "title": {
+        "fullyHighlighted": false,
+        "matchLevel": "partial",
+        "matchedWords": [
+          "founder",
+          "automation"
+        ],
+        "value": "Show HN: <em>Automati</em>cally build sales playbook. For <em>founders</em> doing sales"
+      }
+    },
+    "_tags": [
+      "story",
+      "author_Mrakermo",
+      "story_46710688",
+      "show_hn"
+    ],
+    "author": "Mrakermo",
+    "children": [
+      46713720
+    ],
+    "created_at": "2026-01-21T19:53:35Z",
+    "created_at_i": 1769025215,
+    "num_comments": 1,
+    "objectID": "46710688",
+    "points": 9,
+    "story_id": 46710688,
+    "story_text": "Hi HN,<p>I’m Eric, and I built www.meetgoran.com<p>Goran is a Mac&#x2F;Windows desktop app for sales teams that turns your calls into actionable coaching: what was covered (and what wasn’t), what to improve next time, and patterns across reps.<p>First 5 meetings free (no credit card) ~ 10 min setup.<p>Connect Google Calendar so it can join scheduled meetings and capture the call context<p>What it does (practical, not “AI magic”):<p>- Produces structured sales notes + highlights key moments (pricing pushback, next steps, etc.)<p>- Scores calls against frameworks like MEDDIC&#x2F;BANT (or your own checklist)<p>- Helps managers compare “top vs median” behaviors without rewatching hours of recordings<p>- Makes good examples searchable so new reps can copy what’s already working<p>Why I built it:<p>In most teams, the best talk-tracks stay trapped in recordings nobody rewatches, and managers don’t have time to coach every rep. I wanted something that turns calls into a “self-building playbook” reps will actually use.<p>What I’d love feedback on:<p>- Where would this not fit (team size, workflow, compliance constraints)?<p>- What should be the “default” output: rep coaching, manager dashboard, or team playbook?<p>Super happy with all responses.",
+    "title": "Show HN: Automatically build sales playbook. For founders doing sales",
+    "updated_at": "2026-01-23T05:53:19Z",
+    "url": "",
+    "hn_url": "https://news.ycombinator.com/item?id=46710688",
+    "comments": 1,
+    "query": "AI founder workflows automation",
+    "score": 10
+  },
+  {
+    "_highlightResult": {
+      "author": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "ljhskyso7"
+      },
+      "story_text": {
+        "fullyHighlighted": false,
+        "matchLevel": "full",
+        "matchedWords": [
+          "ai",
+          "founder",
+          "workflows",
+          "automation"
+        ],
+        "value": "Hi HN — I’m Kimi, <em>founder</em> of Aident <em>AI</em>.<p>A couple years ago, I cold-started a startup and tried to automate my outreach pipeline with a patchwork: RPA + Zapier + &quot;just some ChatGPT&quot;.<p>It worked… until it didn’t. Every time I tweaked the strategy, the <em>automation</em> snapped. The system wasn’t built for change — it was built for wiring.<p>And that’s when it hit me: <em>AI</em> is finally smart enough to do real work, but we still don’t have a clean way to communicate the work to it: Drag-and-drop flows are too rigid; Scripts are too fragile; Prompts are too ephemeral. I kept thinking: why can’t <em>automation</em> be something you can simply read, edit, and trust?<p>So we built Aident around one idea: the source of truth is a document.<p>You write a Playbook in plain English (objectives, roles, handoffs), Aiden helps refine it, then we compile it into a reliable agent team (with built-in PM + QA roles) that executes skills with your 250+ tools (Gmail, Slack, Notion, Google Sheets/Calendar, GitHub, etc.). You can test it, schedule it, and then forget about it - it will keep delivering, even when you sleep.<p>It’s still early beta and can be bumpy sometimes, but I’d really appreciate you give it a try and let me know your feedbacks:<p>What <em>workflow</em> would you try first?\nWhere would this be a bad fit (compliance, data sensitivity, team size)?\nWhat would make you trust it enough to run unattended?<p>Try @ <a href=\"https://app.aident.ai\" rel=\"nofollow\">https://app.aident.<em>ai</em></a>"
+      },
+      "title": {
+        "fullyHighlighted": false,
+        "matchLevel": "partial",
+        "matchedWords": [
+          "automation"
+        ],
+        "value": "Show HN: Aident, agentic <em>automations</em> as plain-English playbooks"
+      },
+      "url": {
+        "fullyHighlighted": false,
+        "matchLevel": "partial",
+        "matchedWords": [
+          "ai"
+        ],
+        "value": "https://aident.<em>ai</em>/"
+      }
+    },
+    "_tags": [
+      "story",
+      "author_ljhskyso7",
+      "story_46715824",
+      "show_hn"
+    ],
+    "author": "ljhskyso7",
+    "created_at": "2026-01-22T06:04:02Z",
+    "created_at_i": 1769061842,
+    "num_comments": 0,
+    "objectID": "46715824",
+    "points": 4,
+    "story_id": 46715824,
+    "story_text": "Hi HN — I’m Kimi, founder of Aident AI.<p>A couple years ago, I cold-started a startup and tried to automate my outreach pipeline with a patchwork: RPA + Zapier + &quot;just some ChatGPT&quot;.<p>It worked… until it didn’t. Every time I tweaked the strategy, the automation snapped. The system wasn’t built for change — it was built for wiring.<p>And that’s when it hit me: AI is finally smart enough to do real work, but we still don’t have a clean way to communicate the work to it: Drag-and-drop flows are too rigid; Scripts are too fragile; Prompts are too ephemeral. I kept thinking: why can’t automation be something you can simply read, edit, and trust?<p>So we built Aident around one idea: the source of truth is a document.<p>You write a Playbook in plain English (objectives, roles, handoffs), Aiden helps refine it, then we compile it into a reliable agent team (with built-in PM + QA roles) that executes skills with your 250+ tools (Gmail, Slack, Notion, Google Sheets&#x2F;Calendar, GitHub, etc.). You can test it, schedule it, and then forget about it - it will keep delivering, even when you sleep.<p>It’s still early beta and can be bumpy sometimes, but I’d really appreciate you give it a try and let me know your feedbacks:<p>What workflow would you try first?\nWhere would this be a bad fit (compliance, data sensitivity, team size)?\nWhat would make you trust it enough to run unattended?<p>Try @ <a href=\"https:&#x2F;&#x2F;app.aident.ai\" rel=\"nofollow\">https:&#x2F;&#x2F;app.aident.ai</a>",
+    "title": "Show HN: Aident, agentic automations as plain-English playbooks",
+    "updated_at": "2026-01-22T06:12:09Z",
+    "url": "https://aident.ai/",
+    "hn_url": "https://news.ycombinator.com/item?id=46715824",
+    "comments": 0,
+    "query": "AI founder workflows automation",
+    "score": 4
+  },
+  {
+    "_highlightResult": {
+      "author": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "vincentjiang"
+      },
+      "story_text": {
+        "fullyHighlighted": false,
+        "matchLevel": "full",
+        "matchedWords": [
+          "ai",
+          "agents",
+          "business",
+          "execution"
+        ],
+        "value": "Hi HN,<p>I’m Vincent from Aden. We spent 4 years building ERP automation for construction (PO/invoice reconciliation). We had real enterprise customers but hit a technical wall: Chatbots aren't for real work. Accountants don't want to chat; they want the ledger reconciled while they sleep. They want services, not tools.<p>Existing <em>agent</em> frameworks (LangChain, AutoGPT) failed in production - brittle, looping, and unable to handle messy data. General Computer Use (GCU) frameworks were even worse. My reflections:<p>1. The &quot;Toy App&quot; Ceiling &amp; GCU Trap\nMost frameworks assume synchronous sessions. If the tab closes, state is lost. You can't fit 2 weeks of asynchronous <em>business</em> state into an ephemeral chat session.<p>The GCU hype (<em>agents</em> &quot;looking&quot; at screens) is skeuomorphic. It’s slow (screenshots), expensive (tokens), and fragile (UI changes = crash). It mimics human constraints rather than leveraging machine speed. Real automation should be headless.<p>2. Inversion of Control: OODA &gt; DAGs\nTraditional DAGs are deterministic; if a step fails, the program crashes. In the <em>AI</em> era, the Goal is the law, not the Code. We use an OODA loop to manage stochastic behavior:<p>- Observe: <em>Exception</em>s are observations (FileNotFound = new state), not crashes.<p>- Orient: Adjust strategy based on Memory and - Traits.<p>- Decide: Generate new code at runtime.<p>- Act: Execute.<p>The topology shouldn't be hardcoded; it should emerge from the task's entropy.<p>3. Reliability: The &quot;Synthetic&quot; SLA\nYou can't guarantee one inference ($k=1$) is correct, but you can guarantee a System of Inference ($k=n$) converges on correctness. Reliability is now a function of compute budget. By wrapping an 80% accurate model in a &quot;Best-of-3&quot; verification loop, we mathematically force the error rate down—trading Latency/Tokens for Certainty.<p>4. Biology &amp; Psychology in Code\n&quot;Hard Logic&quot; can't solve &quot;Soft Problems.&quot; We map cognition to architectural primitives:\nHomeostasis: Solving &quot;Perseveration&quot; (infinite loops) via a &quot;Stress&quot; metric. If an action fails 3x, &quot;neuroplasticity&quot; drops, forcing a strategy shift.\nTraits: Personality as a constraint. &quot;High Conscientiousness&quot; increases verification; &quot;High Risk&quot; executes DROP TABLE without asking.<p>For the industry, we need engineers interested in the intersection of biology, psychology, and distributed systems to help us move beyond brittle scripts. It'd be great to have you roasting my codes and sharing feedback.<p>Repo: <a href=\"https://github.com/adenhq/hive\" rel=\"nofollow\">https://github.com/adenhq/hive</a>"
+      },
+      "title": {
+        "fullyHighlighted": false,
+        "matchLevel": "partial",
+        "matchedWords": [
+          "agents"
+        ],
+        "value": "Show HN: <em>Agent</em> framework that generates its own topology and evolves at runtime"
+      },
+      "url": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "https://github.com/adenhq/hive/blob/main/README.md"
+      }
+    },
+    "_tags": [
+      "story",
+      "author_vincentjiang",
+      "story_46979781",
+      "show_hn"
+    ],
+    "author": "vincentjiang",
+    "children": [
+      46985184,
+      46983530,
+      46979829,
+      46984427,
+      47023581,
+      46985688,
+      47023564,
+      46986043,
+      46984074,
+      46982575,
+      46982586,
+      46983313,
+      47021920,
+      47021914,
+      46986893,
+      46988099,
+      46985739,
+      46987006,
+      46985061,
+      46985278,
+      46986448,
+      46985824,
+      46986672,
+      46995150,
+      46985302,
+      46986266,
+      46985290,
+      46982863,
+      46985026,
+      46985133,
+      46985003,
+      47034782,
+      46984748,
+      46984556,
+      46983301,
+      46985231,
+      46984721,
+      46984927,
+      46985243,
+      46984441,
+      46985463,
+      46984731
+    ],
+    "created_at": "2026-02-11T19:39:43Z",
+    "created_at_i": 1770838783,
+    "num_comments": 36,
+    "objectID": "46979781",
+    "points": 107,
+    "story_id": 46979781,
+    "story_text": "Hi HN,<p>I’m Vincent from Aden. We spent 4 years building ERP automation for construction (PO&#x2F;invoice reconciliation). We had real enterprise customers but hit a technical wall: Chatbots aren&#x27;t for real work. Accountants don&#x27;t want to chat; they want the ledger reconciled while they sleep. They want services, not tools.<p>Existing agent frameworks (LangChain, AutoGPT) failed in production - brittle, looping, and unable to handle messy data. General Computer Use (GCU) frameworks were even worse. My reflections:<p>1. The &quot;Toy App&quot; Ceiling &amp; GCU Trap\nMost frameworks assume synchronous sessions. If the tab closes, state is lost. You can&#x27;t fit 2 weeks of asynchronous business state into an ephemeral chat session.<p>The GCU hype (agents &quot;looking&quot; at screens) is skeuomorphic. It’s slow (screenshots), expensive (tokens), and fragile (UI changes = crash). It mimics human constraints rather than leveraging machine speed. Real automation should be headless.<p>2. Inversion of Control: OODA &gt; DAGs\nTraditional DAGs are deterministic; if a step fails, the program crashes. In the AI era, the Goal is the law, not the Code. We use an OODA loop to manage stochastic behavior:<p>- Observe: Exceptions are observations (FileNotFound = new state), not crashes.<p>- Orient: Adjust strategy based on Memory and - Traits.<p>- Decide: Generate new code at runtime.<p>- Act: Execute.<p>The topology shouldn&#x27;t be hardcoded; it should emerge from the task&#x27;s entropy.<p>3. Reliability: The &quot;Synthetic&quot; SLA\nYou can&#x27;t guarantee one inference ($k=1$) is correct, but you can guarantee a System of Inference ($k=n$) converges on correctness. Reliability is now a function of compute budget. By wrapping an 80% accurate model in a &quot;Best-of-3&quot; verification loop, we mathematically force the error rate down—trading Latency&#x2F;Tokens for Certainty.<p>4. Biology &amp; Psychology in Code\n&quot;Hard Logic&quot; can&#x27;t solve &quot;Soft Problems.&quot; We map cognition to architectural primitives:\nHomeostasis: Solving &quot;Perseveration&quot; (infinite loops) via a &quot;Stress&quot; metric. If an action fails 3x, &quot;neuroplasticity&quot; drops, forcing a strategy shift.\nTraits: Personality as a constraint. &quot;High Conscientiousness&quot; increases verification; &quot;High Risk&quot; executes DROP TABLE without asking.<p>For the industry, we need engineers interested in the intersection of biology, psychology, and distributed systems to help us move beyond brittle scripts. It&#x27;d be great to have you roasting my codes and sharing feedback.<p>Repo: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;adenhq&#x2F;hive\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;adenhq&#x2F;hive</a>",
+    "title": "Show HN: Agent framework that generates its own topology and evolves at runtime",
+    "updated_at": "2026-02-28T02:19:56Z",
+    "url": "https://github.com/adenhq/hive/blob/main/README.md",
+    "hn_url": "https://news.ycombinator.com/item?id=46979781",
+    "comments": 36,
+    "query": "AI agents business execution",
+    "score": 143
+  },
+  {
+    "_highlightResult": {
+      "author": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "robeym"
+      },
+      "story_text": {
+        "fullyHighlighted": false,
+        "matchLevel": "full",
+        "matchedWords": [
+          "ai",
+          "founder",
+          "workflows",
+          "automation"
+        ],
+        "value": "I'm a developer who built an ERP/CRM system for small manufacturers (https://www.paxerp.com). It does all the basics very well; financial reporting, lot tracking, production planning, shipping carrier integrations, the usual <em>workflow</em> stuff—but there's zero <em>AI</em> in it.\nIt's just fast, clean, and solves real problems I saw working in manufacturing ERP systems. The product works well, customers really like it, but I have almost no sales experience.<p>Every SaaS <em>founder</em> seems to be talking about &quot;<em>AI</em>-powered insights&quot; and &quot;intelligent <em>automation</em>.&quot; while... We just have a clean system that is fast and tries to stay out of the user's way.<p>For those who've sold B2B SaaS (especially to traditional industries like manufacturing):<p>- Is &quot;no <em>AI</em>&quot; actually a disadvantage, or does it not matter as much as I think?<p>- How do I communicate value when the value is &quot;it's simple and fast, and your data is highly accessible&quot; vs &quot;revolutionary <em>AI</em>&quot;?<p>- Should I be adding <em>AI</em> features just to check a marketing box, even if customers don't need them?<p>You can learn more about why I built this on the websites about page. But now I'm wondering if I'm fighting an uphill battle by not having the buzzwords everyone else does.<p>Any advice from founders who've been here?<p>TY"
+      },
+      "title": {
+        "fullyHighlighted": false,
+        "matchLevel": "partial",
+        "matchedWords": [
+          "ai"
+        ],
+        "value": "Ask HN: How to sell SaaS without <em>AI</em> features in 2026?"
+      }
+    },
+    "_tags": [
+      "story",
+      "author_robeym",
+      "story_47023609",
+      "ask_hn"
+    ],
+    "author": "robeym",
+    "children": [
+      47023748,
+      47023877,
+      47023657
+    ],
+    "created_at": "2026-02-15T13:45:28Z",
+    "created_at_i": 1771163128,
+    "num_comments": 4,
+    "objectID": "47023609",
+    "points": 1,
+    "story_id": 47023609,
+    "story_text": "I&#x27;m a developer who built an ERP&#x2F;CRM system for small manufacturers (https:&#x2F;&#x2F;www.paxerp.com). It does all the basics very well; financial reporting, lot tracking, production planning, shipping carrier integrations, the usual workflow stuff—but there&#x27;s zero AI in it.\nIt&#x27;s just fast, clean, and solves real problems I saw working in manufacturing ERP systems. The product works well, customers really like it, but I have almost no sales experience.<p>Every SaaS founder seems to be talking about &quot;AI-powered insights&quot; and &quot;intelligent automation.&quot; while... We just have a clean system that is fast and tries to stay out of the user&#x27;s way.<p>For those who&#x27;ve sold B2B SaaS (especially to traditional industries like manufacturing):<p>- Is &quot;no AI&quot; actually a disadvantage, or does it not matter as much as I think?<p>- How do I communicate value when the value is &quot;it&#x27;s simple and fast, and your data is highly accessible&quot; vs &quot;revolutionary AI&quot;?<p>- Should I be adding AI features just to check a marketing box, even if customers don&#x27;t need them?<p>You can learn more about why I built this on the websites about page. But now I&#x27;m wondering if I&#x27;m fighting an uphill battle by not having the buzzwords everyone else does.<p>Any advice from founders who&#x27;ve been here?<p>TY",
+    "title": "Ask HN: How to sell SaaS without AI features in 2026?",
+    "updated_at": "2026-02-15T21:28:12Z",
+    "url": "",
+    "hn_url": "https://news.ycombinator.com/item?id=47023609",
+    "comments": 4,
+    "query": "AI founder workflows automation",
+    "score": 5
+  },
+  {
+    "_highlightResult": {
+      "author": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "uejfiweun"
+      },
+      "story_text": {
+        "fullyHighlighted": false,
+        "matchLevel": "full",
+        "matchedWords": [
+          "ai",
+          "founder",
+          "workflows",
+          "automation"
+        ],
+        "value": "At my large tech company, we're all being pushed to use <em>AI</em>. I, and most people I work with, have had success using the chatbots and Cursor-style tools and more recently Claude Code to accelerate the process of writing code.<p>Yet, with a few people in my network, it's like they're living 10 years ahead. Guys are <em>automatin</em>g everything in their jobs, spinning up 10 specialized agents at a time and running multi-agent pipelines, just doing all sorts of crazy things with this tech that I just can't even fathom. It seems like it's making them way more productive.<p>I have <em>found</em> a way to fit code-writing and question-answering chatbots into my <em>workflow</em>. I have NOT done the same in terms of these crazy Agent setups. There's clearly a way to leverage these tools to turbocharge your productivity, like at least 2x or maybe even 10x. But what is it?<p>Are there any Agentic power users out there who can enlighten me? What are the best ways to take advantage of these new tools?"
+      },
+      "title": {
+        "fullyHighlighted": false,
+        "matchLevel": "partial",
+        "matchedWords": [
+          "ai"
+        ],
+        "value": "Ask HN: Any <em>AI</em> / Agent power users out there? Do you have any tips?"
+      }
+    },
+    "_tags": [
+      "story",
+      "author_uejfiweun",
+      "story_47058199",
+      "ask_hn"
+    ],
+    "author": "uejfiweun",
+    "children": [
+      47059094,
+      47078469,
+      47070192,
+      47059255,
+      47079839,
+      47072058,
+      47060319,
+      47073583,
+      47061034,
+      47063412,
+      47087181
+    ],
+    "created_at": "2026-02-18T07:15:50Z",
+    "created_at_i": 1771398950,
+    "num_comments": 9,
+    "objectID": "47058199",
+    "points": 9,
+    "story_id": 47058199,
+    "story_text": "At my large tech company, we&#x27;re all being pushed to use AI. I, and most people I work with, have had success using the chatbots and Cursor-style tools and more recently Claude Code to accelerate the process of writing code.<p>Yet, with a few people in my network, it&#x27;s like they&#x27;re living 10 years ahead. Guys are automating everything in their jobs, spinning up 10 specialized agents at a time and running multi-agent pipelines, just doing all sorts of crazy things with this tech that I just can&#x27;t even fathom. It seems like it&#x27;s making them way more productive.<p>I have found a way to fit code-writing and question-answering chatbots into my workflow. I have NOT done the same in terms of these crazy Agent setups. There&#x27;s clearly a way to leverage these tools to turbocharge your productivity, like at least 2x or maybe even 10x. But what is it?<p>Are there any Agentic power users out there who can enlighten me? What are the best ways to take advantage of these new tools?",
+    "title": "Ask HN: Any AI / Agent power users out there? Do you have any tips?",
+    "updated_at": "2026-03-01T12:05:08Z",
+    "url": "",
+    "hn_url": "https://news.ycombinator.com/item?id=47058199",
+    "comments": 9,
+    "query": "AI founder workflows automation",
+    "score": 18
+  },
+  {
+    "_highlightResult": {
+      "author": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "PrateekJ17"
+      },
+      "story_text": {
+        "fullyHighlighted": false,
+        "matchLevel": "full",
+        "matchedWords": [
+          "ai",
+          "agents",
+          "business",
+          "execution"
+        ],
+        "value": "Hey HN,<p>We've been heads down building Coasty for the past few months and wanted to share a milestone, we just achieved state-of-the-art results on OSWorld, the most comprehensive benchmark for computer-use <em>agents</em>.\nFor those unfamiliar, OSWorld tests whether <em>AI</em> <em>agents</em> can actually use a computer the way a human does navigating real desktop environments, clicking through UIs, filling out forms, managing files across apps.<p>We're building an <em>agent</em> <em>execution</em> platform for computer-use <em>AI</em>. Think of it like Vercel but for <em>AI</em> <em>agents</em> that operate full desktop environments. You give Coasty a task, and it spins up a sandboxed environment where an <em>agent</em> can see the screen, move the mouse, type, and complete end-to-end workflows things like filing expenses, canceling subscriptions, filling out insurance forms, or navigating legacy enterprise software.\nWhy this matters<p>Most &quot;<em>AI</em> automation&quot; today is really just API glue between apps that have APIs. But the vast majority of <em>business</em> workflows still live in UIs that were designed for humans, healthcare portals, government forms, internal tools that will never get an API. Computer-use <em>agents</em> unlock automation for all of that.\nWhat's next<p>We're opening up early access. If you're dealing with painful, repetitive computer workflows (especially in healthcare, insurance, legal, or ops), we'd love to talk.<p>Happy to answer questions about our approach, the benchmark, or anything else."
+      },
+      "title": {
+        "fullyHighlighted": false,
+        "matchLevel": "partial",
+        "matchedWords": [
+          "ai",
+          "agents"
+        ],
+        "value": "Show HN: Coasty.<em>ai</em> – We just hit SOTA on OSWorld (computer-use <em>agent</em> benchmark)"
+      }
+    },
+    "_tags": [
+      "story",
+      "author_PrateekJ17",
+      "story_47117621",
+      "show_hn"
+    ],
+    "author": "PrateekJ17",
+    "children": [
+      47117667,
+      47118111,
+      47117628
+    ],
+    "created_at": "2026-02-23T03:13:02Z",
+    "created_at_i": 1771816382,
+    "num_comments": 3,
+    "objectID": "47117621",
+    "points": 2,
+    "story_id": 47117621,
+    "story_text": "Hey HN,<p>We&#x27;ve been heads down building Coasty for the past few months and wanted to share a milestone, we just achieved state-of-the-art results on OSWorld, the most comprehensive benchmark for computer-use agents.\nFor those unfamiliar, OSWorld tests whether AI agents can actually use a computer the way a human does navigating real desktop environments, clicking through UIs, filling out forms, managing files across apps.<p>We&#x27;re building an agent execution platform for computer-use AI. Think of it like Vercel but for AI agents that operate full desktop environments. You give Coasty a task, and it spins up a sandboxed environment where an agent can see the screen, move the mouse, type, and complete end-to-end workflows things like filing expenses, canceling subscriptions, filling out insurance forms, or navigating legacy enterprise software.\nWhy this matters<p>Most &quot;AI automation&quot; today is really just API glue between apps that have APIs. But the vast majority of business workflows still live in UIs that were designed for humans, healthcare portals, government forms, internal tools that will never get an API. Computer-use agents unlock automation for all of that.\nWhat&#x27;s next<p>We&#x27;re opening up early access. If you&#x27;re dealing with painful, repetitive computer workflows (especially in healthcare, insurance, legal, or ops), we&#x27;d love to talk.<p>Happy to answer questions about our approach, the benchmark, or anything else.",
+    "title": "Show HN: Coasty.ai – We just hit SOTA on OSWorld (computer-use agent benchmark)",
+    "updated_at": "2026-02-25T08:39:14Z",
+    "url": "",
+    "hn_url": "https://news.ycombinator.com/item?id=47117621",
+    "comments": 3,
+    "query": "AI agents business execution",
+    "score": 5
+  },
+  {
+    "_highlightResult": {
+      "author": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "meisnerd"
+      },
+      "story_text": {
+        "fullyHighlighted": false,
+        "matchLevel": "full",
+        "matchedWords": [
+          "ai",
+          "agents",
+          "business",
+          "execution"
+        ],
+        "value": "I've been delegating work to Claude Code for the past few months, and it's been genuinely transformative—but managing multiple <em>agents</em> doing different things became chaos. No tool existed for this workflow, so I built one.\n<i>The Problem</i><p>When you're working with <em>AI</em> <em>agents</em> (Claude Code, Cursor, Windsurf), you end up in a weird situation: - You have tasks scattered across your head, Slack, email, and the CLI - <em>Agents</em> need clear work items, context, and role-specific instructions - You have no visibility into what <em>agents</em> are actually doing - Failed tasks just... disappear. No retry, no notification - Each agent context-switches constantly because you're hand-feeding them work<p>I was manually shepherding <em>agents</em>, copying task descriptions, restarting failed sessions, and losing track of what needed done next. It felt like hiring expensive contractors but managing them like a disorganized chaos experiment.<p><i>The Solution</i><p>Mission Control is a task management app purpose-built for delegating work to <em>AI</em> <em>agents</em>. It's got the expected stuff (Eisenhower matrix, kanban board, goal hierarchy) but built from the assumption that your collaborators are Claude, not humans.<p>The <i>killer feature is the autonomous daemon</i>. It runs in the background, polls your task queue, spawns Claude Code sessions automatically, handles retries, manages concurrency, and respects your cron-scheduled work. One click: your entire work queue activates.<p><i>The Architecture</i><p>- <i>Local-first</i>: Everything lives in JSON files. No database, no cloud dependency, no vendor lock-in. - <i>Token-optimized API</i>: The task/decision payloads are ~50 tokens vs ~5,400 unfiltered. Matters when you're spawning <em>agents</em> repeatedly. - <i>Rock-solid concurrency</i>: Zod validation + async-mutex locking prevents corruption under concurrent writes. - <i>193 automated tests</i>: This thing has to be reliable. It's doing unattended work.<p>The app is Next.js 15 with 5 built-in agent roles (researcher, developer, marketer, <em>business</em>-analyst, plus you). You define reusable skills as markdown that get injected into agent prompts. <em>Agents</em> report back through an inbox + decisions queue.<p><i>Why Release This?</i><p>A few people have asked for access, and I think it's genuinely useful for anyone delegating to <em>AI</em>. It's MIT licensed, open source, and actively maintained.<p><i>What's Next</i><p>- Human collaboration (sharing tasks with real team members) - Integrations with GitHub issues and email inboxes - Better observability dashboard for daemon <em>execution</em> - Custom agent templates (currently hardcoded roles)<p>If you're doing something similar—delegating serious work to <em>AI</em>—check it out and let me know what's broken.<p>GitHub: <a href=\"https://github.com/MeisnerDan/mission-control\" rel=\"nofollow\">https://github.com/MeisnerDan/mission-control</a>"
+      },
+      "title": {
+        "fullyHighlighted": false,
+        "matchLevel": "partial",
+        "matchedWords": [
+          "ai",
+          "agents"
+        ],
+        "value": "Show HN: Mission Control – Open-source task management for <em>AI</em> <em>agents</em>"
+      },
+      "url": {
+        "matchLevel": "none",
+        "matchedWords": [],
+        "value": "https://github.com/MeisnerDan/mission-control"
+      }
+    },
+    "_tags": [
+      "story",
+      "author_meisnerd",
+      "story_47165602",
+      "show_hn"
+    ],
+    "author": "meisnerd",
+    "children": [
+      47209456,
+      47181395,
+      47171518,
+      47171605,
+      47190545,
+      47170178,
+      47170985,
+      47176539,
+      47192547,
+      47181312,
+      47171323
+    ],
+    "created_at": "2026-02-26T13:12:33Z",
+    "created_at_i": 1772111553,
+    "num_comments": 16,
+    "objectID": "47165602",
+    "points": 43,
+    "story_id": 47165602,
+    "story_text": "I&#x27;ve been delegating work to Claude Code for the past few months, and it&#x27;s been genuinely transformative—but managing multiple agents doing different things became chaos. No tool existed for this workflow, so I built one.\n<i>The Problem</i><p>When you&#x27;re working with AI agents (Claude Code, Cursor, Windsurf), you end up in a weird situation: - You have tasks scattered across your head, Slack, email, and the CLI - Agents need clear work items, context, and role-specific instructions - You have no visibility into what agents are actually doing - Failed tasks just... disappear. No retry, no notification - Each agent context-switches constantly because you&#x27;re hand-feeding them work<p>I was manually shepherding agents, copying task descriptions, restarting failed sessions, and losing track of what needed done next. It felt like hiring expensive contractors but managing them like a disorganized chaos experiment.<p><i>The Solution</i><p>Mission Control is a task management app purpose-built for delegating work to AI agents. It&#x27;s got the expected stuff (Eisenhower matrix, kanban board, goal hierarchy) but built from the assumption that your collaborators are Claude, not humans.<p>The <i>killer feature is the autonomous daemon</i>. It runs in the background, polls your task queue, spawns Claude Code sessions automatically, handles retries, manages concurrency, and respects your cron-scheduled work. One click: your entire work queue activates.<p><i>The Architecture</i><p>- <i>Local-first</i>: Everything lives in JSON files. No database, no cloud dependency, no vendor lock-in. - <i>Token-optimized API</i>: The task&#x2F;decision payloads are ~50 tokens vs ~5,400 unfiltered. Matters when you&#x27;re spawning agents repeatedly. - <i>Rock-solid concurrency</i>: Zod validation + async-mutex locking prevents corruption under concurrent writes. - <i>193 automated tests</i>: This thing has to be reliable. It&#x27;s doing unattended work.<p>The app is Next.js 15 with 5 built-in agent roles (researcher, developer, marketer, business-analyst, plus you). You define reusable skills as markdown that get injected into agent prompts. Agents report back through an inbox + decisions queue.<p><i>Why Release This?</i><p>A few people have asked for access, and I think it&#x27;s genuinely useful for anyone delegating to AI. It&#x27;s MIT licensed, open source, and actively maintained.<p><i>What&#x27;s Next</i><p>- Human collaboration (sharing tasks with real team members) - Integrations with GitHub issues and email inboxes - Better observability dashboard for daemon execution - Custom agent templates (currently hardcoded roles)<p>If you&#x27;re doing something similar—delegating serious work to AI—check it out and let me know what&#x27;s broken.<p>GitHub: <a href=\"https:&#x2F;&#x2F;github.com&#x2F;MeisnerDan&#x2F;mission-control\" rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;MeisnerDan&#x2F;mission-control</a>",
+    "title": "Show HN: Mission Control – Open-source task management for AI agents",
+    "updated_at": "2026-03-01T18:44:39Z",
+    "url": "https://github.com/MeisnerDan/mission-control",
+    "hn_url": "https://news.ycombinator.com/item?id=47165602",
+    "comments": 16,
+    "query": "AI agents business execution",
+    "score": 59
+  }
+]

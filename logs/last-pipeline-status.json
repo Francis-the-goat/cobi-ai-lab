@@ -1,17 +1,17 @@
 {
-  "timestamp": "20260301-170000",
+  "timestamp": "20260302-050000",
   "harvester": {
     "status": "SUCCESS",
     "sources": 1,
-    "transcripts": 11
+    "transcripts": 22
   },
   "analyst": {
     "status": "SUCCESS",
-    "transcripts": 3,
+    "transcripts": 0,
     "patterns": 0
   },
   "detector": {
     "status": "SUCCESS"
   },
-  "log_file": "/Users/cobi/.openclaw/workspace/logs/pipeline-20260301-170000.log"
+  "log_file": "/Users/cobi/.openclaw/workspace/logs/pipeline-20260302-050000.log"
 }
